@@ -1,11 +1,41 @@
+
+// Customization FONTS"
 $default-font: "PTSansRegular-example", sans-serif;
-$accent: orange;
-$text: #333;
+
+$fz--base: 16px;
+$fz--xsmall: ceil($fz--base * 0.75); /* 12px */
+$fz--small: ceil($fz--base * 0.88); /* 14px */
+$fz--xbase: ceil($fz--base * 1.13); /* 18px */
+$fz--medium: ceil($fz--base * 1.25); /* 20px */
+$fz--xmedium: ceil($fz--base * 1.5); /* 24px */
+$fz--large: ceil($fz--base * 1.88); /* 30px */
+$fz--xlarge: ceil($fz--base * 2.25); /* 36px */
+
+$normal: 400;
+$bold: 700;
+$light: 300;
+
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;
 $grid-columns: 12;
 $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
-
 $gutter: $grid-gutter-width;
+
+
+// Customization COLOR"
+$accent: #2c923a;
+$accent2: #e2b11a;
+$text: #253031;
+
+$bg--white: #fff;
+$bg--black: #000;
+$bg--gray: #f2f2f2;
+$bg--green2: #7aac70;
+$bg--green3: #90af89;
+$bg--olive: #a6b868;
+$bg--yellow: #d1c361;
+$bg--gold: #fbce58;
+
+

@@ -1,0 +1,66 @@
+
+@mixin h1 {
+	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+  font-size: $fz--xlarge;
+  line-height: 1.2;
+  font-weight: $light;
+}
+
+@mixin h2-mobile {
+  font-size: $fz--xmedium;
+  line-height: 1.2;
+  font-weight: $bold;
+}
+
+@mixin h2-tablet {
+  font-size: $fz--xlarge;
+  line-height: 1.2;
+  font-weight: $light;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin h2-desktop {
+  font-size: $fz--xxlarge;
+  line-height: 1.2;
+  font-weight: $light;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin h3-mobile {
+  font-size: $fz--base;
+  line-height: 1.2;
+  font-weight: $bold;
+  font-style: normal;
+  color: $c--black;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin h3-tablet {
+  font-size: $fz--base;
+  line-height: 1.2;
+  font-weight: $bold;
+  color: $c--black;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin h3-tablet-popup {
+  font-size: $fz--large;
+  line-height: 1.2;
+  font-weight: $bold;
+  color: $c--black;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin h3-dekstop {
+  font-size: $fz--large;
+  line-height: 1.2;
+  font-weight: $bold;
+  color: $c--black;
+  margin: 0;
+  padding: 0;
+}

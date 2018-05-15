@@ -1,0 +1,21 @@
+.site-header {
+  &__top {
+		min-height: 275px;
+		}
+	&__wraper {
+		
+		height: 200px;
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+
+	&__left {
+		border: 2px solid black;
+	}
+
+	&__right {
+		border: 2px solid black;
+	}
+}
+
+

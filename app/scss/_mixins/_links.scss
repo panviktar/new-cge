@@ -1,0 +1,16 @@
+
+@mixin link {
+  color: $accent;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $c--blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $c--blue-opacity;
+    text-decoration: none;
+  }
+}
