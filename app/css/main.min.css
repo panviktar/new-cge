@@ -2286,15 +2286,36 @@ html {
   min-height: 275px; }
 
 .site-header__wraper {
-  height: 200px;
+  min-height: 200px;
   padding-top: 45px;
   padding-bottom: 45px; }
 
 .site-header__left {
-  border: 2px solid black; }
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.site-header__left h1 {
+  font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 700; }
 
 .site-header__right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   border: 2px solid black; }
+
+.site-header__logo {
+  width: 100px;
+  height: auto; }
+
+.site-header__name {
+  margin-left: 15px; }
 
 /* =====  End of Header  ====== */
 ::-webkit-input-placeholder {
@@ -2345,6 +2366,13 @@ body {
 b,
 strong {
   font-weight: bold; }
+
+section {
+  position: relative;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  background-color: #fff; }
 
 /* 12px */
 /* 14px */

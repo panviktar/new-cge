@@ -1,9 +1,9 @@
 
-@mixin h1 {
+@mixin h1-all {
 	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
   font-size: $fz--xlarge;
-  line-height: 1.2;
-  font-weight: $light;
+  line-height: 1;
+  font-weight: $bold;
 }
 
 @mixin h2-mobile {
