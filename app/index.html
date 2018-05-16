@@ -15,8 +15,8 @@
 
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/icon/logo_1.svg">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/icon/logo_1.svg">
+	<link rel="icon" href="img/icon/logo.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/icon/logo.svg">
 
 	<!-- Template Basic Images End -->
 
@@ -24,7 +24,7 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 
-	<link rel="stylesheet" href="libs/font-awesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/fontawesome-all.min.css">
 
 	<link rel="stylesheet" href="css/main.min.css">
 
@@ -48,7 +48,7 @@
 									<a href="#">
 											<img class="site-header__logo"
   									src="img/icon/logo.svg"
-  									alt="Гродно областной центр гигиены, эпидемиологии и общественного здоровья" width="100px">
+  									alt="Гродно областной центр гигиены, эпидемиологии и общественного здоровья" width="90px">
 									</a>
 									<div class="site-header__name">
 									<span>государственное учреждение</span><br>
@@ -61,29 +61,56 @@
 
 								<div class="col-3  site-header__right ">
 									<a href="#">
-										<img src="/img/icon/icon_sertif_1.png" alt="Сертификат соответвия" >
+									<a href="#">
+										<img class="site-header__sertif  site-header__sertif--1" src="/img/icon/icon_sertif_1.png" alt="Сертификат соответвия" width="35px" height="25px" >
 									</a>
 
 									<a href="#">
-										<img src="/img/icon/icon_sertif_2.png" alt="Сертификат соответвия">
+									<a href="#">
+										<img class="site-header__sertif  site-header__sertif--2" src="/img/icon/icon_sertif_2.png" alt="Сертификат соответвия" width="35px" height="25px" >
 									</a>
 
 									<a href="#">
 																				
 									<a href="#">
-										<img src="/img/icon/world-eng.svg" alt="Русский язык" width="30px" height="25px">
+										<img class="site-header__world  site-header__world--eng" src="/img/icon/world-eng.svg" alt="Русский язык" width="35px" height="22px" title="Англоязычная версия сайта">
 									</a>
 
 									<a href="#">
-										<img src="/img/icon/world-rus.svg" alt="Сертификат соответвия" width="30px" height="25px">
+										<img class="site-header__world  site-header__world--rus"  src="/img/icon/world-rus.svg" alt="Сертификат соответвия" width="35px" height="22px" title="Русскоязычная версия сайта">
 									</a>
 
 									<a href="#">
-										<i class="fa fa-eye" aria-hidden="true"></i>
-
-
+										<i class="fa fa-eye" aria-hidden="true" title="Режим для слабовидящих включить"></i>
+										<!-- <i class="fa fa-eye-slash" aria-hidden="true" title="Режим для слабовидящих выключить"></i>></i> -->
 									</a>
+
+									<form action="" method="post" class="site-header__search">
+										<input type="search" name="" placeholder="поиск" class="site-header__search-input" />
+										<input type="submit" name="" value="" class="site-header__search-submit" />
+									</form>
+
 								</div>
+
+								
+								</div>
+
+								<div class="site-header__bottom  row col-12">
+										<div class="site-header__info  site-header__info--left  col-4">
+												<i class="fa fa-map-marker" aria-hidden="true"></i>
+												<p><strong>Адрес:</strong> проспект Космонавтов, 58, </br>
+												230003, г. Гродно </p>			
+											</div>
+										<div class="site-header__info  site-header__info--center  col-4">
+												<i class="fa fa-comments" aria-hidden="true"></i>
+												<p><strong>Телефон/факс:</strong> 8-0152-75-54-93 </br>
+												<strong>E-mail:</strong> ocge@mail.grodno.by </p>
+										</div>
+										<div class="site-header__info  site-header__info--right  col-4">
+												<i class="fa fa-clock" aria-hidden="true"></i>
+												<p><strong>Режим работы:</strong> 08.30-13.00, 14.00-17.30 </br>
+												<strong>выходные:</strong> суббота, воскресенье</p>
+										</div>
 
 							</div>
 

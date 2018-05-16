@@ -4,16 +4,26 @@
 
   &__top {
 		min-height: 275px;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background: $gray;
+			top: 68%;
+			left: 0;
+			
+		}
 	}
 
 	&__wraper {
-		min-height: 200px;
-		padding-top: 45px;
-		padding-bottom: 45px;
+		min-height: 150px;
+		padding-top: 35px;
+		padding-bottom: 47px;
 	}
 
 	&__left {
-		border: 2px solid black;
 		display: flex;
 	}
 
@@ -23,7 +33,10 @@
 
 	&__right {
 		display: flex;
-		border: 2px solid black;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		
 	}
 
 	&__logo {
@@ -34,7 +47,107 @@
 	&__name {
 		margin-left: 15px;
 	}
+
+	&__world,
+	&__sertif {
+		opacity: 1;
+	&:hover {
+		opacity: 0.7;
+		transition: all 0.3s;
+	}
+	&:active {
+		opacity: 1;
+		transition: all 0.1s;
+	}
+	}
+
+	
+	&__search {
+		width: 100%;
+		position: relative;
+	}
+	
+	&__search-input {
+		width: 96%;
+		padding: 5px 37px 6px 15px;
+		box-sizing: border-box;
+		background: $white;
+		font-family: $default-font;
+		font-size: $fz--small;
+		color: $text;
+		outline: none;
+		border: 5px solid #b1e9ce;
+		margin-left: 10px;
+		&:focus {
+			border: 5px solid $accent;
+			transition: all 0.5s;
+		}
+	}
+	
+			
+	/* оформляем кнопку отправки */
+	&__search-submit {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		width: 35px;
+		height: 35px;
+		cursor: pointer;
+		background:  $gray url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+		opacity: 0.5;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	&__info {
+		padding: 15px 5px 10px 40px;
+		line-height: 1.4;
+		position: relative;
+		
+		&--center {
+			border-right: 1px solid $gray;
+			border-left: 1px solid $gray;
+		}
+	}
+
+	
+
+	
+
+	
 }
+	
+		
+.fa-eye {
+	font-size: $fz--large;
+	margin-top: 10px;
+	color: gray;
+	opacity: 1;
+	&:hover {
+		opacity: 0.8;
+		transition: all 0.3s;
+	}
+	&:active {
+		opacity: 1;
+		transition: all 0.1s;
+	}
+}
+
+.fa-map-marker,
+.fa-comments,
+.fa-clock {
+	font-size: $fz--xbase;
+	position: absolute;
+	margin-left: -30px;
+	color: $gold;
+	margin-top: 10px;
+}
+
+
+
+
+
 
 
 
