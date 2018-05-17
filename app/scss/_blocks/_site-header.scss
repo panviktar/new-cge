@@ -1,69 +1,54 @@
 @import "_mixins/h";
 @import "_mixins/links";
-
 .site-header {
-
-  &__top {
+	&__top {
 		min-height: 232px;
 		position: relative;
-	
 	}
-
 	&__line {
 		border-bottom: 1px solid $gray-light;
 	}
-
 	&__wraper {
 		padding-top: 25px;
 		padding-bottom: 25px;
-		
 	}
-
 	&__left {
 		display: flex;
 	}
-
 	&__left h1 {
+		padding: 8px 20px 0 0;
 		@include h1-all;
 	}
-
 	&__right {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		
 	}
-
 	&__logo {
 		margin-top: 10px;
 		width: 90px;
 		height: auto;
 	}
-
 	&__name {
 		margin-left: 15px;
 	}
-
 	&__world,
 	&__sertif {
 		opacity: 1;
-	&:hover {
-		opacity: 0.7;
-		transition: all 0.3s;
+		&:hover {
+			opacity: 0.7;
+			transition: all 0.3s;
+		}
+		&:active {
+			opacity: 1;
+			transition: all 0.1s;
+		}
 	}
-	&:active {
-		opacity: 1;
-		transition: all 0.1s;
-	}
-	}
-
-	
 	&__search {
 		width: 100%;
 		position: relative;
 	}
-	
 	&__search-input {
 		width: 96%;
 		padding: 2px 45px 3px 15px;
@@ -80,8 +65,6 @@
 			transition: all 0.5s;
 		}
 	}
-	
-			
 	/* оформляем кнопку отправки */
 	&__search-submit {
 		position: absolute;
@@ -90,19 +73,16 @@
 		width: 35px;
 		height: 25px;
 		cursor: pointer;
-		background:  $gray url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+		background: $gray url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
 		opacity: 0.5;
 		&:hover {
 			opacity: 0.8;
 		}
 	}
-
 	&__bottom {
-		justify-content:space-between;
+		justify-content: space-between;
 		min-height: 70px;
-		position: relative;
-		// align-items: center;
-
+		position: relative; // align-items: center;
 		&:after,
 		&:before {
 			content: "";
@@ -117,27 +97,15 @@
 			left: 66%;
 		}
 	}
-
 	&__info {
 		padding: 12px 10px 17px 35px;
 		line-height: 1.4;
-
-			
-		
 	}
-
 	&__info a {
 		@include link;
 	}
-
-	
-
-	
-
-	
 }
-	
-		
+
 .fa-eye {
 	font-size: $fz--xmedium;
 	margin-top: 10px;
@@ -162,11 +130,3 @@
 // 	color: $gold;
 // 	margin-top: 10px;
 // }
-
-
-
-
-
-
-
-
