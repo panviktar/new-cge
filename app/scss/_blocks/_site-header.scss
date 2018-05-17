@@ -1,26 +1,22 @@
 @import "_mixins/h";
+@import "_mixins/links";
 
 .site-header {
 
   &__top {
-		min-height: 275px;
+		min-height: 232px;
 		position: relative;
-		&::after {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 1px;
-			background: $gray;
-			top: 68%;
-			left: 0;
-			
-		}
+	
+	}
+
+	&__line {
+		border-bottom: 1px solid $gray-light;
 	}
 
 	&__wraper {
-		min-height: 150px;
-		padding-top: 35px;
-		padding-bottom: 47px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		
 	}
 
 	&__left {
@@ -40,7 +36,8 @@
 	}
 
 	&__logo {
-		width: 100px;
+		margin-top: 10px;
+		width: 90px;
 		height: auto;
 	}
 
@@ -69,11 +66,11 @@
 	
 	&__search-input {
 		width: 96%;
-		padding: 5px 37px 6px 15px;
+		padding: 2px 45px 3px 15px;
 		box-sizing: border-box;
 		background: $white;
 		font-family: $default-font;
-		font-size: $fz--small;
+		font-size: $fz--xsmall;
 		color: $text;
 		outline: none;
 		border: 5px solid #b1e9ce;
@@ -91,7 +88,7 @@
 		top: 5px;
 		right: 5px;
 		width: 35px;
-		height: 35px;
+		height: 25px;
 		cursor: pointer;
 		background:  $gray url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
 		opacity: 0.5;
@@ -100,15 +97,37 @@
 		}
 	}
 
-	&__info {
-		padding: 15px 5px 10px 40px;
-		line-height: 1.4;
+	&__bottom {
+		justify-content:space-between;
+		min-height: 70px;
 		position: relative;
-		
-		&--center {
-			border-right: 1px solid $gray;
-			border-left: 1px solid $gray;
+		// align-items: center;
+
+		&:after,
+		&:before {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 1px;
+			background: $gray-light;
+			top: 0;
+			left: 31%;
 		}
+		&:before {
+			left: 66%;
+		}
+	}
+
+	&__info {
+		padding: 12px 10px 17px 35px;
+		line-height: 1.4;
+
+			
+		
+	}
+
+	&__info a {
+		@include link;
 	}
 
 	
@@ -120,7 +139,7 @@
 	
 		
 .fa-eye {
-	font-size: $fz--large;
+	font-size: $fz--xmedium;
 	margin-top: 10px;
 	color: gray;
 	opacity: 1;
@@ -134,15 +153,15 @@
 	}
 }
 
-.fa-map-marker,
-.fa-comments,
-.fa-clock {
-	font-size: $fz--xbase;
-	position: absolute;
-	margin-left: -30px;
-	color: $gold;
-	margin-top: 10px;
-}
+// .fa-map-marker,
+// .fa-comments,
+// .fa-clock {
+// 	font-size: $fz--xbase;
+// 	position: absolute;
+// 	margin-left: -30px;
+// 	color: $gold;
+// 	margin-top: 10px;
+// }
 
 
 
