@@ -11,6 +11,7 @@
 	&__wraper {
 		padding-top: 25px;
 		padding-bottom: 25px;
+	
 	}
 	&__left {
 		display: flex;
@@ -118,8 +119,11 @@
 	&:active {
 		opacity: 1;
 		transition: all 0.1s;
+		
 	}
 }
+
+
 
 // .fa-map-marker,
 // .fa-comments,

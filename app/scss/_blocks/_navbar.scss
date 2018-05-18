@@ -4,67 +4,114 @@
 .top-line {
 	background-color: $accent;
 	text-align: center;
-	
-	
+				
 	a {
 		color: $white;
 	}
+
 	ul, li {
 		list-style-type: none;
 		padding: 0;
-	}
-	
-}
-
-.nav-item {
-	display: inline-block;
+		margin: 0;
+		background-color: $accent;
+	}	
 }
 
 .sf-menu {
-	margin: auto;
+	margin: 0 auto;
+	margin-bottom: -10px;
 	display: inline-block;
 	float: none;
 	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
 	font-size: $fz--base;
+	background-color: $accent;
 
-		ul {
-		background-color: $accent;
+	a {
+		border-bottom: lighten($accent, 5%) 1px solid;
+		border-left: lighten($accent, 5%) 1px solid;
+		border-top: none;
+		
 		>li {
 			border-bottom: lighten($accent, 5%) 1px solid;
-			background-color: lighten($accent,50%);
+			background-color: transparent;
+			
 			a{
-				padding: 12px 25px 12px;
-				text-align: left;
-				color: $text;
+				color: $white;
+				border: none;
+				padding: 22px 28px 20px;
+				
+				.fa {
+					font-size: 11px;
+					margin-left: 3px;
+				}
+			}
+			&::hover {
+				background-color: darken($accent, 3%);
+				>a {
+					color: $accent2;
+				}
+			}
+			ul {
+				
+				li {
+					background-color: $accent;
+					text-align: left;
+					&:hover {
+						>a {
+							color: $accent2;
+						}
+					}
+					a {
+						padding: 10px 20px;
+						color: #fff;
+					}
+				}
 			}
 		}
 	}
 
-	li{
-		background-color: $accent;
-		&:hover {
-			background-color: darken($accent, 3%);
-		}
-	}
+	// 	ul {
+	// 	
+	// 	>li {
+	// 		border-bottom: lighten($accent, 5%) 1px solid;
+	// 		background-color: lighten($accent,50%);
+	// 		a{
+	// 			padding: 12px 25px 12px;
+	// 			text-align: left;
+	// 			color: $text;
+	// 		}
+	// 	}
+	// }
+
+	// li{
+	// 	background-color: $accent;
+	// 	&:hover {
+	// 		background-color: darken($accent, 3%);
+	// 	}
+	// }
 
 	
-	a {
-		color: $white;
-		border: none;
-		padding: 12px 25px;
-		&:hover{
-			text-decoration: underline;
-		}
+	// a {
+	// 	color: $white;
+	// 	border: none;
+	// 	padding: 12px 25px;
+	// 	&:hover{
+	// 		text-decoration: underline;
+	// 	}
 
-		.sf-menu ul li {
-			background: transparent;
-	}
+	// 	.sf-menu ul li {
+	// 		background: transparent;
+	// }
 
-		.fa{
-			font-size: 11px;
-			margin-left: 3px;
-		}
-	}
+	// 	.fa{
+	// 		font-size: 11px;
+	// 		margin-left: 3px;
+	// 	}
+	// }
 	
 	
+}
+
+.top-line ul, .top-line li {
+	margin-bottom: -4px;
 }
