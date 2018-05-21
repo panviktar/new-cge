@@ -19,7 +19,6 @@
 
 .sf-menu {
 	margin: 0 auto;
-	margin-bottom: -10px;
 	display: inline-block;
 	float: none;
 	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
@@ -30,87 +29,47 @@
 		border-bottom: lighten($accent, 5%) 1px solid;
 		border-left: lighten($accent, 5%) 1px solid;
 		border-top: none;
-		
+	}
 		>li {
 			border-bottom: lighten($accent, 5%) 1px solid;
 			background-color: transparent;
 			
-			a{
+			>a {
 				color: $white;
 				border: none;
-				padding: 22px 28px 20px;
+				padding: 15px 25px;
 				
 				.fa {
 					font-size: 11px;
 					margin-left: 3px;
 				}
 			}
-			&::hover {
-				background-color: darken($accent, 3%);
+			&:hover {
+				background-color: darken($accent, 5%);
 				>a {
-					color: $accent2;
+					text-decoration: underline;
 				}
 			}
 			ul {
 				
 				li {
-					background-color: $accent;
+					background-color: lighten($accent,50%);
 					text-align: left;
+					
 					&:hover {
+						background-color: lighten($accent,50%);
 						>a {
-							color: $accent2;
+							color: $accent;
 						}
 					}
 					a {
-						padding: 10px 20px;
-						color: #fff;
+						padding: 12px 20px;
+						color: $text;
 					}
 				}
 			}
 		}
 	}
-
-	// 	ul {
-	// 	
-	// 	>li {
-	// 		border-bottom: lighten($accent, 5%) 1px solid;
-	// 		background-color: lighten($accent,50%);
-	// 		a{
-	// 			padding: 12px 25px 12px;
-	// 			text-align: left;
-	// 			color: $text;
-	// 		}
-	// 	}
-	// }
-
-	// li{
-	// 	background-color: $accent;
-	// 	&:hover {
-	// 		background-color: darken($accent, 3%);
-	// 	}
-	// }
-
-	
-	// a {
-	// 	color: $white;
-	// 	border: none;
-	// 	padding: 12px 25px;
-	// 	&:hover{
-	// 		text-decoration: underline;
-	// 	}
-
-	// 	.sf-menu ul li {
-	// 		background: transparent;
-	// }
-
-	// 	.fa{
-	// 		font-size: 11px;
-	// 		margin-left: 3px;
-	// 	}
-	// }
-	
-	
-}
 
 .top-line ul, .top-line li {
 	margin-bottom: -4px;
