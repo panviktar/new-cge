@@ -7,3 +7,7 @@
 @include font-face("RobotoCondensedRegular-example", "../fonts/RobotoCondensedRegular/RobotoCondensedRegular");
 @include font-face("RobotoCondensedRegular-example", "../fonts/RobotoCondensedBold/RobotoCondensedBold", bold);
 @include font-face("RobotoCondensedRegular-example", "../fonts/RobotoCondensedLight/RobotoCondensedLight", 300);
+
+@include font-face("FA", "../libs/font-awesome/webfonts/fa-brands-400", 300);
+@include font-face("FA", "../libs/font-awesome/webfonts/fa-solid-900", 300);
+@include font-face("FA", "../libs/font-awesome/webfonts/fa-regular-400", 300);

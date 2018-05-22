@@ -1,23 +1,10 @@
 
+
 @mixin h1-all {
 	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
   font-size: $fz--large;
   line-height: 1;
   font-weight: $bold;
-}
-
-@mixin h2-mobile {
-  font-size: $fz--xmedium;
-  line-height: 1.2;
-  font-weight: $bold;
-}
-
-@mixin h2-tablet {
-  font-size: $fz--xlarge;
-  line-height: 1.2;
-  font-weight: $light;
-  margin: 0;
-  padding: 0;
 }
 
 @mixin h2-desktop {

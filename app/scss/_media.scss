@@ -1,10 +1,35 @@
-@import "vars";
+@import "_vars";
+@import "_mixins/h";
 
 
 /*==========  Desktop First  ==========*/
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+	.site-header {
+		&__left h1 {
+			font-size: $fz--large;
+			padding: 8px 10px 0 0;
+		}
+
+		&__search-input {
+			margin-left: 5px;
+		}
+		&__search {
+			&::before {
+				right: 5px;
+			}
+		}
+		&__search-submit {
+			right: 5px;
+		}
+	}
+	.sf-menu {
+		font-size: $fz--small;
+		}
+	.sf-menu >li >a {
+		padding: 12px 15px;
+	}
 	
 }
 

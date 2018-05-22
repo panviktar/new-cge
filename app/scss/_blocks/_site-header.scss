@@ -49,36 +49,56 @@
 	&__search {
 		width: 100%;
 		position: relative;
+		
+		&::before{
+				padding-top: 2px;
+				font-family: FA;
+				font-size: $fz--base;
+				position: absolute;
+        text-align: center;
+        content: "\f002";
+				color: $white;
+				width: 35px;
+				height: 33px;
+				cursor: pointer;
+				background: $gray;
+				opacity: 0.5;
+				top: 5%;
+				right: 0;
+			}
 	}
 	&__search-input {
 		width: 96%;
-		padding: 2px 45px 3px 15px;
+		padding: 6px 45px 7px 15px;
 		box-sizing: border-box;
 		background: $white;
 		font-family: $default-font;
 		font-size: $fz--xsmall;
 		color: $text;
 		outline: none;
-		border: 5px solid #b1e9ce;
-		margin-left: 10px;
+		border: 2px solid lighten($accent,50%);
+		margin-left: 12px;
 		&:focus {
-			border: 5px solid $accent;
+			border: 2px solid $accent;
 			transition: all 0.5s;
 		}
 	}
 	/* оформляем кнопку отправки */
 	&__search-submit {
 		position: absolute;
-		top: 5px;
-		right: 5px;
+		top: 2px;
+		right: 0;
 		width: 35px;
-		height: 25px;
+		height: 33px;
 		cursor: pointer;
-		background: $gray url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
-		opacity: 0.5;
-		&:hover {
-			opacity: 0.8;
+		opacity: 0;
+		z-index: 99;
+		background: $gray;
+		&:hover{
+			opacity: 0.2;
 		}
+
+		
 	}
 	&__bottom {
 		justify-content: space-between;
@@ -99,9 +119,15 @@
 		}
 	}
 	&__info {
-		padding: 12px 10px 17px 35px;
+		padding: 12px 10px 17px 20px;
 		line-height: 1.4;
+		position: relative;
 	}
+
+	&__info--left{
+		padding-left: 40px;
+	}
+
 	&__info a {
 		@include link;
 	}
@@ -114,7 +140,7 @@
 	opacity: 1;
 	&:hover {
 		opacity: 0.8;
-		transition: all 0.3s;
+			transition: all 0.3s;
 	}
 	&:active {
 		opacity: 1;
@@ -123,14 +149,24 @@
 	}
 }
 
+.fa-search{
+	font-size: $fz--large;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: $gold;
+	z-index: 100;
+}
 
-
-// .fa-map-marker,
-// .fa-comments,
-// .fa-clock {
-// 	font-size: $fz--xbase;
-// 	position: absolute;
-// 	margin-left: -30px;
-// 	color: $gold;
-// 	margin-top: 10px;
-// }
+.fa-map-marker,
+.fa-comments,
+.fa-clock {
+	font-size: $fz--xbase;
+	position: absolute;
+	top: 15px;
+	left: -10px;
+	color: $gold;
+	}
+.fa-map-marker {
+	left: 15px;
+}
