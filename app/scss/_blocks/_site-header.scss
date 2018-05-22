@@ -101,7 +101,7 @@
 		
 	}
 	&__bottom {
-		justify-content: space-between;
+		justify-content: space-around;
 		min-height: 70px;
 		position: relative; // align-items: center;
 		&:after,
@@ -119,6 +119,7 @@
 		}
 	}
 	&__info {
+		
 		padding: 12px 10px 17px 20px;
 		line-height: 1.4;
 		position: relative;

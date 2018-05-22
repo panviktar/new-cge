@@ -7,8 +7,11 @@
 // ≥1200px
 @include media-breakpoint-down(lg) {
 	.site-header {
-		&__left h1 {
-			font-size: $fz--large;
+		&__top {
+			min-height: 225px;
+		}
+
+		&__name h1 {
 			padding: 8px 10px 0 0;
 		}
 
@@ -17,11 +20,21 @@
 		}
 		&__search {
 			&::before {
+				top: 2px;
 				right: 5px;
+				height: 32px;
 			}
 		}
 		&__search-submit {
 			right: 5px;
+		}
+
+		&__info {
+			font-size: $fz--small;
+			padding: 12px 10px 12px 20px;
+		}
+		&__info--left{
+			padding-left: 40px;
 		}
 	}
 	.sf-menu {
@@ -33,9 +46,59 @@
 	
 }
 
+.fa-map-marker,
+.fa-comments,
+.fa-clock {
+	font-size: $fz--base;
+}
+
 // ≥992px
 @include media-breakpoint-down(md) {
+	.site-header {
+		&__top {
+			min-height: 225px;
+		}
 
+		&__wraper {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		&__right {
+			align-items: flex-start;
+		}
+
+		&__logo {
+			width: 75px;
+		}
+		
+		&__name h1 {
+			font-size: $fz--xmedium;
+			padding: 8px 5px 0 0;
+		}
+
+		&__name span {
+			font-size: $fz--small;
+		}
+
+		
+
+		&__world {
+			width: 26px;
+			height: 14px;
+		}
+		
+		&__info {
+			font-size: $fz--small;
+			padding: 12px 10px 12px 20px;
+		}
+		&__info--left{
+			padding-left: 40px;
+		}
+	}
+	.fa-eye {
+		margin-top: 5px;
+	}
 }
 
 // ≥768px

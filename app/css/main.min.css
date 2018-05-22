@@ -2529,10 +2529,9 @@ html {
     .site-header__search-submit:hover {
       opacity: 0.2; }
   .site-header__bottom {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     min-height: 70px;
     position: relative; }
     .site-header__bottom:after, .site-header__bottom:before {
@@ -2670,7 +2669,8 @@ html {
           line-height: 1.2; }
 
 .top-line ul, .top-line li {
-  margin-bottom: -4px; }
+  margin-bottom: -3px;
+  border-bottom: transparent; }
 
 .fa-caret-down {
   font-size: 11px;
@@ -2742,18 +2742,60 @@ section {
 /* 36px */
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
-  .site-header__left h1 {
-    font-size: 31px;
+  .site-header__top {
+    min-height: 225px; }
+  .site-header__name h1 {
     padding: 8px 10px 0 0; }
   .site-header__search-input {
     margin-left: 5px; }
   .site-header__search::before {
-    right: 5px; }
+    top: 2px;
+    right: 5px;
+    height: 32px; }
   .site-header__search-submit {
     right: 5px; }
+  .site-header__info {
+    font-size: 15px;
+    padding: 12px 10px 12px 20px; }
+  .site-header__info--left {
+    padding-left: 40px; }
   .sf-menu {
     font-size: 15px; }
   .sf-menu > li > a {
     padding: 12px 15px; } }
+
+.fa-map-marker,
+.fa-comments,
+.fa-clock {
+  font-size: 16px; }
+
+@media (max-width: 991.98px) {
+  .site-header__top {
+    min-height: 225px; }
+  .site-header__wraper {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .site-header__right {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .site-header__logo {
+    width: 75px; }
+  .site-header__name h1 {
+    font-size: 24px;
+    padding: 8px 5px 0 0; }
+  .site-header__name span {
+    font-size: 15px; }
+  .site-header__world {
+    width: 26px;
+    height: 14px; }
+  .site-header__info {
+    font-size: 15px;
+    padding: 12px 10px 12px 20px; }
+  .site-header__info--left {
+    padding-left: 40px; }
+  .fa-eye {
+    margin-top: 5px; } }
 
 /*==========  Mobile First  ==========*/
