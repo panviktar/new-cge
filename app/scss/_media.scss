@@ -6,6 +6,9 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+	
+/*==========  HEADER  ==========*/
+
 	.site-header {
 		&__top {
 			min-height: 225px;
@@ -15,57 +18,65 @@
 			padding: 8px 10px 0 0;
 		}
 
-		&__search-input {
-			margin-left: 5px;
-		}
-		&__search {
-			&::before {
-				top: 2px;
-				right: 5px;
-				height: 32px;
-			}
-		}
-		&__search-submit {
-			right: 5px;
-		}
-
 		&__info {
 			font-size: $fz--small;
 			padding: 12px 10px 12px 20px;
 		}
+
 		&__info--left{
 			padding-left: 40px;
 		}
 	}
+
 	.sf-menu {
 		font-size: $fz--small;
 		}
+
 	.sf-menu >li >a {
 		padding: 12px 15px;
 	}
-	
+
+	.top-line ul, .top-line li {
+		margin-bottom: -3px;
+		border-bottom: transparent;
+	}
+	.fa-map-marker,
+	.fa-comments,
+	.fa-clock {
+	font-size: $fz--base;
+	}
 }
 
-.fa-map-marker,
-.fa-comments,
-.fa-clock {
-	font-size: $fz--base;
-}
+/*==========  header end  ==========*/
+
+
 
 // ≥992px
+
 @include media-breakpoint-down(md) {
+	
+	/*==========  HEADER  ==========*/
+
 	.site-header {
 		&__top {
-			min-height: 225px;
+			min-height: 190px;
 		}
 
 		&__wraper {
-			padding-top: 15px;
+			padding-top: 0;
 			padding-bottom: 15px;
+		}
+
+		&__left {
+			order: 5;
+			margin-top: -10px;
+			padding-right: 60px;
 		}
 
 		&__right {
 			align-items: flex-start;
+			justify-content: flex-end;
+			order: 1;
 		}
 
 		&__logo {
@@ -79,36 +90,133 @@
 
 		&__name span {
 			font-size: $fz--small;
+			display: flex;
+			margin-top: -5px;
 		}
-
-		
 
 		&__world {
 			width: 26px;
 			height: 14px;
+			margin-right: 5px;
+		}
+
+		&__bottom {
+			align-items: center;
 		}
 		
 		&__info {
-			font-size: $fz--small;
-			padding: 12px 10px 12px 20px;
-		}
+			font-size: $fz--xsmall;
+			padding: 12px 5px 12px 18px;
+			align-items: center;
+			}
+
 		&__info--left{
-			padding-left: 40px;
+			padding-left: 35px;
+		}
+
+		&__bottom {
+			&:after,
+			&:before {
+				width: 0;
+			}
 		}
 	}
+	
 	.fa-eye {
 		margin-top: 5px;
+		font-size: $fz--medium;
 	}
+
+	.fa-map-marker,
+	.fa-comments,
+	.fa-clock {
+	font-size: $fz--small;
+	left: -7px;
 }
+
+.fa-map-marker {
+	left: 15px;
+}
+}
+
+/*==========  header end  ==========*/
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+	.site-header {
+		&__top {
+			min-height: 190px;
+		}
 
+		&__left {
+			padding-right: 0;
+		}
+
+		&__logo {
+			width: 55px;
+		}
+		
+		&__name h1 {
+			font-size: $fz--medium;
+			padding-right: 20px;
+		}
+
+		&__name span {
+			font-size: $fz--xsmall;
+		}
+
+		&__world {
+			width: 20px;
+			height: 10px;
+		}
+	
+		
+		&__info {
+			font-size: $fz--xsmall;
+			padding: 5px 5px 5px 20px;
+		}
+		
+		&__info--left{
+			padding-left: 20px;
+		
+		}
+
+		&__bottom {
+			padding: 5px 0 5px 0;
+			
+						
+			// &:after,
+			// &:before {
+			// 	width: 0;
+			// }
+		}
+	}
+	.fa-eye {
+		margin-top: 7px;
+		font-size: $fz--base;
+	}
+	.fa-map-marker {
+		left: -4px;
+	}
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+	.site-header {
+	&__info {
+		margin-left: 43%;
+	}
 
+	&__logo {
+		width: 50px;
+		
+	}
+	&__name h1 {
+		font-size: $fz--base;
+		padding-right: 20px;
+		
+	}
+	}
 }
 
 

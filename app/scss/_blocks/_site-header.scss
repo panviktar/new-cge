@@ -36,19 +36,20 @@
 	}
 	&__world,
 	&__sertif {
-		opacity: 1;
+		opacity: 0.7;
 		&:hover {
-			opacity: 0.7;
-			transition: all 0.3s;
+			opacity: 1;
+			transition: all 0.2s;
 		}
 		&:active {
-			opacity: 1;
-			transition: all 0.1s;
+			opacity: 0.5;
+			transition: all 0.2s;
 		}
 	}
 	&__search {
 		width: 100%;
 		position: relative;
+		
 		
 		&::before{
 				padding-top: 2px;
@@ -64,11 +65,11 @@
 				background: $gray;
 				opacity: 0.5;
 				top: 5%;
-				right: 0;
+				right: 2px;
 			}
 	}
 	&__search-input {
-		width: 96%;
+		width: 100%;
 		padding: 6px 45px 7px 15px;
 		box-sizing: border-box;
 		background: $white;
@@ -77,7 +78,7 @@
 		color: $text;
 		outline: none;
 		border: 2px solid lighten($accent,50%);
-		margin-left: 12px;
+	
 		&:focus {
 			border: 2px solid $accent;
 			transition: all 0.5s;
@@ -87,7 +88,7 @@
 	&__search-submit {
 		position: absolute;
 		top: 2px;
-		right: 0;
+		right: 2px;
 		width: 35px;
 		height: 33px;
 		cursor: pointer;
@@ -104,19 +105,19 @@
 		justify-content: space-around;
 		min-height: 70px;
 		position: relative; // align-items: center;
-		&:after,
-		&:before {
-			content: "";
-			position: absolute;
-			height: 100%;
-			width: 1px;
-			background: $gray-light;
-			top: 0;
-			left: 31%;
-		}
-		&:before {
-			left: 66%;
-		}
+		// &:after,
+		// &:before {
+		// 	content: "";
+		// 	position: absolute;
+		// 	height: 100%;
+		// 	width: 1px;
+		// 	background: $gray-light;
+		// 	top: 0;
+		// 	left: 31%;
+		// }
+		// &:before {
+		// 	left: 66%;
+		// }
 	}
 	&__info {
 		
@@ -138,14 +139,14 @@
 	font-size: $fz--xmedium;
 	margin-top: 10px;
 	color: gray;
-	opacity: 1;
+	opacity: 0.7;
 	&:hover {
-		opacity: 0.8;
+		opacity: 1;
 			transition: all 0.3s;
 	}
 	&:active {
-		opacity: 1;
-		transition: all 0.1s;
+		opacity: 0.5;
+		transition: all 0.2s;
 		
 	}
 }
