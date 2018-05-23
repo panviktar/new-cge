@@ -23,9 +23,7 @@
 			padding: 12px 10px 12px 20px;
 		}
 
-		&__info--left{
-			padding-left: 40px;
-		}
+		
 	}
 
 	.sf-menu {
@@ -59,7 +57,7 @@
 
 	.site-header {
 		&__top {
-			min-height: 190px;
+			min-height: 170px;
 		}
 
 		&__wraper {
@@ -101,25 +99,15 @@
 		}
 
 		&__bottom {
+			padding-left: 20px;
 			align-items: center;
 		}
 		
 		&__info {
 			font-size: $fz--xsmall;
-			padding: 12px 5px 12px 18px;
-			align-items: center;
+			padding: 12px 0 12px 18px;
+			
 			}
-
-		&__info--left{
-			padding-left: 35px;
-		}
-
-		&__bottom {
-			&:after,
-			&:before {
-				width: 0;
-			}
-		}
 	}
 	
 	.fa-eye {
@@ -135,17 +123,22 @@
 }
 
 .fa-map-marker {
-	left: 15px;
+	left: -2px;
 }
+
+
 }
 
 /*==========  header end  ==========*/
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+	
+/*==========  HEADER  ==========*/
+	
 	.site-header {
 		&__top {
-			min-height: 190px;
+			min-height: 170px;
 		}
 
 		&__left {
@@ -176,19 +169,8 @@
 			padding: 5px 5px 5px 20px;
 		}
 		
-		&__info--left{
-			padding-left: 20px;
-		
-		}
-
 		&__bottom {
-			padding: 5px 0 5px 0;
-			
-						
-			// &:after,
-			// &:before {
-			// 	width: 0;
-			// }
+			padding: 5px 0 5px 20px;
 		}
 	}
 	.fa-eye {
@@ -200,24 +182,48 @@
 	}
 }
 
+/*==========  header end  ==========*/
+
 // ≥576px
 @include media-breakpoint-down(xs) {
+	
+		/*==========  HEADER  ==========*/
+	
 	.site-header {
-	&__info {
-		margin-left: 43%;
-	}
-
+		&__top {
+			min-height: 140px;
+		}	
+			
 	&__logo {
 		width: 50px;
-		
-	}
+		}
+
 	&__name h1 {
 		font-size: $fz--base;
 		padding-right: 20px;
-		
+		}
+
+		&__bottom {
+			padding-left: 20px;
+		}
+
+		&__info {
+			font-size: $fz--xsmall;
+			padding: 5px 10px 5px 15px;
+		}	
 	}
+	.fa-map-marker {
+	left: -3px;
+	top: 5px;
+	}
+
+	.fa-comments {
+	left: -7px;
+	top: 5px;
 	}
 }
+
+/*==========  header end  ==========*/
 
 
 /*==========  Mobile First  ==========*/

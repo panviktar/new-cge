@@ -102,32 +102,15 @@
 		
 	}
 	&__bottom {
+		padding-left: 22px;
 		justify-content: space-around;
 		min-height: 70px;
 		position: relative; // align-items: center;
-		// &:after,
-		// &:before {
-		// 	content: "";
-		// 	position: absolute;
-		// 	height: 100%;
-		// 	width: 1px;
-		// 	background: $gray-light;
-		// 	top: 0;
-		// 	left: 31%;
-		// }
-		// &:before {
-		// 	left: 66%;
-		// }
 	}
 	&__info {
-		
 		padding: 12px 10px 17px 20px;
 		line-height: 1.4;
 		position: relative;
-	}
-
-	&__info--left{
-		padding-left: 40px;
 	}
 
 	&__info a {
@@ -170,5 +153,5 @@
 	color: $gold;
 	}
 .fa-map-marker {
-	left: 15px;
+	left: -5px;
 }
