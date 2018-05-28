@@ -17,25 +17,23 @@ $("#my-menu").mmenu({
 		placeholder: "Поиск по сайту",
 		noResults: "Нет результата"
 	},
-	extensions : [ "widescreen", "theme-white", "effect-menu-slide", "pagedim-black"],
+	extensions: [ "widescreen", "theme-white", "effect-menu-slide", "pagedim-black", "position-right"],
 	navbar: {
-		title: "Меню"
-	}
+		title: '<img src="img/icon/logo.svg" alt="Гродненский областной центр гигиены, эпидемилогии и общественного здоровья"><b>"Гродненский областной ЦГЭОЗ"</b>'
+	}	
 });
 
 	var api = $("#my-menu").data("mmenu");
-	api.bind("opened", function() {
-		$(".toggle-mnu").addClass("off");
-	});
+	api.bind("open:start", function() {
+		$(".hamburger").addClass("is-active");
+	}).bind("close:finish", function() {
+		$(".hamburger").removeClass("is-active");
+	})
 
 		$(".mobile-mnu").click(function() {
 			var mmAPI = $("#my-menu").data( "mmenu" );
 			mmAPI.open();
-			var thiss = $(this).find(".toggle-mnu");
-			thiss.toggleClass("on");
-			$(".main-mnu").slideToggle();
-			return false;
-	});
+		});
 
 		
 	
