@@ -1,5 +1,4 @@
-@import "_mixins/h";
-@import "_mixins/links";
+
 
 .top-line {
 	background-color: $accent;
@@ -130,13 +129,14 @@
 		}
 }
 
-// Гамбургер
+// Гамбургер start-------------
 
 .hamburger  {
 	margin: 0;
-	padding: 10px 0 2px 0;
+	padding: 8px 0 9px 0;
 	display: flex; 
 	text-decoration: none;
+	align-items: center;
 
 	.hamburger .hamburger--emphatic a:hover{
 		text-decoration: none;
@@ -145,7 +145,7 @@
 
 	.hamburger-box {
 		width: 34px;
-		margin-top: 5px;
+		margin-top: 3px;
 	}
 
 	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
@@ -159,13 +159,17 @@
 		color: #fff;
 		font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
 		font-weight: $light;
-		margin-bottom: 7px;
 		margin-right: 20px;
 		text-transform: uppercase;
 		font-size: 21px;
 		display: flex;
+		line-height: 0;
 	}
 	}
+
+	// Гамбургер end--------------
+
+	// Стилизация mmenu плагина start------------
 
 .mm-menu_offcanvas {
 	z-index: 5;
@@ -183,26 +187,92 @@
 
 	&__title  {
 		margin: 0;
+		
 		img {
-		width: 45px;
+		width: 25px;
 		height: auto;
 		margin-right: 10px;
 		}
 		b {
+			color: $text;
 			font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
 		}
 	}
 }  
 
 .mm-panel_has-navbar.mm-panel_has-searchfield {
-	padding-top: 120px;
+	padding-top: 95px;
 	&>.mm-searchfield {
-		top: 62px;
+		top: 38px;
+		left: 3%;
 	}
 }
-
-
 
 .mm-panel:after, .mm-panel:before {
 	height: 0;
 }
+
+// Убираем некрасивый скролл
+
+.mm-panels > .mm-panel_has-navbar {
+	right: -18px;
+}
+
+a:hover {
+	text-decoration: none;
+} 
+
+html.mm-opened {
+	overflow-y: scroll;
+}
+
+// Убираем некрасивый скролл END-------
+
+.mm-listitem::after {
+	display: none;
+}
+
+.mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next::before, .mm-listitem::after, .mm-listview {
+	border: none;
+}
+
+.mm-menu_theme-white .mm-listitem_selected > a:not(.mm-btn_next), .mm-menu_theme-white .mm-listitem_selected > span {
+	background-color: lighten($accent, 55%);
+	color: $accent;
+}
+
+.mm-listview > li.active {
+	&>a {
+		color: $accent2;
+	}
+	&>a:hover {
+		color: $accent2;
+	}
+}
+
+.mm-menu_theme-white .mm-navbar a, .mm-menu_theme-white .mm-navbar > * {
+	color: $accent2;
+}
+
+.mm-listview {
+	> li {
+		> a {
+			transition: all .25s ease;
+			padding-left: 5%;
+			padding-right: 5%;
+			&:hover {
+				color: $accent;
+			}
+			&::before {
+				content: "\f02e";
+				font-family: FA;
+				margin-right: 10px;
+				text-decoration: none;
+				font-size: 12px;
+			}
+		}
+	}
+}
+ 
+
+// mmenu END------------

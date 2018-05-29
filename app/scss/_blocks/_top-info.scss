@@ -1,0 +1,37 @@
+@import "_mixins/h";
+@import "_mixins/links";
+.top-info {
+	margin-top: 25px;
+}
+
+.console {
+	flex-direction: column;
+	&__item {
+		height: 80px;
+		margin-bottom: 12px;
+		display: flex;
+		justify-content:flex-start;
+		align-items: center;
+		padding-left: 115px;
+		padding-right: 15px;
+		background-size: contain;
+	}
+	&__name {
+		font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+		font-size: $fz--base;
+		line-height: 1.2;
+		color: #fff;
+	}
+
+	&__link {
+		text-decoration: none;
+		transition: all 0.3s;
+	
+		// &:hover {
+		// 	background-color: darken( ,10%);
+		// }
+		&:hover .console__name {
+			text-decoration: underline;
+		}
+	}
+}
