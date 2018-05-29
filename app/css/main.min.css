@@ -2431,7 +2431,7 @@ html {
 .site-header {
   /* оформляем кнопку отправки */ }
   .site-header__top {
-    min-height: 140px;
+    min-height: 220px;
     position: relative; }
   .site-header__line {
     border-bottom: 1px solid #b2b2b2; }
@@ -2530,6 +2530,7 @@ html {
     .site-header__search-submit:hover {
       opacity: 0.2; }
   .site-header__bottom {
+    padding-top: 5px;
     padding-left: 22px;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
@@ -2539,7 +2540,8 @@ html {
   .site-header__info {
     padding: 12px 10px 17px 20px;
     line-height: 1.4;
-    position: relative; }
+    position: relative;
+    font-size: 14px; }
   .site-header__info a {
     font-family: "PTSansRegular-example", sans-serif;
     color: #253031;
@@ -2811,8 +2813,8 @@ html.mm-opened {
       -ms-flex-direction: column;
           flex-direction: column; }
   .console__item {
-    height: 80px;
-    margin-bottom: 12px;
+    height: 70px;
+    margin-bottom: 15px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2825,7 +2827,7 @@ html.mm-opened {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 115px;
+    padding-left: 80px;
     padding-right: 15px;
     -webkit-background-size: contain;
             background-size: contain; }
@@ -2912,7 +2914,7 @@ section {
   .site-header__name h1 {
     padding: 8px 10px 0 0; }
   .site-header__info {
-    font-size: 15px;
+    font-size: 13px;
     padding: 12px 10px 12px 20px; }
   .sf-menu {
     font-size: 15px; }
@@ -2929,6 +2931,9 @@ section {
 /*==========  header end  ==========*/
 @media (max-width: 991.98px) {
   /*==========  HEADER  ==========*/
+  .site-header__top {
+    min-height: 170px;
+    position: relative; }
   .site-header__wraper {
     padding-top: 0;
     padding-bottom: 15px; }
@@ -2991,6 +2996,8 @@ section {
 /*==========  header end  ==========*/
 @media (max-width: 767.98px) {
   /*==========  HEADER  ==========*/
+  .site-header__top {
+    min-height: 140px; }
   .site-header__left {
     padding-right: 0; }
   .site-header__logo {
