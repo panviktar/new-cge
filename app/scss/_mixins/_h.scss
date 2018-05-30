@@ -7,12 +7,13 @@
   font-weight: $bold;
 }
 
-@mixin h2-desktop {
+@mixin h2 {
+	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
   font-size: $fz--xxlarge;
-  line-height: 1.2;
-  font-weight: $light;
-  margin: 0;
-  padding: 0;
+  line-height: 1;
+	font-weight: $light;
+	text-transform: uppercase;
+  
 }
 
 @mixin h3-mobile {
