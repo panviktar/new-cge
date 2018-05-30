@@ -1,0 +1,93 @@
+.carousel-services {
+    background-color: $gray;
+    &__item {
+        color: #fff;
+        font-size: $fz--base;
+        position: relative;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column-reverse;
+        &:hover .carousel-services__image {
+            opacity: 1;
+        }
+    }
+    &__image {
+        background-size: color;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: .7;
+        transition: opacity .5s ease;
+    }
+    &__content {
+        padding: 20px 10% 50px 10%;
+    }
+    &__wraper {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+    &__title {
+        @include h3;
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+    &__logo {
+        width: 25px;
+        height: auto;
+        margin: 0 auto;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 25px;
+        font-weight: 300;
+        li {
+            padding: 5px;
+            border-bottom: 1px solid rgba(#000, .12);
+            font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+            font-weight: 300;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    .owl-item {
+        &:nth-child(2n+2) {
+            .carousel-services__item {
+                flex-direction: column;
+            }
+        }
+		}
+		
+    .owl-nav {
+				position: absolute;
+				top: 0;
+        width: 100%;
+        >button {
+            width: 64px;
+            height: 64px;
+            position: absolute;
+            text-align: center;
+            line-height: 64px;
+            &.owl-prev {
+                font-size: 26px;
+                left: 0;
+                color: #000;
+                background-color: #fff;
+            }
+            &.owl-next {
+                font-size: 26px;
+                right: 0;
+                color: #000;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.owl-carousel {
+    .owl-item {
+        backface-visibility: inherit;
+    }
+}
