@@ -41,4 +41,105 @@ $olive: #a6b868;
 $yellow: #d1c361;
 $gold: #e2b11a;
 
+$primaryColor: #4A90E2;
+$secondColor:#0087AC;
 
+
+.btn{
+	position: relative;
+	text-decoration: none;
+	font-weight: 500;
+	color: lighten($text, 20%);
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: $default-font;
+	cursor: pointer;
+	letter-spacing: 3px;
+	outline: none;
+	font-weight: $light;
+	padding: 12px 35px;
+	border: 3px solid $accent;
+	transition: all 300ms ease;
+	box-shadow: 0px 4px 10px 2px rgba(black, 0.2);
+	z-index: 5;
+	
+ 
+	&:before{
+		position: absolute;
+		content: '';
+		width: 0%; height: 100%;
+		background: $accent;
+		top: 0; left: 50%;
+		z-index: -1;
+		transition: all 0ms ease;
+	}
+	
+	&:hover{
+		color: white; 
+		box-shadow:none;
+		&:before{
+			position: absolute;
+			content: '';
+			width: 100%; height: 100%;
+			background: $accent;
+			top: 0; left: 0%;
+			z-index: -1;
+			transition: all 300ms ease;
+		}
+	}
+	&:active {
+		opacity: 0.5;
+		transition: all 300ms ease;
+	}
+}
+
+.btn-white{
+	position: relative;
+	text-decoration: none;
+	font-weight: 500;
+	color: lighten($text, 20%);
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: $default-font;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	font-weight: $light;
+	padding: 8px 25px;
+	background-color: #fff;
+	transition: all 300ms ease;
+	box-shadow: 0px 4px 10px 2px rgba(black, 0.2);
+	z-index: 5;
+	opacity: 0.8;
+	
+ 
+	&:before{
+		position: absolute;
+		content: '';
+		width: 0%; height: 100%;
+		background: $accent;
+		bottom: 0; left: 50%;
+		z-index: 1;
+		transition: all 0ms ease;
+	}
+	
+	&:hover{
+		color: $text; 
+		box-shadow:none;
+		opacity: 1;
+		&:before{
+			position: absolute;
+			content: '';
+			width: 100%; 
+			height: 2px;
+			background: lighten($text, 20%);
+			bottom: 0; left: 0%;
+			z-index: -1;
+			transition: all 200ms ease;
+		}
+	}
+	&:active {
+		opacity: 0.5;
+		transition: all 300ms ease;
+	}
+}

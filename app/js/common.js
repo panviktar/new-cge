@@ -50,7 +50,7 @@ $(".hamburger").click(function () {
 $(".carousel-services").on('initialized.owl.carousel', function() {
 	setTimeout(function() {
 		carouselService()
-	}, 200);
+	}, 1000);
 });
 
 $(".carousel-services").owlCarousel({
@@ -71,6 +71,8 @@ $(".carousel-services").owlCarousel({
 	}
 });
 
+
+
 function carouselService() {
 	$('.carousel-services__item').each(function() {
 		var ths = $(this),
@@ -83,7 +85,7 @@ function carouselService() {
 
 // Custom JS
 
-
+// BigSlider-------------------------
 // Params
 var mainSliderSelector = '.main-slider',
     navSliderSelector = '.nav-slider',
@@ -119,6 +121,7 @@ var mainSliderOptions = {
           }
           swiper.slides[swiper.activeIndex].querySelector('.caption').classList.add('show');
 				},
+				
 			   progress: function(){
           var swiper = this;
           for (var i = 0; i < swiper.slides.length; i++) {
@@ -172,3 +175,5 @@ var navSlider = new Swiper(navSliderSelector, navSliderOptions);
 // Matching sliders
 mainSlider.controller.control = navSlider;
 navSlider.controller.control = mainSlider;
+
+// BigSlider END--------------------
