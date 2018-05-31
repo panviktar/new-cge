@@ -9,9 +9,9 @@
 
 @mixin h2 {
 	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
-  font-size: $fz--xxlarge;
-  line-height: 1;
-	font-weight: $light;
+  font-size: $fz--xlarge;
+	line-height: 1.2;
+	font-weight: $bold;
 	text-transform: uppercase;
   
 }

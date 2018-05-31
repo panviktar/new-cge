@@ -24,8 +24,11 @@
 ============================== */
 
 @import "_blocks/top-info";
+@import "_blocks/bigslider";
 @import "_blocks/s-services";
+
 /* =====  End of my-content  ====== */
+
 
 
 
@@ -89,7 +92,7 @@ section  {
 	color: #fff;
 	text-decoration: none;
 	background-color: $accent;
-	padding: 10px 25px;
+	padding: 12px 35px;
 	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -132,33 +135,107 @@ section  {
 	}
 }
 
-.btn-white {
-	background-color: #fff;
-	color: $text;
 
-		&::after{
-			background-color: rgba(#000, 1);
-		}
-		&:hover{
-			background-color: rgb(235, 222, 222);
-			color: $text;
-			&::after {
-				background-color: rgba(#000, .2);
-			}
-		}
-		&:active{
-			background-color: #fff;
-			color: $text;
-			&::after {
-				background-color: rgba(#000, .4);
-			}
-		}
-		&:focus,
-	&:hover {
-		color: $text;
-	}
+.button,
+.button::before,
+.button::after,
+.button span,
+.button span::before,
+.button span::after
+{
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
 }
 
+.button{
+  position: relative;
+  display: inline-block;
+  padding: 0.3em;
+  margin: 1em;
+  border: solid 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover
+{
+  box-shadow: 0 0 5em .5em rgba(50,50,150,0.5);
+}
+
+.button span
+{
+  display: inline-block;
+  width: 100%;
+  padding: 0.6em 2em;
+}
+
+.button:hover span
+{
+  background-color: #fff;
+  color: #112;
+}
+
+.button::before,
+.button::after,
+.button span::before,
+.button span::after
+{
+  content: '';
+  position: absolute;
+  border: 1px;
+}
+
+.button::before,
+.button span::before
+{
+  border-style: solid none;  
+}
+
+.button::before,
+.button span::after{      
+  left: 0;
+  top: -0.4em;
+  width: 100%; 
+  height: calc(100% + 0.8em);
+}
+
+.button::after,
+.button span::after
+{
+  border-style: none solid;   
+}
+
+.button::after,
+.button span::before
+{
+  top: 0;
+  left: -0.4em;
+  height: 100%;
+  width: calc(100% + 0.8em); 
+}
+
+.button:hover::after,
+.button:hover span::after
+{
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.button:hover::before,
+.button:hover span::before
+{
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.button:hover span::after,
+.button:hover span::before
+{
+  opacity: 0;
+}
+
+
+// Цикл для окрашивания карусели section s-services
 
 $colors: $olive, $accent2, $accent;  
 @for $i from 1 through length($colors) { 
@@ -166,5 +243,7 @@ $colors: $olive, $accent2, $accent;
 		background-color:nth($colors, $i); 
 	} 
 }
+
+
 
 @import "media"; // Always at the end
