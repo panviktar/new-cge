@@ -1,20 +1,12 @@
 
 
-@mixin h1-all {
+@mixin h1 {
 	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
   font-size: $fz--large;
   line-height: 1;
   font-weight: $bold;
 }
 
-@mixin h2 {
-	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
-  font-size: $fz--xlarge;
-	line-height: 1.2;
-	font-weight: $bold;
-	text-transform: uppercase;
-  
-}
 
 @mixin h3 {
 	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
@@ -23,6 +15,18 @@
 	font-weight: $bold;
 	text-transform: uppercase;
 }
+
+
+@mixin h4 {
+	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+  font-size: $fz--xlarge;
+	line-height: 1.2;
+	font-weight: $bold;
+	text-transform: uppercase;
+  
+}
+
+
 
 @mixin h3-tablet {
   font-size: $fz--base;
@@ -42,11 +46,11 @@
   padding: 0;
 }
 
-@mixin h4 {
-  font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
-	font-size: $fz--base;
-  line-height: 1;
-  font-weight: $bold;
-  color: #fff;
+// @mixin h4 {
+//   font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+// 	font-size: $fz--base;
+//   line-height: 1;
+//   font-weight: $bold;
+//   color: #fff;
   
-}
+// }

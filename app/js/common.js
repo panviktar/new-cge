@@ -71,7 +71,7 @@ $(".carousel-services").owlCarousel({
 	}
 });
 
-
+$('.carousel-services__content').equalHeights();
 
 function carouselService() {
 	$('.carousel-services__item').each(function() {
@@ -82,6 +82,17 @@ function carouselService() {
 } carouselService();
 
 
+
+$(".carousel-services__wraper .carousel-services__title").each(function() {
+	var ths = $(this);
+ths.html(ths.html().replace(/(\S+)\s*$/, "<span>$1</span>"));
+});
+
+// Resize window
+function onResize() {
+	$('.carousel-services__content').equalHeights();
+}onResize();
+window.onresize = function() {onResize()};
 
 // Custom JS
 
@@ -177,3 +188,4 @@ mainSlider.controller.control = navSlider;
 navSlider.controller.control = mainSlider;
 
 // BigSlider END--------------------
+

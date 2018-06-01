@@ -6,8 +6,6 @@
 @include media-breakpoint-down(lg) {
 	/*==========  HEADER  ==========*/
 	.site-header {
-
-	
 		&__name h1 {
 			padding: 8px 10px 0 0;
 		}
@@ -35,6 +33,10 @@
 }
 
 /*==========  header end  ==========*/
+
+// .carousel-services__item {
+// 	flex-direction: column-reverse;
+// }
 
 // ≥992px
 @include media-breakpoint-down(md) {
@@ -102,6 +104,10 @@
 
 /*==========  header end  ==========*/
 
+
+// .carousel-services__item {
+// 	flex-direction: row;
+// }
 // ≥768px
 @include media-breakpoint-down(sm) {
 	/*==========  HEADER  ==========*/
