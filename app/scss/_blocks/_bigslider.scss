@@ -72,25 +72,72 @@
     top:10%;
 		width:100%;
 		height:80%;
-		padding-right: 10%;
+		padding-right: 40%;
     padding-left:10%;
-		color:#fff;
+		color:$text--white;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		
+		&:hover .title::before, 
+		&:hover .caption::before {
+			opacity: 0.2;
+			transition:opacity .3s ease;
+		}
+		&:hover .title::after {
+			opacity: 1;
+			transition:opacity .6s ease;
+		}
+		
+		
     .title{
 			@include h2;
-			margin-bottom: 30px;			
+			margin-bottom: 30px;	
+			position: relative;
+			z-index: 50;
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				content: "";
+				background-color: $gray;
+				opacity: 0.1;
+				z-index: -1;
+			}		
+			&:after {
+				position: absolute;
+				bottom: -3px;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				content: "";
+				background-color: #fff;
+				z-index: -1;
+				opacity: 0;
+			}		
 	 }
     .caption{
-        font-size: $fz--small;
+        font-size: $fz--xbase;
 			
 				// Для коректной работы в мозиле закомментировать 7 строк
 			
       transform:translateX(50px);
       opacity:0;
-      transition:opacity .2s ease, transform .4s ease;
+			transition:opacity .2s ease, transform .4s ease;
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				content: "";
+				background-color: $gray;
+				opacity: 0.1;
+				z-index: -1;
+				display: inline-block;
+			}
       &.show{
         transform:translateX(0);
         opacity:1;

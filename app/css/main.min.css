@@ -42,13 +42,13 @@
     content: '';
     width: 0%;
     height: 100%;
-    background: #2c923a;
     top: 0;
     left: 50%;
     z-index: -1;
     -webkit-transition: all 0ms ease;
     -o-transition: all 0ms ease;
-    transition: all 0ms ease; }
+    transition: all 0ms ease;
+    background: #2c923a; }
   .btn:hover {
     color: white;
     -webkit-box-shadow: none;
@@ -91,14 +91,14 @@
   -webkit-box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
   z-index: 5;
-  opacity: 0.8; }
+  border: none; }
   .btn-white:before {
     position: absolute;
     content: '';
     width: 0%;
-    height: 100%;
-    background: #2c923a;
-    bottom: 0;
+    height: 4px;
+    background: #51696b;
+    top: 100%;
     left: 50%;
     z-index: 1;
     -webkit-transition: all 0ms ease;
@@ -113,14 +113,14 @@
       position: absolute;
       content: '';
       width: 100%;
-      height: 2px;
+      height: 4px;
       background: #51696b;
-      bottom: 0;
+      top: 100%;
       left: 0%;
       z-index: -1;
-      -webkit-transition: all 200ms ease;
-      -o-transition: all 200ms ease;
-      transition: all 200ms ease; }
+      -webkit-transition: all 400ms ease;
+      -o-transition: all 400ms ease;
+      transition: all 400ms ease; }
   .btn-white:active {
     opacity: 0.5;
     -webkit-transition: all 300ms ease;
@@ -3075,7 +3075,7 @@ html.mm-opened {
     top: 10%;
     width: 100%;
     height: 80%;
-    padding-right: 10%;
+    padding-right: 40%;
     padding-left: 10%;
     color: #fff;
     display: -webkit-box;
@@ -3091,15 +3091,48 @@ html.mm-opened {
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+    .swiper-slide .content:hover .title::before,
+    .swiper-slide .content:hover .caption::before {
+      opacity: 0.2;
+      -webkit-transition: opacity .3s ease;
+      -o-transition: opacity .3s ease;
+      transition: opacity .3s ease; }
+    .swiper-slide .content:hover .title::after {
+      opacity: 1;
+      -webkit-transition: opacity .6s ease;
+      -o-transition: opacity .6s ease;
+      transition: opacity .6s ease; }
     .swiper-slide .content .title {
       font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
       font-size: 36px;
       line-height: 1.2;
       font-weight: 700;
       text-transform: uppercase;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      position: relative;
+      z-index: 50; }
+      .swiper-slide .content .title:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: #596262;
+        opacity: 0.1;
+        z-index: -1; }
+      .swiper-slide .content .title:after {
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        content: "";
+        background-color: #fff;
+        z-index: -1;
+        opacity: 0; }
     .swiper-slide .content .caption {
-      font-size: 15px;
+      font-size: 18px;
       -webkit-transform: translateX(50px);
           -ms-transform: translateX(50px);
               transform: translateX(50px);
@@ -3109,6 +3142,17 @@ html.mm-opened {
       -o-transition: opacity .2s ease, transform .4s ease;
       transition: opacity .2s ease, transform .4s ease;
       transition: opacity .2s ease, transform .4s ease, -webkit-transform .4s ease; }
+      .swiper-slide .content .caption:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: #596262;
+        opacity: 0.1;
+        z-index: -1;
+        display: inline-block; }
       .swiper-slide .content .caption.show {
         -webkit-transform: translateX(0);
             -ms-transform: translateX(0);
@@ -3137,6 +3181,11 @@ html.mm-opened {
 
 .carousel-services {
   background-color: #596262; }
+  .carousel-services:hover .owl-nav > button {
+    opacity: 1;
+    -webkit-transition: opacity .8s ease;
+    -o-transition: opacity .8s ease;
+    transition: opacity .8s ease; }
   .carousel-services__item {
     color: #fff;
     font-size: 16px;
@@ -3213,21 +3262,33 @@ html.mm-opened {
     top: 0;
     width: 100%; }
     .carousel-services .owl-nav > button {
-      width: 64px;
-      height: 64px;
+      width: 54px;
+      height: 54px;
       position: absolute;
       text-align: center;
-      line-height: 64px; }
+      line-height: 54px;
+      opacity: 0; }
       .carousel-services .owl-nav > button.owl-prev {
         font-size: 26px;
         left: 0;
         color: #000;
-        background-color: #fff; }
+        background-color: #fff;
+        -webkit-transform: translateX(50px);
+            -ms-transform: translateX(50px);
+                transform: translateX(50px); }
       .carousel-services .owl-nav > button.owl-next {
         font-size: 26px;
         right: 0;
         color: #000;
-        background-color: #fff; }
+        background-color: #fff;
+        -webkit-transform: translateX(-50px);
+            -ms-transform: translateX(-50px);
+                transform: translateX(-50px); }
+
+[class^="swiper-button-"] {
+  width: 44px;
+  opacity: 0;
+  visibility: hidden; }
 
 .owl-carousel .owl-item {
   -webkit-backface-visibility: inherit;
@@ -3332,13 +3393,13 @@ section {
     content: '';
     width: 0%;
     height: 100%;
-    background: #2c923a;
     top: 0;
     left: 50%;
     z-index: -1;
     -webkit-transition: all 0ms ease;
     -o-transition: all 0ms ease;
-    transition: all 0ms ease; }
+    transition: all 0ms ease;
+    background: #2c923a; }
   .btn:hover {
     color: white;
     -webkit-box-shadow: none;
@@ -3381,14 +3442,14 @@ section {
   -webkit-box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
   z-index: 5;
-  opacity: 0.8; }
+  border: none; }
   .btn-white:before {
     position: absolute;
     content: '';
     width: 0%;
-    height: 100%;
-    background: #2c923a;
-    bottom: 0;
+    height: 4px;
+    background: #51696b;
+    top: 100%;
     left: 50%;
     z-index: 1;
     -webkit-transition: all 0ms ease;
@@ -3403,14 +3464,14 @@ section {
       position: absolute;
       content: '';
       width: 100%;
-      height: 2px;
+      height: 4px;
       background: #51696b;
-      bottom: 0;
+      top: 100%;
       left: 0%;
       z-index: -1;
-      -webkit-transition: all 200ms ease;
-      -o-transition: all 200ms ease;
-      transition: all 200ms ease; }
+      -webkit-transition: all 400ms ease;
+      -o-transition: all 400ms ease;
+      transition: all 400ms ease; }
   .btn-white:active {
     opacity: 0.5;
     -webkit-transition: all 300ms ease;

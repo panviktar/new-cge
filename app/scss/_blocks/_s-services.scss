@@ -1,5 +1,10 @@
 .carousel-services {
 		background-color: $gray;
+
+		&:hover .owl-nav > button {
+			opacity: 1;
+			transition: opacity .8s ease;
+		}
 	
 	
     &__item {
@@ -69,26 +74,40 @@
 				top: 0;
         width: 100%;
         >button {
-            width: 64px;
-            height: 64px;
+            width: 54px;
+            height: 54px;
             position: absolute;
             text-align: center;
-            line-height: 64px;
+						line-height: 54px;
+						opacity: 0;
             &.owl-prev {
                 font-size: 26px;
                 left: 0;
                 color: #000;
-                background-color: #fff;
+								background-color: #fff;
+								
+								transform:translateX(50px);
             }
             &.owl-next {
                 font-size: 26px;
                 right: 0;
                 color: #000;
-                background-color: #fff;
+								background-color: #fff;
+								
+								transform:translateX(-50px);
             }
-        }
+				}
+				
     }
 }
+
+[class^="swiper-button-"]{
+  width:44px;
+  opacity:0;
+  visibility:hidden;
+  @extend %transition_all_03s;
+}
+
 
 .owl-carousel {
     .owl-item {
