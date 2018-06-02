@@ -1,4 +1,5 @@
 .carousel-services {
+		margin-top: 15px;
 		background-color: $gray;
 		&:hover .owl-nav .owl-prev,
 		&:hover .owl-nav .owl-next
@@ -26,7 +27,7 @@
     }
     
     &__content {
-				padding: 5% 10%;
+				padding: 3% 10% 5% 10%;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
@@ -47,17 +48,14 @@
 				span {
 					display: block;
 					@include h3;
-					
-					
-				
-				}
+			}
     }
    
     &__list {
         margin: 0;
         padding: 0;
         list-style: none;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         font-weight: 300;
         li {
             padding: 5px;

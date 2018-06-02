@@ -72,6 +72,7 @@
     transition: all 300ms ease; }
 
 .btn-white {
+  font-size: 15px;
   position: relative;
   text-decoration: none;
   font-weight: 500;
@@ -2942,8 +2943,8 @@ html.mm-opened {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 80px;
-    padding-right: 15px;
+    padding-left: 70px;
+    padding-right: 10px;
     -webkit-background-size: contain;
             background-size: contain;
     -webkit-transition: all .2s ease;
@@ -2966,45 +2967,6 @@ html.mm-opened {
     text-decoration: none; }
     .console__link:hover .console__name {
       text-decoration: underline; }
-
-.slider {
-  position: relative; }
-  .slider__slide {
-    position: absolute;
-    top: 0;
-    color: #000;
-    width: 100%; }
-  .slider__slide-bg {
-    position: absolute;
-    top: 0;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-            background-size: cover;
-    width: 100%;
-    height: 440px; }
-  .slider__content {
-    position: absolute;
-    top: 0; }
-  .slider__title {
-    font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
-    font-size: 36px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-transform: uppercase; }
-  .slider__text {
-    font-size: 31px;
-    line-height: 1.2;
-    font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
-    font-weight: 300; }
-  .slider__btn {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
 
 [class^="swiper-button-"] {
   -webkit-transition: all .3s ease;
@@ -3131,6 +3093,12 @@ html.mm-opened {
         background-color: #fff;
         z-index: -1;
         opacity: 0; }
+    .swiper-slide .content .title--min {
+      font-size: 20px;
+      font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+      line-height: 1;
+      text-transform: uppercase;
+      font-weight: 700; }
     .swiper-slide .content .caption {
       font-size: 18px;
       -webkit-transform: translateX(50px);
@@ -3180,6 +3148,7 @@ html.mm-opened {
           transform: translateX(-50px); }
 
 .carousel-services {
+  margin-top: 15px;
   background-color: #596262; }
   .carousel-services:hover .owl-nav .owl-prev,
   .carousel-services:hover .owl-nav .owl-next {
@@ -3205,7 +3174,7 @@ html.mm-opened {
     .carousel-services__item:hover .carousel-services__image {
       opacity: 1; }
   .carousel-services__content {
-    padding: 5% 10%;
+    padding: 3% 10% 5% 10%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3241,7 +3210,7 @@ html.mm-opened {
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-weight: 300; }
     .carousel-services__list li {
       padding: 5px;
@@ -3463,6 +3432,7 @@ section {
     transition: all 300ms ease; }
 
 .btn-white {
+  font-size: 15px;
   position: relative;
   text-decoration: none;
   font-weight: 500;
@@ -3536,9 +3506,33 @@ section {
   .fa-map-marker,
   .fa-comments,
   .fa-clock {
-    font-size: 16px; } }
+    font-size: 16px; }
+  /*==========  header end  ==========*/
+  /*==========  MY-CONTENT  ==========*/
+  .console {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .console__item {
+      padding-left: 62px;
+      padding-right: 7px; }
+    .console__name {
+      font-size: 12px; }
+  .swiper-slide-btn {
+    padding: 10px 25px; }
+  .swiper-slide .content {
+    padding-right: 30%; }
+    .swiper-slide .content .title--min {
+      font-size: 16px;
+      line-height: 1.2; }
+  .carousel-services__title {
+    font-size: 16px; }
+  .carousel-services__btn {
+    font-size: 12px; }
+  /*==========  MY-CONTENT END ==========*/ }
 
-/*==========  header end  ==========*/
 @media (max-width: 991.98px) {
   /*==========  HEADER  ==========*/
   .site-header__top {
@@ -3601,9 +3595,40 @@ section {
     font-size: 15px;
     left: -7px; }
   .fa-map-marker {
-    left: -2px; } }
+    left: -2px; }
+  /*==========  header end  ==========*/
+  /*==========  MY-CONTENT  ==========*/
+  .console {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .console__item {
+      padding-left: 70px;
+      padding-right: 15px; }
+  .bigslider {
+    margin-top: 15px;
+    margin-bottom: 25px; }
+  .swiper-container {
+    height: 350px; }
+  .swiper-slide .content .title {
+    font-size: 31px; }
+  .swiper-slide .content .caption {
+    font-size: 16px; }
+  .swiper-slide .content .title--min {
+    font-size: 15px; }
+  .swiper-slide-btn {
+    font-size: 12px; }
+  .carousel-services__title {
+    font-size: 15px; }
+  .carousel-services__btn {
+    font-size: 12px; }
+  .carousel-services__list li {
+    font-size: 15px; }
+  /*==========  MY-CONTENT END ==========*/
+  /*==========  MY-CONTENT END ==========*/ }
 
-/*==========  header end  ==========*/
 @media (max-width: 767.98px) {
   /*==========  HEADER  ==========*/
   .site-header__top {
@@ -3629,9 +3654,32 @@ section {
     margin-top: 7px;
     font-size: 16px; }
   .fa-map-marker {
-    left: -4px; } }
+    left: -4px; }
+  /*==========  header end  ==========*/
+  /*==========  MY-CONTENT  ==========*/
+  .console {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .console__item {
+      padding-left: 80px;
+      padding-right: 7px; }
+  .swiper-container {
+    width: 78%;
+    height: 280px; }
+  .swiper-slide .content .title {
+    font-size: 24px; }
+  .swiper-slide .content .caption {
+    font-size: 15px; }
+  .swiper-slide .content .title--min {
+    font-size: 12px; }
+  .swiper-slide-btn {
+    font-size: 12px;
+    padding: 8px 15px; }
+  /*==========  MY-CONTENT END ==========*/ }
 
-/*==========  header end  ==========*/
 @media (max-width: 575.98px) {
   /*==========  HEADER  ==========*/
   .site-header__top {
@@ -3651,7 +3699,18 @@ section {
     top: 5px; }
   .fa-comments {
     left: -7px;
-    top: 5px; } }
+    top: 5px; }
+  /*==========  header end  ==========*/
+  /*==========  MY-CONTENT  ==========*/
+  .console {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .console__item {
+      padding-left: 65px;
+      padding-right: 7px; }
+  /*==========  MY-CONTENT END ==========*/ }
 
-/*==========  header end  ==========*/
 /*==========  Mobile First  ==========*/

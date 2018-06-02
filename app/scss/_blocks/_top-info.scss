@@ -12,8 +12,8 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		padding-left: 80px;
-		padding-right: 15px;
+		padding-left: 70px;
+		padding-right: 10px;
 		background-size: contain;
 		transition: all .2s ease;
 		&:hover {
@@ -39,41 +39,183 @@
 	}
 }
 
-.slider {
-	position: relative;
-	&__slide {
-		position: absolute;
-		top: 0;
-		color: #000;
-		width: 100%;
-	}
-	&__slide-bg {
-		position: absolute;
-		top: 0;
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 100%;
-		height: 440px;
-	}
-	&__content {
-		position: absolute;
-		top: 0;
-		
-	}
-	&__title {
-		@include h4;
-	
-	}
-	&__text {
-		font-size: $fz--large;
-		line-height: 1.2;
-		font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
-		font-weight: $light;
-	}
-
-	&__btn {
-		display: flex;
-		align-items: flex-end;
-	}
-
+%transition_all_03s {
+  transition:all .3s ease;
 }
+%backface_visibility_hidden{
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 80%;
+  height: 440px;
+  display:inline-block;
+  vertical-align:top;
+ 
+  transition:opacity .6s ease, transform .3s ease;
+  &.nav-slider{
+		width:15%;
+		margin-left: -10px;
+		
+		
+    
+    .swiper-slide{
+      cursor:pointer;
+      opacity:.4;
+			transition:opacity .3s ease;
+			  &.swiper-slide-active{
+        opacity:1;
+      }
+      .content{
+        width:100%;
+        .title{
+          font-size:20px;
+        }
+      }
+    }
+  }
+  &:hover{
+    .swiper-button-prev,
+    .swiper-button-next{
+      transform:translateX(0);
+      opacity:1;
+      visibility:visible;
+    }
+  }
+  &.loading{
+    opacity:0;
+    visibility:hidden;
+  }
+}
+
+.swiper-slide{
+  overflow: hidden;
+  @extend %backface_visibility_hidden;
+  .slide-bgimg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-position:center;
+    background-size:cover;
+  }
+  .entity-img{
+    display:none;
+  }
+  .content{
+    position:absolute;
+    top:10%;
+		width:100%;
+		height:80%;
+		padding-right: 40%;
+		padding-left:10%;
+		
+		color:$text--white;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		
+		&:hover .title::before, 
+		&:hover .caption::before {
+			opacity: 0.2;
+			transition:opacity .3s ease;
+		}
+		&:hover .title::after {
+			opacity: 1;
+			transition:opacity .6s ease;
+		}
+		
+		
+    .title{
+			@include h4;
+			margin-bottom: 30px;	
+			position: relative;
+			z-index: 50;
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				content: "";
+				background-color: $gray;
+				opacity: 0.1;
+				z-index: -1;
+			}		
+			&:after {
+				position: absolute;
+				bottom: -3px;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				content: "";
+				background-color: #fff;
+				z-index: -1;
+				opacity: 0;
+			}		
+	 }
+
+	 .title--min {
+		font-size: $fz--medium;
+		font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+		line-height: 1;
+		text-transform: uppercase;
+		font-weight: $bold;
+		}
+
+	 
+    .caption{
+        font-size: $fz--xbase;
+			
+				// Для коректной работы в мозиле закомментировать 7 строк
+			
+      transform:translateX(50px);
+      opacity:0;
+			transition:opacity .2s ease, transform .4s ease;
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				content: "";
+				background-color: $gray;
+				opacity: 0.1;
+				z-index: -1;
+				display: inline-block;
+			}
+      &.show{
+        transform:translateX(0);
+        opacity:1;
+      }
+		}
+		.swiper-slide-btn {
+			display: inline-block;
+			position: absolute;
+			bottom: 0;
+			right: 10%;
+		}
+  }
+}
+
+[class^="swiper-button-"]{
+  width:44px;
+  opacity:0;
+  visibility:hidden;
+  @extend %transition_all_03s;
+}
+.swiper-button-prev{
+  transform:translateX(50px);
+}
+.swiper-button-next{
+  transform:translateX(-50px);
+}
+
