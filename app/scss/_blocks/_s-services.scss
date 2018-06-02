@@ -1,5 +1,17 @@
+.s-services {
+	margin-top: 15px;
+}
+
+.section-title-wraper {
+	display: block;
+	text-align: center;
+}
+.section-title {
+	@include h2;
+}
+
 .carousel-services {
-		margin-top: 15px;
+	
 		background-color: $gray;
 		&:hover .owl-nav .owl-prev,
 		&:hover .owl-nav .owl-next

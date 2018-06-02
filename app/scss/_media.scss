@@ -59,6 +59,9 @@
 			.carousel-services {
 				&__title {
 					font-size: $fz--base;
+					span {
+						font-size: $fz--xmedium;
+				}
 				}
 				&__btn {
 					font-size: $fz--xsmall;
@@ -160,9 +163,16 @@
         font-size: $fz--xsmall;
 		} // TOP-INFO END-----------------//
 			// S-SERVICES END-----------------
+			.section-title {
+				font-size: $fz--medium;
+			}
+			
 			.carousel-services {
 				&__title {
 					font-size: $fz--small;
+					span {
+						font-size: $fz--medium;
+				}
 				}
 				&__btn {
 					font-size: $fz--xsmall;

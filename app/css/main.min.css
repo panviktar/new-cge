@@ -3147,8 +3147,26 @@ html.mm-opened {
       -ms-transform: translateX(-50px);
           transform: translateX(-50px); }
 
+.s-services {
+  margin-top: 15px; }
+
+.section-title-wraper {
+  display: block;
+  text-align: center; }
+
+.section-title {
+  font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #253031;
+  border: 1px solid #a6aeae;
+  padding: 12px 25px;
+  display: inline-block;
+  vertical-align: middle; }
+
 .carousel-services {
-  margin-top: 15px;
   background-color: #596262; }
   .carousel-services:hover .owl-nav .owl-prev,
   .carousel-services:hover .owl-nav .owl-next {
@@ -3529,6 +3547,8 @@ section {
       line-height: 1.2; }
   .carousel-services__title {
     font-size: 16px; }
+    .carousel-services__title span {
+      font-size: 24px; }
   .carousel-services__btn {
     font-size: 12px; }
   /*==========  MY-CONTENT END ==========*/ }
@@ -3620,8 +3640,12 @@ section {
     font-size: 15px; }
   .swiper-slide-btn {
     font-size: 12px; }
+  .section-title {
+    font-size: 20px; }
   .carousel-services__title {
     font-size: 15px; }
+    .carousel-services__title span {
+      font-size: 20px; }
   .carousel-services__btn {
     font-size: 12px; }
   .carousel-services__list li {
