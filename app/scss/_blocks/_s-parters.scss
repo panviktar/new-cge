@@ -6,12 +6,12 @@
 .partners {
 
 	a {
-		opacity: 0.8;
 		transition: opacity .25s ease;
-		&:hover {
+		
+		&:hover .partner{
 			opacity: 1;
 		} 
-		&:active {
+		&:active .partner{
 			opacity: 0.5;
 		}
 	}
@@ -20,6 +20,8 @@
 		height: 100%;
 		display: flex;
 		margin: auto;
+		opacity: 0.8;
+		transition: opacity .25s ease;
 	}
 	.owl-stage {
 		display: flex;

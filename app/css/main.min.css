@@ -2710,7 +2710,7 @@ html {
 
 .top-line {
   background-color: #2c923a;
-  text-align: center; }
+  text-align: left; }
   .top-line a {
     color: #fff; }
   .top-line ul, .top-line li {
@@ -2720,7 +2720,6 @@ html {
     background-color: #2c923a; }
 
 .sf-menu {
-  margin: 0 auto;
   display: inline-block;
   float: none;
   font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
@@ -2984,7 +2983,7 @@ html.mm-opened {
   padding: 0; }
 
 .swiper-container {
-  width: 80%;
+  width: 100%;
   height: 440px;
   display: inline-block;
   vertical-align: top;
@@ -2992,9 +2991,13 @@ html.mm-opened {
   transition: opacity .6s ease, -webkit-transform .3s ease;
   -o-transition: opacity .6s ease, transform .3s ease;
   transition: opacity .6s ease, transform .3s ease;
-  transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease; }
+  transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease;
+  position: relative;
+  z-index: 5; }
+  .swiper-container:hover .slide-bgimg::before {
+    opacity: .2; }
   .swiper-container.nav-slider {
-    width: 15%;
+    width: 1%;
     margin-left: -10px; }
     .swiper-container.nav-slider .swiper-slide {
       cursor: pointer;
@@ -3030,6 +3033,19 @@ html.mm-opened {
     background-position: center;
     -webkit-background-size: cover;
             background-size: cover; }
+    .swiper-slide .slide-bgimg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #253031;
+      z-index: 10;
+      opacity: 0;
+      -webkit-transition: opacity 1s ease;
+      -o-transition: opacity 1s ease;
+      transition: opacity 1s ease; }
   .swiper-slide .entity-img {
     display: none; }
   .swiper-slide .content {
@@ -3040,6 +3056,7 @@ html.mm-opened {
     padding-right: 40%;
     padding-left: 10%;
     color: #fff;
+    text-shadow: #000 0 0 5px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3073,16 +3090,6 @@ html.mm-opened {
       margin-bottom: 30px;
       position: relative;
       z-index: 50; }
-      .swiper-slide .content .title:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        content: "";
-        background-color: #596262;
-        opacity: 0.1;
-        z-index: -1; }
       .swiper-slide .content .title:after {
         position: absolute;
         bottom: -3px;
@@ -3110,17 +3117,6 @@ html.mm-opened {
       -o-transition: opacity .2s ease, transform .4s ease;
       transition: opacity .2s ease, transform .4s ease;
       transition: opacity .2s ease, transform .4s ease, -webkit-transform .4s ease; }
-      .swiper-slide .content .caption:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        content: "";
-        background-color: #596262;
-        opacity: 0.1;
-        z-index: -1;
-        display: inline-block; }
       .swiper-slide .content .caption.show {
         -webkit-transform: translateX(0);
             -ms-transform: translateX(0);
@@ -3130,7 +3126,8 @@ html.mm-opened {
       display: inline-block;
       position: absolute;
       bottom: 0;
-      right: 10%; }
+      right: 10%;
+      text-shadow: none; }
 
 [class^="swiper-button-"] {
   width: 44px;
@@ -3320,13 +3317,12 @@ html.mm-opened {
   margin-bottom: 60px; }
 
 .partners a {
-  opacity: 0.8;
   -webkit-transition: opacity .25s ease;
   -o-transition: opacity .25s ease;
   transition: opacity .25s ease; }
-  .partners a:hover {
+  .partners a:hover .partner {
     opacity: 1; }
-  .partners a:active {
+  .partners a:active .partner {
     opacity: 0.5; }
 
 .partners .partner {
@@ -3335,7 +3331,11 @@ html.mm-opened {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: auto; }
+  margin: auto;
+  opacity: 0.8;
+  -webkit-transition: opacity .25s ease;
+  -o-transition: opacity .25s ease;
+  transition: opacity .25s ease; }
 
 .partners .owl-stage {
   display: -webkit-box;
@@ -3442,7 +3442,7 @@ html.mm-opened {
 .main-footer {
   padding: 3% 0;
   color: #fff;
-  font-size: 16px; }
+  font-size: 15px; }
   .main-footer__column {
     margin: 15px 0; }
 

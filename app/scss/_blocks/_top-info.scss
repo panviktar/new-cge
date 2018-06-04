@@ -54,13 +54,24 @@
 }
 
 .swiper-container {
-  width: 80%;
+  width: 100%;
   height: 440px;
   display:inline-block;
   vertical-align:top;
-  transition:opacity .6s ease, transform .3s ease;
+	transition:opacity .6s ease, transform .3s ease;
+	position: relative;
+	z-index: 5;
+	
+
+	&:hover {
+		.slide-bgimg::before{
+			opacity: .2;
+			
+		}
+	}
+	
   &.nav-slider{
-		width:15%;
+		width: 1%;
 		margin-left: -10px;
 		
 		
@@ -104,8 +115,24 @@
     width:100%;
     height:100%;
     background-position:center;
-    background-size:cover;
-  }
+		background-size:cover;
+		
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $text;
+			z-index: 10;
+			opacity: 0;
+			transition:opacity 1s ease;
+		}
+		
+	}
+	
+	
   .entity-img{
     display:none;
   }
@@ -116,8 +143,8 @@
 		height:80%;
 		padding-right: 40%;
 		padding-left:10%;
-		
 		color:$text--white;
+		text-shadow: #000 0 0 5px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
@@ -138,17 +165,7 @@
 			margin-bottom: 30px;	
 			position: relative;
 			z-index: 50;
-			&:before {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				content: "";
-				background-color: $gray;
-				opacity: 0.1;
-				z-index: -1;
-			}		
+			
 			&:after {
 				position: absolute;
 				bottom: -3px;
@@ -179,18 +196,7 @@
       transform:translateX(50px);
       opacity:0;
 			transition:opacity .2s ease, transform .4s ease;
-			&:before {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				content: "";
-				background-color: $gray;
-				opacity: 0.1;
-				z-index: -1;
-				display: inline-block;
-			}
+			
       &.show{
         transform:translateX(0);
         opacity:1;
@@ -201,6 +207,7 @@
 			position: absolute;
 			bottom: 0;
 			right: 10%;
+			text-shadow: none;
 		}
   }
 }
@@ -209,12 +216,15 @@
   width:44px;
   opacity:0;
   visibility:hidden;
-  @extend %transition_all_03s;
+	@extend %transition_all_03s;
+	
 }
 .swiper-button-prev{
-  transform:translateX(50px);
+	transform:translateX(50px);
+	
 }
 .swiper-button-next{
-  transform:translateX(-50px);
+	transform:translateX(-50px);
+
 }
 

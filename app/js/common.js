@@ -113,15 +113,13 @@ $(".partners").owlCarousel({
 			items: 1
 		},
 
-		576: {
-			items: 2
-		},
+		
 
 		768: {
 			items: 2
 		},
 		
-		900: {
+		990: {
 			items: 3
 		},
 		
@@ -145,6 +143,10 @@ $(".info-materials").owlCarousel({
 			items: 1
 		},
 		576: {
+			items: 2
+		},
+
+		768: {
 			items: 2
 		},
 		

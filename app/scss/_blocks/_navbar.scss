@@ -2,7 +2,7 @@
 
 .top-line {
 	background-color: $accent;
-	text-align: center;
+	text-align: left;
 				
 	a {
 		color: $white;
@@ -17,7 +17,7 @@
 }
 
 .sf-menu {
-	margin: 0 auto;
+	
 	display: inline-block;
 	float: none;
 	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
