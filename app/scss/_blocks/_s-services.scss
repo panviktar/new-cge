@@ -1,14 +1,15 @@
 .s-services {
-	margin-top: 15px;
+	margin-top: 30px;
 }
 
-.section-title-wraper {
-	display: block;
-	text-align: center;
-}
+
 .section-title {
 	@include h2;
+	display: inline-block;
 }
+
+
+
 
 .carousel-services {
 	
@@ -39,10 +40,11 @@
     }
     
     &__content {
-				padding: 3% 10% 5% 10%;
+				padding: 10%;
 				display: flex;
 				flex-direction: column;
-				justify-content: space-between;
+				justify-content: space-around;
+				
     }
     &__wraper {
         margin: auto;

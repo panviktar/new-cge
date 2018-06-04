@@ -1,0 +1,72 @@
+.s-parters {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.partners {
+
+	a {
+		opacity: 0.8;
+		transition: opacity .25s ease;
+		&:hover {
+			opacity: 1;
+		} 
+		&:active {
+			opacity: 0.5;
+		}
+	}
+	
+	.partner {
+		height: 100%;
+		display: flex;
+		margin: auto;
+	}
+	.owl-stage {
+		display: flex;
+		
+		.owl-item {
+			
+			margin-top: 30px;
+			img {
+				max-width: 100%;
+				width: auto;
+				margin: auto;
+				display: inline-block;
+			}
+		}
+	}
+	.owl-nav {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+		font-size: 30px;
+		color: $text;
+		transition: opacity .5s ease;
+		opacity: .2;
+		
+		&:hover {
+			opacity: .6;
+			
+		}
+		&:active {
+			opacity: .3;
+			
+		}
+		
+		>button {
+			position: absolute;
+			top: 30px;
+			
+			outline: none;
+			padding: 10px;
+			
+			&.owl-prev {
+				left: -60px;
+			}
+			&.owl-next {
+				right: -60px;
+			}
+		}
+	}
+}

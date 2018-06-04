@@ -24,11 +24,20 @@
 ============================== */
 
 @import "_blocks/top-info";
-@import "_blocks/s-services";
-
+@import "_blocks/s-services"; 
+@import "_blocks/s-parters"; 
+@import "_blocks/s-info-materials";
 /* =====  End of my-content  ====== */
 
 
+/* ==============================
+=            Footer           =
+============================== */
+
+@import "_blocks/main-footer";
+
+
+/* =====  End of Footer  ====== */
 
 
 ::placeholder {
@@ -90,7 +99,7 @@ section  {
 
 // Цикл для окрашивания карусели section s-services
 
-$colors: $olive, $accent2, #72a8ff;  
+$colors: rgba(255, 0, 19, 0.5), $accent2, #72a8ff;  
 @for $i from 1 through length($colors) { 
 	.carousel-services .owl-item:nth-child(#{length($colors)}n+#{$i}) { 
 		background-color:nth($colors, $i); 

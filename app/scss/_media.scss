@@ -146,19 +146,27 @@
         margin-bottom: 25px;
     }
     .swiper-container {
-        height: 350px;
-    }
-    .swiper-slide .content {
-        .title {
+				height: 350px;
+				
+			
+	
+		}
+		.carousel-services {
+
+			 &__content {
+					padding: 8%;
+			 }
+        &__title {
             font-size: $fz--large;
         }
-        .caption {
+        &__caption {
             font-size: $fz--base;
         }
-        .title--min {
+        &__title--min {
             font-size: $fz--small;
         }
-    }
+		}
+	
     .swiper-slide-btn {
         font-size: $fz--xsmall;
 		} // TOP-INFO END-----------------//
