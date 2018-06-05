@@ -58,27 +58,36 @@
   height: 440px;
   display:inline-block;
   vertical-align:top;
-	transition:opacity .6s ease, transform .3s ease;
+	transition: all .6s ease, transform .3s ease;
 	position: relative;
 	z-index: 5;
+
+	.swiper-slide{ 
+	visibility: hidden;
+	
+	}
+
+	.swiper-slide-active {
+		visibility: visible;
+		
+	}
 	
 
 	&:hover {
 		.slide-bgimg::before{
 			opacity: .2;
-			
+				
 		}
 	}
 	
   &.nav-slider{
-		width: 1%;
-		margin-left: -10px;
+		padding: 0 0 0 15px;
+	
 		
-		
-    
-    .swiper-slide{
+		 .swiper-slide{
       cursor:pointer;
-      opacity:.4;
+			opacity:.4;
+			visibility: visible;
 			transition:opacity .3s ease;
 			  &.swiper-slide-active{
         opacity:1;

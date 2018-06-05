@@ -1,10 +1,11 @@
 .s-info-materials {
-	margin-top: 50px;
-	margin-bottom: 60px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .info-materials {
 	margin-top: -15px;
+
 
 	a {
 		opacity: 0.8;
@@ -18,12 +19,52 @@
 	}
 	
 	.info-material {
-		width: 140px;
-		height: 100%;
 		display: flex;
-		margin: auto;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		align-content: center;
+		text-align: center;
+		margin-right: 15px;
+
+
+		&:hover .info-material__img{
+			transition: opacity .5 ease;
+			opacity: 1;
+		}
 		
+	
+				&__img {
+					display: flex;
+					width: 100px;
+					height: 100px;
+					opacity: .8;
+
+					
+				}
+				&__title {
+					font-size: $fz--small;
+					text-transform: uppercase;	
+					line-height: 1.2;
+					font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+					font-weight: $bold;
+					margin-top: 15px;
+					margin-bottom: 10px;	
+				}
+
+				&__text {
+					font-size: $fz--xsmall;
+					line-height: 1.2;
+					font-style: italic;	
+					color: lighten($text, 20%);	
+					
+				}
+				&__link {
+					font-size: $fz--base;
+					margin-bottom: 15px;
+				}
 	}
+
 	.owl-stage {
 		display: flex;
 		

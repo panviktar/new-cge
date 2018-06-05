@@ -1,12 +1,19 @@
 // Plagin superfish START подключение и стилизация
 
 $(function () {
+	
+
+	$(".info-material__title").equalHeights();
+	$(".info-material__text").equalHeights();
+
 	$(".top-line .sf-menu").superfish({
 		cssArrows: false,
 		hoverClass: "no-class",
 		delay: 200
 	});
 });
+
+
 
 // Plagin superfish END---------------
 
@@ -158,6 +165,10 @@ $(".info-materials").owlCarousel({
 		}
 	}
 });
+
+
+
+
 // Карусель .s-info-materials---------END
 
 // Resize window
@@ -261,4 +272,6 @@ mainSlider.controller.control = navSlider;
 navSlider.controller.control = mainSlider;
 
 // BigSlider END--------------------
-
+foo.onclick = function(){
+	this.classList.toggle('rotate')
+};
