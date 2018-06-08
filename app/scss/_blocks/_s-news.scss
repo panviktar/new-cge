@@ -1,30 +1,30 @@
-// colour stuff
-.section-title-wraper {
-	.section-title {
-		margin-right: 20px;
-	}
-	.btn-link {
-		display: inline-block;
-		text-transform: uppercase;
-		font-size: $fz--xsmall;
-		opacity: 0.88;
-		&:hover {
-			opacity: 1;
-		}
-	}
-}
-
 .s-news {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	color: $text;
 	text-rendering: optimizeLegibility;
+
+	.section-title-wraper {
+		.section-title {
+			margin-right: 20px;
+		}
+		.btn-link {
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: $fz--xsmall;
+			opacity: 0.88;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	
 	.s-news-wraper {
 		padding-top: 50px;
-		padding-bottom: 0;
+		padding-bottom: 30px;
 		position: relative;
 		z-index: 5;
-		max-height: 450px;
+		
 		&::before {
 			position: absolute;
 			width: 100%;
@@ -60,27 +60,30 @@
 		transform: translate3d(0, 1px, 0);
 		transition: all 0.025s 0s ease-out;
 	}
-	div.cards {
+	.cards {
 		text-align: center;
+		display: flex;
+		flex-direction: row;
 	}
-	div.card {
+	.card {
 		perspective: 1000;
 		position: relative;
 		text-align: left;
 		transition: all 0.3s 0s ease-in;
-		z-index: 1;
+		z-index: 10;
+		
 		&:hover {
 			transform: scale(1.02) !important;
 		}
 		img {
-			max-width: 100%;
+			width: 100%;
 		}
-		div.card-title {
+		.card-title {
 			// background: #fff;
 			padding: 10px 0 10px 0;
 			position: relative;
-			z-index: 0;
-			a.toggle-info {
+			z-index: 20;
+				a.toggle-info {
 				border-radius: 32px;
 				height: 32px;
 				padding: 0;
@@ -127,39 +130,39 @@
 			}
 		}
 		.card-description {
-			padding: 10px 3px 5px 8px;
-			position: relative;
+			padding: 10px 3px 10px 8px;
+			position: absolute;
 			font-size: $fz--small;
 			line-height: 1.2;
-			margin-bottom: -5px;
+			z-index: 50;
+			background: #fff;
+			box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .15);
+		
 		}
-		.card-actions {
-			box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
-			text-align: center;
-			padding-bottom: 10px;
-			padding-top: 5px;
-			.btn-link {
-				display: inline-block;
-				padding: 10px 20px;
-			}
-		}
+		
 		.card-flap {
 			background: darken($white, 15);
-			bottom: 0;
-			box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.075);
+			position: absolute;
 			transform-origin: top;
 			transform: rotateX(-87deg);
 			opacity: 0;
+			position: relative;
+			z-index: 55;
+
+					
 		}
-		div.flap1 {
+	.flap1 {
 			transition: all 0.3s 0.3s ease-out;
-			z-index: -1;
+		
 		}
-		div.flap2 {
-			transition: all 0.3s 0s ease-out;
-			z-index: -2;
-			text-align: center;
-		}
+	
+			.btn-link {
+				display: inline-block;
+				padding: 15px 20px;
+				font-size: $fz--xxsmall;
+				margin-top: -15px;
+			}
+		
 	}
 	div.cards.showing {
 		div.card {

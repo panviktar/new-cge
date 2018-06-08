@@ -43,32 +43,28 @@
 			font-size: $fz--xsmall;
 		}
 	}
-
 	.swiper-container {
 		height: 440px;
 		.content {
-		top: 10%;
-		width: 100%;
-		height: 80%;
-		padding-right: 12%;
-		padding-left: 12%;
-		.title {
-		margin-bottom: 30px;
-		font-size: $fz--xlarge;
+			top: 10%;
+			width: 100%;
+			height: 80%;
+			padding-right: 12%;
+			padding-left: 12%;
+			.title {
+				margin-bottom: 30px;
+				font-size: $fz--xlarge;
+			}
+			.caption {
+				font-size: $fz--base;
+				line-height: 1.4;
+			}
+			.swiper-slide-btn {
+				font-size: $fz--small;
+			}
 		}
-		.caption {
-			font-size: $fz--base;
-			line-height: 1.4;
-		}
-		.swiper-slide-btn {
-			font-size: $fz--small;
-	}
-	}
-}
-
-	// TOP-INFO END-----------------//
+	} // TOP-INFO END-----------------//
 	// S-SERVICES-----------------
-	// S-SERVICES END-----------------
 	.carousel-services {
 		&__title {
 			font-size: $fz--base;
@@ -79,7 +75,28 @@
 		&__btn {
 			font-size: $fz--xsmall;
 		}
-	}
+	} // S-SERVICES END-----------------
+	// S-NEWS
+	.s-news {
+		.section-title-wraper {
+			.section-title {
+				margin-right: 20px;
+			}
+			.btn-link {
+				display: inline-block;
+				font-size: $fz--xsmall;
+				opacity: 0.88;
+				margin-right: -5px;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+		.s-news-wraper {
+			padding-top: 40px;
+			padding-bottom: 30px;
+		}
+	} // S-NEWS END
 	/*==========  MY-CONTENT END ==========*/
 }
 
@@ -161,26 +178,43 @@
 	.swiper-container {
 		height: 350px;
 		.content {
-		top: 10%;
-		width: 100%;
-		height: 80%;
-		padding-right: 10%;
-		padding-left: 10%;
-		.title {
-		margin-bottom: 25px;
-		font-size: $fz--xlarge;
+			top: 10%;
+			width: 100%;
+			height: 80%;
+			padding-right: 10%;
+			padding-left: 10%;
+			.title {
+				margin-bottom: 25px;
+				font-size: $fz--xlarge;
+			}
+			.caption {
+				font-size: $fz--xbase;
+				line-height: 1.4;
+			}
+			.swiper-slide-btn {
+				font-size: $fz--xsmall;
+			}
 		}
-		.caption {
-			font-size: $fz--xbase;
-			line-height: 1.4;
-		}
-		.swiper-slide-btn {
-			font-size: $fz--xsmall;
-	}
-	}
-	
 	} // TOP-INFO END-----------------//
-	// S-SERVICES END-----------------
+// S-NEWS---------------------//
+	.s-news {
+		margin-top: 5px;
+		margin-bottom: 20px;
+
+		.section-title-wraper {
+			.section-title {
+				margin-right: 0;
+				font-size: $fz--xbase;
+			}
+			.btn-link {
+				padding: 5px 20px;
+				margin-right: -10px;
+			}
+		}
+
+	}
+	// S-NEWS END---------------------
+	// S-SERVICES-----------------
 	.section-title {
 		font-size: $fz--medium;
 	}
@@ -199,8 +233,9 @@
 				font-size: $fz--small;
 			}
 		}
-	}
-	/*==========  MY-CONTENT END ==========*/
+	} 
+	// S-SERVICES END-----
+
 	/*==========  MY-CONTENT END ==========*/
 }
 
@@ -271,26 +306,25 @@
 	.swiper-slide-btn {
 		font-size: $fz--xsmall;
 		padding: 8px 15px;
-	} 
+	}
 	.swiper-container {
 		height: 300px;
 		.content {
-		top: 10%;
-		width: 100%;
-		height: 80%;
-		padding-right: 12%;
-		padding-left: 12%;
-		.title {
-		margin-bottom: 18px;
-		font-size: $fz--xmedium;
+			top: 10%;
+			width: 100%;
+			height: 80%;
+			padding-right: 12%;
+			padding-left: 12%;
+			.title {
+				margin-bottom: 18px;
+				font-size: $fz--xmedium;
+			}
+			.caption {
+				font-size: $fz--small;
+				line-height: 1.25;
+			}
 		}
-		.caption {
-			font-size: $fz--small;
-			line-height: 1.25;
-		}
-	}
-	}
-	// TOP-INFO END-----------------//
+	} // TOP-INFO END-----------------//
 	/*==========  MY-CONTENT END ==========*/
 }
 
@@ -344,27 +378,25 @@
 				display: none;
 			}
 		}
-	} 
+	}
 	.swiper-container {
 		height: 250px;
 		.content {
-		top: 10%;
-		width: 100%;
-		height: 80%;
-		padding-right: 18%;
-		padding-left: 18%;
-		.title {
-		margin-bottom: 15px;
-		font-size: $fz--medium;
+			top: 10%;
+			width: 100%;
+			height: 80%;
+			padding-right: 18%;
+			padding-left: 18%;
+			.title {
+				margin-bottom: 15px;
+				font-size: $fz--medium;
+			}
+			.caption {
+				font-size: $fz--xxsmall;
+				line-height: 1.2;
+			}
 		}
-		.caption {
-			font-size: $fz--xxsmall;
-			line-height: 1.2;
-		}
-	}
-	}
-	
-	// TOP-INFO END-----------------//
+	} // TOP-INFO END-----------------//
 	/*==========  MY-CONTENT END ==========*/
 }
 
