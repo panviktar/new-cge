@@ -4,309 +4,468 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-    /*==========  HEADER  ==========*/
-    .site-header {
-        &__name h1 {
-            padding: 8px 10px 0 0;
-        }
-        &__info {
-            font-size: 13px;
-            padding: 12px 10px 12px 20px;
-        }
-    }
-    .sf-menu {
-        font-size: $fz--small;
-    }
-    .sf-menu>li>a {
-        padding: 12px 15px;
-    }
-    .top-line ul,
-    .top-line li {
-        margin-bottom: -3px;
-        border-bottom: transparent;
-    }
-    .fa-map-marker,
-    .fa-comments,
-    .fa-clock {
-        font-size: $fz--base;
-    }
-    /*==========  header end  ==========*/
-    /*==========  MY-CONTENT  ==========*/
-    // TOP-INFO-----------------
-    .console {
-        flex-direction: column;
-        &__item {
-            padding-left: 62px;
-            padding-right: 7px;
-        }
-        &__name {
-            font-size: $fz--xsmall;
-        }
-    }
-    .swiper-slide-btn {
-        padding: 10px 25px;
-    }
-    .swiper-slide .content {
-        padding-right: 30%;
-        .title--min {
-            font-size: $fz--base;
-            line-height: 1.2;
-        }
-		} // TOP-INFO END-----------------//
-			// S-SERVICES-----------------
-			
-			// S-SERVICES END-----------------
-			.carousel-services {
-				&__title {
-					font-size: $fz--base;
-					span {
-						font-size: $fz--xmedium;
-				}
-				}
-				&__btn {
-					font-size: $fz--xsmall;
+	/*==========  HEADER  ==========*/
+	.site-header {
+		&__name h1 {
+			padding: 8px 10px 0 0;
+		}
+		&__info {
+			font-size: 13px;
+			padding: 12px 10px 12px 20px;
+		}
+	}
+	.sf-menu {
+		font-size: $fz--small;
+	}
+	.sf-menu>li>a {
+		padding: 12px 15px;
+	}
+	.top-line ul,
+	.top-line li {
+		margin-bottom: -3px;
+		border-bottom: transparent;
+	}
+	.fa-map-marker,
+	.fa-comments,
+	.fa-clock {
+		font-size: $fz--base;
+	}
+	/*==========  header end  ==========*/
+	/*==========  MY-CONTENT  ==========*/
+	// TOP-INFO-----------------
+	.console {
+		flex-direction: column;
+		&__item {
+			padding-left: 62px;
+			padding-right: 7px;
+		}
+		&__name {
+			font-size: $fz--xsmall;
+		}
+	}
+	.swiper-container {
+		height: 440px;
+		.content {
+			top: 10%;
+			width: 100%;
+			height: 80%;
+			padding-right: 12%;
+			padding-left: 12%;
+			.title {
+				margin-bottom: 30px;
+				font-size: $fz--xlarge;
+			}
+			.caption {
+				font-size: $fz--base;
+				line-height: 1.4;
+			}
+			.swiper-slide-btn {
+				font-size: $fz--small;
+			}
+		}
+	} // TOP-INFO END-----------------//
+	// S-SERVICES-----------------
+	.carousel-services {
+		&__title {
+			font-size: $fz--base;
+			span {
+				font-size: $fz--xmedium;
+			}
+		}
+		&__btn {
+			font-size: $fz--xsmall;
+		}
+	} // S-SERVICES END-----------------
+	// S-NEWS
+	.s-news {
+		.section-title-wraper {
+			.section-title {
+				margin-right: 20px;
+			}
+			.btn-link {
+				display: inline-block;
+				font-size: $fz--xsmall;
+				opacity: 0.88;
+				margin-right: -5px;
+				&:hover {
+					opacity: 1;
 				}
 			}
-    /*==========  MY-CONTENT END ==========*/
+		}
+		.s-news-wraper {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	} // S-NEWS END
+	/*==========  MY-CONTENT END ==========*/
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
-    /*==========  HEADER  ==========*/
-    .site-header {
-        &__top {
-            min-height: 170px;
-            position: relative;
-        }
-        &__wraper {
-            padding-top: 0;
-            padding-bottom: 15px;
-        }
-        &__left {
-            order: 5;
-            margin-top: -10px;
-            padding-right: 60px;
-        }
-        &__right {
-            align-items: flex-start;
-            justify-content: flex-end;
-            order: 1;
-        }
-        &__logo {
-            width: 75px;
-        }
-        &__name h1 {
-            font-size: $fz--xmedium;
-            padding: 8px 5px 0 0;
-        }
-        &__name span {
-            font-size: $fz--small;
-            display: flex;
-            margin-top: -5px;
-        }
-        &__world {
-            width: 26px;
-            height: 14px;
-            margin-right: 5px;
-        }
-        &__bottom {
-            padding-left: 20px;
-            align-items: center;
-        }
-        &__info {
-            font-size: $fz--xsmall;
-            padding: 12px 0 12px 18px;
-        }
-    }
-    .fa-eye {
-        margin-top: 5px;
-        font-size: $fz--medium;
-    }
-    .fa-map-marker,
-    .fa-comments,
-    .fa-clock {
-        font-size: $fz--small;
-        left: -7px;
-    }
-    .fa-map-marker {
-        left: -2px;
-    }
-    /*==========  header end  ==========*/
-    /*==========  MY-CONTENT  ==========*/
-    // TOP-INFO-----------------
-    .console {
-        flex-direction: row;
-        &__item {
-            padding-left: 70px;
-            padding-right: 15px;
-        }
-    }
-    .bigslider {
-        margin-top: 15px;
-        margin-bottom: 25px;
-    }
-    .swiper-container {
-				height: 350px;
-				
-			
-	
+	/*==========  HEADER  ==========*/
+	.site-header {
+		&__top {
+			min-height: 170px;
+			position: relative;
 		}
-		.carousel-services {
+		&__wraper {
+			padding-top: 0;
+			padding-bottom: 15px;
+		}
+		&__left {
+			order: 5;
+			margin-top: -10px;
+			padding-right: 60px;
+		}
+		&__right {
+			align-items: flex-start;
+			justify-content: flex-end;
+			order: 1;
+		}
+		&__logo {
+			width: 75px;
+		}
+		&__name h1 {
+			font-size: $fz--xmedium;
+			padding: 8px 5px 0 0;
+		}
+		&__name span {
+			font-size: $fz--small;
+			display: flex;
+			margin-top: -5px;
+		}
+		&__world {
+			width: 26px;
+			height: 14px;
+			margin-right: 5px;
+		}
+		&__bottom {
+			padding-left: 20px;
+			align-items: center;
+		}
+		&__info {
+			font-size: $fz--xsmall;
+			padding: 12px 0 12px 18px;
+		}
+	}
+	.fa-eye {
+		margin-top: 5px;
+		font-size: $fz--medium;
+	}
+	.fa-map-marker,
+	.fa-comments,
+	.fa-clock {
+		font-size: $fz--small;
+		left: -7px;
+	}
+	.fa-map-marker {
+		left: -2px;
+	}
+	/*==========  header end  ==========*/
+	/*==========  MY-CONTENT  ==========*/
+	// TOP-INFO-----------------
+	.console {
+		flex-direction: row;
+		&__item {
+			padding-left: 70px;
+			padding-right: 15px;
+		}
+	}
+	.bigslider {
+		margin-top: 15px;
+		margin-bottom: 25px;
+	}
+	.swiper-container {
+		height: 350px;
+		.content {
+			top: 10%;
+			width: 100%;
+			height: 80%;
+			padding-right: 10%;
+			padding-left: 10%;
+			.title {
+				margin-bottom: 25px;
+				font-size: $fz--xlarge;
+			}
+			.caption {
+				font-size: $fz--xbase;
+				line-height: 1.4;
+			}
+			.swiper-slide-btn {
+				font-size: $fz--xsmall;
+			}
+		}
+	} // TOP-INFO END-----------------//
+// S-NEWS---------------------//
+	.s-news {
+		margin-top: 5px;
+		margin-bottom: 20px;
 
-			 &__content {
-					padding: 8%;
-			 }
-        &__title {
-            font-size: $fz--large;
-        }
-        &__caption {
-            font-size: $fz--base;
-        }
-        &__title--min {
-            font-size: $fz--small;
-        }
-		}
-	
-    .swiper-slide-btn {
-        font-size: $fz--xsmall;
-		} // TOP-INFO END-----------------//
-			// S-SERVICES END-----------------
+		.section-title-wraper {
 			.section-title {
+				margin-right: 0;
+				font-size: $fz--xbase;
+			}
+			.btn-link {
+				padding: 5px 20px 10px 20px;
+				margin-right: -10px;
+			}
+		}
+		.s-news-wraper {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+
+		.card {
+
+		&__info {
+			padding: 8px ;
+		}
+		&__title {
+			padding-top: 5px;
+			font-size: $fz--small;
+		}
+		&__title--big {
+			padding-right: 10px;
+			padding-top: 8px;
+			font-size: $fz--xbase;
+		}
+		&__text {
+			font-size: $fz--xxsmall;
+		}
+
+		&__data {
+			&--big {
+				font-size: $fz--xsmall;
+				margin-top: 5px;
+			}
+			
+		}
+	}
+	
+		}
+	// S-NEWS END---------------------
+	// S-SERVICES-----------------
+	.section-title {
+		font-size: $fz--medium;
+	}
+	.carousel-services {
+		&__title {
+			font-size: $fz--small;
+			span {
 				font-size: $fz--medium;
 			}
-			
-			.carousel-services {
-				&__title {
-					font-size: $fz--small;
-					span {
-						font-size: $fz--medium;
-				}
-				}
-				&__btn {
-					font-size: $fz--xsmall;
-				}
-				&__list {
-					li {
-						font-size: $fz--small;
-					}
-				}
+		}
+		&__btn {
+			font-size: $fz--xsmall;
+		}
+		&__list {
+			li {
+				font-size: $fz--small;
 			}
-    /*==========  MY-CONTENT END ==========*/
-    /*==========  MY-CONTENT END ==========*/
+		}
+	} 
+	// S-SERVICES END-----
+
+	/*==========  MY-CONTENT END ==========*/
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-    /*==========  HEADER  ==========*/
-    .site-header {
-        &__top {
-            min-height: 140px;
-        }
-        &__left {
-            padding-right: 0;
-        }
-        &__logo {
-            width: 55px;
-        }
-        &__name h1 {
-            font-size: $fz--medium;
-            padding-right: 20px;
-        }
-        &__name span {
-            font-size: $fz--xsmall;
-        }
-        &__world {
-            width: 20px;
-            height: 10px;
-        }
-        &__info {
-            font-size: $fz--xsmall;
-            padding: 5px 5px 5px 20px;
-        }
-        &__bottom {
-            padding: 5px 0 5px 20px;
-        }
-    }
-    .fa-eye {
-        margin-top: 7px;
-        font-size: $fz--base;
-    }
-    .fa-map-marker {
-        left: -4px;
-    }
-    /*==========  header end  ==========*/
-    /*==========  MY-CONTENT  ==========*/
-    // TOP-INFO-----------------
-    .console {
-        flex-direction: column;
-        &__item {
-            padding-left: 80px;
-            padding-right: 7px;
-        }
-    }
-    .swiper-container {
-        width: 78%;
-        height: 280px;
-    }
-    .swiper-slide .content {
-        .title {
-            font-size: $fz--xmedium;
-        }
-        .caption {
-            font-size: $fz--small;
-        }
-        .title--min {
-            font-size: $fz--xsmall;
-        }
-    }
-    .swiper-slide-btn {
-        font-size: $fz--xsmall;
-        padding: 8px 15px;
-    } // TOP-INFO END-----------------//
-    /*==========  MY-CONTENT END ==========*/
+	/*==========  HEADER  ==========*/
+	.site-header {
+		&__top {
+			min-height: 140px;
+		}
+		&__left {
+			padding-right: 0;
+		}
+		&__logo {
+			width: 55px;
+		}
+		&__name h1 {
+			font-size: $fz--medium;
+			padding-right: 20px;
+		}
+		&__name span {
+			font-size: $fz--xsmall;
+		}
+		&__world {
+			width: 20px;
+			height: 10px;
+		}
+		&__info {
+			font-size: $fz--xsmall;
+			padding: 5px 5px 5px 20px;
+		}
+		&__bottom {
+			padding: 5px 0 5px 20px;
+		}
+	}
+	.fa-eye {
+		margin-top: 7px;
+		font-size: $fz--base;
+	}
+	.fa-map-marker {
+		left: -4px;
+	}
+	/*==========  header end  ==========*/
+	/*==========  MY-CONTENT  ==========*/
+	// TOP-INFO-----------------
+	.console {
+		flex-direction: column;
+		&__item {
+			padding-left: 80px;
+			padding-right: 7px;
+		}
+	}
+	.swiper-container {
+		width: 78%;
+		height: 280px;
+	}
+	.swiper-slide .content {
+		.title {
+			font-size: $fz--xmedium;
+		}
+		.caption {
+			font-size: $fz--small;
+		}
+		.title--min {
+			font-size: $fz--xsmall;
+		}
+	}
+	.swiper-slide-btn {
+		font-size: $fz--xsmall;
+		padding: 8px 15px;
+	}
+	.swiper-container {
+		height: 300px;
+		.content {
+			top: 10%;
+			width: 100%;
+			height: 80%;
+			padding-right: 12%;
+			padding-left: 12%;
+			.title {
+				margin-bottom: 18px;
+				font-size: $fz--xmedium;
+			}
+			.caption {
+				font-size: $fz--small;
+				line-height: 1.25;
+			}
+		}
+	} // TOP-INFO END-----------------//
+	// S-INFO-------------------------
+	.s-news {
+		.section-title-wraper {
+		.section-title {
+			font-size: $fz--small;
+			padding: 7px 10px;
+		}
+		}
+		.s-news-wraper {
+			padding-bottom: 10px;
+		}
+		.card {
+			&--big {
+				margin-bottom: 20px;
+			}
+			&__data {
+				margin-top: 5px;
+				width: 100%;
+			}
+		}
+	}
+	// S-INFO END-------------------------
+
+	/*==========  MY-CONTENT END ==========*/
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-    /*==========  HEADER  ==========*/
-    .site-header {
-        &__top {
-            min-height: 140px;
-        }
-        &__logo {
-            width: 50px;
-        }
-        &__name h1 {
-            font-size: $fz--base;
-            padding-right: 20px;
-        }
-        &__bottom {
-            padding-left: 20px;
-        }
-        &__info {
-            font-size: $fz--xsmall;
-            padding: 5px 10px 5px 15px;
-        }
-    }
-    .fa-map-marker {
-        left: -3px;
-        top: 5px;
-    }
-    .fa-comments {
-        left: -7px;
-        top: 5px;
-    }
-    /*==========  header end  ==========*/
-    /*==========  MY-CONTENT  ==========*/
-    // TOP-INFO-----------------
-    .console {
-        flex-direction: column;
-        &__item {
-            padding-left: 65px;
-            padding-right: 7px;
-        }
-    } // TOP-INFO END-----------------//
-    /*==========  MY-CONTENT END ==========*/
+	/*==========  HEADER  ==========*/
+	.site-header {
+		&__top {
+			min-height: 140px;
+		}
+		&__logo {
+			width: 50px;
+		}
+		&__name h1 {
+			font-size: $fz--base;
+			padding-right: 20px;
+		}
+		&__bottom {
+			padding-left: 20px;
+		}
+		&__info {
+			font-size: $fz--xsmall;
+			padding: 5px 10px 5px 15px;
+		}
+	}
+	.fa-map-marker {
+		left: -3px;
+		top: 5px;
+	}
+	.fa-comments {
+		left: -7px;
+		top: 5px;
+	}
+	/*==========  header end  ==========*/
+	/*==========  MY-CONTENT  ==========*/
+	// TOP-INFO-----------------
+	.console {
+		flex-direction: column;
+		&__item {
+			padding-left: 7px;
+			padding-right: 7px;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			text-align: right;
+			min-height: 60px;
+		}
+		&__name {
+			text-shadow: #000 1px 1px 1px;
+			br {
+				display: none;
+			}
+		}
+	}
+	.swiper-container {
+		height: 250px;
+		.content {
+			top: 10%;
+			width: 100%;
+			height: 80%;
+			padding-right: 18%;
+			padding-left: 18%;
+			.title {
+				margin-bottom: 15px;
+				font-size: $fz--medium;
+			}
+			.caption {
+				font-size: $fz--xxsmall;
+				line-height: 1.2;
+			}
+		}
+	} // TOP-INFO END-----------------//
+	// TOP-INFO -----------------//
+	// .s-news {
+	// 	.card {
+	// 		&__image {
+	// 			text-align: center;
+	// 			border: none;
+	// 			img {
+	// 				width: 80%;
+	// 			}
+	// 		}
+	// 	}
+	// }
+	
+	// TOP-INFO END-----------------//
+	/*==========  MY-CONTENT END ==========*/
 }
 
 /*==========  Mobile First  ==========*/

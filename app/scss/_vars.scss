@@ -4,6 +4,7 @@ $default-font: "PTSansRegular-example", sans-serif;
 
 $fz--base: 16px;
 $fz--xsmall: ceil($fz--base * 0.75); /* 12px */
+$fz--xxsmall: ceil($fz--base * 0.81); /* 13px */
 $fz--small: ceil($fz--base * 0.88); /* 14px */
 $fz--xbase: ceil($fz--base * 1.1); /* 18px */
 $fz--medium: ceil($fz--base * 1.25); /* 20px */
@@ -41,12 +42,13 @@ $green3: #90af89;
 $olive: #a6b868;
 $yellow: #d1c361;
 $gold: #e2b11a;
+$salmon: #ff6666;
 
 $primaryColor: #4A90E2;
 $secondColor:#0087AC;
 
 
-.btn{
+.btn-bigslider{
 	position: relative;
 	text-decoration: none;
 	font-weight: 500;
@@ -154,13 +156,14 @@ $secondColor:#0087AC;
 	display: block;
   margin: auto;
   padding: 1rem 1.25rem;
-  font-family: sans-serif;
+  font-family: $default-font;
   font-size: $fz--base;
   text-decoration: none;
   color: $text;
   position: relative;
   transition: all .3s cubic-bezier(.2, 0, 0, 1);
-  z-index: 1;
+	z-index: 1;
+	text-transform: uppercase;
   
   &:after {
     content: '';
