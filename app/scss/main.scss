@@ -6,6 +6,7 @@
 @import "fonts";
 @import "libs";
 @import "_mixins/h";
+@import "_mixins/darken";
 @import "_mixins/font-face";
 @import "_mixins/links";
 
@@ -28,7 +29,7 @@
 
 @import "_blocks/top-info";
 @import "_blocks/s-news";
-@import "_blocks/s-mer";
+
 @import "_blocks/s-services"; 
 @import "_blocks/s-parters"; 
 @import "_blocks/s-info-materials";

@@ -81,16 +81,7 @@
 				transition: all .5s ease-out;
 				}
 				&::before {
-					content: "";
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					background-color: #000;
-					z-index: -1;
-					opacity: 0;
-					transition: opacity 1s ease;
+					@include darken;
 				}
 			}
 		
@@ -123,7 +114,7 @@
 		}
 		
 			&__id {
-				font-size: $fz--xsmall;
+				font-size: $fz--min;
 				text-transform: uppercase;
 				border: 1px solid $accent;
 				padding: 1px 5px;

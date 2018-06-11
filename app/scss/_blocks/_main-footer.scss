@@ -6,6 +6,16 @@
 	&__column {
 		margin: 15px 0;
 	}
+	&__title {
+		@include h5;
+	}
+	&__list {
+		text-decoration: none;
+		list-style: none;
+	}
+	&__item {
+		font-size: $fz--xxsmall;
+	}
 
 }
 

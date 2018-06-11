@@ -3,6 +3,8 @@
 $default-font: "PTSansRegular-example", sans-serif;
 
 $fz--base: 16px;
+$fz--xmin: ceil($fz--base * 0.62); /* 10px */
+$fz--min: ceil($fz--base * 0.69); /* 11px */
 $fz--xsmall: ceil($fz--base * 0.75); /* 12px */
 $fz--xxsmall: ceil($fz--base * 0.81); /* 13px */
 $fz--small: ceil($fz--base * 0.88); /* 14px */

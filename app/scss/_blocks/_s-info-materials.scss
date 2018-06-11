@@ -3,23 +3,10 @@
 	margin-bottom: 30px;
 	position: relative;
 	z-index: 1;
-	
 }
 
 .info-materials {
-	margin-top: -15px;
-
-
-	a {
-		opacity: 0.8;
-		transition: opacity .25s ease;
-		&:hover {
-			opacity: 1;
-		} 
-		&:active {
-			opacity: 0.5;
-		}
-	}
+	margin-top: -10px;
 	
 	.info-material {
 		display: flex;
@@ -28,49 +15,58 @@
 		justify-content: space-around;
 		align-content: center;
 		text-align: center;
-		margin-right: 15px;
-
-
-		&:hover .info-material__img{
-			transition: opacity .5 ease;
-			opacity: 1;
-		}
 		
-	
-				&__img {
-					display: flex;
-					width: 100px;
-					height: 100px;
-					opacity: .8;
-
-					
+		&:hover {
+			img{
+				transform: scale(1.02);
+				opacity: 1;
+				width: 100%;
 				}
-				&__title {
-					font-size: $fz--small;
-					text-transform: uppercase;	
-					line-height: 1.2;
-					font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
-					font-weight: $bold;
-					margin-top: 15px;
-					margin-bottom: 10px;	
-				}
-
-				&__text {
-					font-size: $fz--xsmall;
-					line-height: 1.2;
-					font-style: italic;	
-					color: lighten($text, 20%);	
-					
-				}
-				&__link {
-					font-size: $fz--base;
-					margin-bottom: 15px;
-				}
+		.info-material__title {
+				text-decoration: underline;
+		}
 	}
-
+	&:active {
+		img{
+			transform: scale(1);
+			opacity: .8;
+			
+			}
+	.info-material__title {
+			text-decoration: none;
+	}
+	}
+		&__img {
+			display: flex;
+			width: 100%;
+			overflow:hidden;
+			padding: 3px;
+			img {
+				width: 100px;
+				height: 100px;
+				transition: all .3s ease-out;
+				opacity: 0.9;
+				}
+		}
+		&__title {
+			font-size: $fz--small;
+			color: $text;
+			text-transform: uppercase;
+			line-height: 1.2;
+			font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+			font-weight: $bold;
+			margin-top: 15px;
+			margin-bottom: 5px;
+		}
+		&__text {
+			font-size: $fz--xsmall;
+			line-height: 1.2;
+			font-style: italic;
+			color: lighten($text, 30%);
+		}
+	}
 	.owl-stage {
 		display: flex;
-		
 		.owl-item {
 			margin-top: 30px;
 			img {
@@ -93,29 +89,22 @@
 		
 		&:hover {
 			opacity: .6;
-			
 		}
 		&:active {
 			opacity: .3;
-			
 		}
-		
 		>button {
 			position: absolute;
 			top: 90px;
 			outline: none;
 			padding: 15px;
-				
-			&.owl-prev {
-				left: -60px;
 			
+			&.owl-prev {
+				left: -30px;
 			}
 			&.owl-next {
-				right: -60px;
-			
+				right: -30px;
 			}
 		}
 	}
 }
-
-

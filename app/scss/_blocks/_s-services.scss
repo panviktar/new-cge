@@ -2,164 +2,142 @@
 	margin-top: 30px;
 }
 
-
 .section-title {
 	@include h2;
 	display: inline-block;
 }
 
-
-
-
 .carousel-services {
-	
-		background-color: $gray;
-		&:hover .owl-nav .owl-prev,
-		&:hover .owl-nav .owl-next
-		 {
-			opacity: 1;
-			transform:translateX(0);
-			visibility:visible;
-			
-		}
-	
-    &__item {
-        color: #fff;
-        font-size: $fz--base;
-        position: relative;
-        font-weight: 300;
-        display: flex;
-				flex-direction: column-reverse;
-				
-        &:hover .carousel-services__image {
-						opacity: 1;
-						
-				}
-				
-			
-    }
-    
-    &__content {
-				padding: 7%;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-around;
-				
-    }
-    &__wraper {
-        margin: auto;
-        text-align: center;
-        width: 100%;
-    }
-    &__title {
-			text-transform: uppercase;
-			font-weight: $light;
-			display: block;
-			font-size: $fz--xbase;
-			line-height: 1;
-			margin-top: 5px;
-			
-				span {
-					display: block;
-					@include h3;
-			}
-    }
-   
-    &__list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        margin-bottom: 15px;
-        font-weight: 300;
-        li {
-            padding: 5px;
-            border-bottom: 1px solid rgba(#000, .12);
-            font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
-            font-weight: 300;
-            &:last-child {
-                border-bottom: none;
-            }
-        }
-		}
-		
-		&__image {
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-			opacity: .8;
-			transition: opacity .5s ease;
+	background-color: $gray;
+	&:hover .owl-nav .owl-prev,
+	&:hover .owl-nav .owl-next {
+		opacity: 1;
+		transform: translateX(0);
+		visibility: visible;
 	}
-    .owl-item {
-        &:nth-child(2n+2) {
-            .carousel-services__item {
-                flex-direction: column;
-            }
-        }
+	&__item {
+		color: #fff;
+		font-size: $fz--base;
+		position: relative;
+		font-weight: 300;
+		display: flex;
+		flex-direction: column-reverse;
+		&:hover .carousel-services__image {
+			opacity: 1;
 		}
-		
-    .owl-nav {
-				position: absolute;
-				top: 0;
-        width: 100%;
-        >button {
-            width: 64px;
-            height: 64px;
-            position: absolute;
-            text-align: center;
-						line-height: 54px;
-						opacity: 0;
-						outline: none;
-						&:active {
-							opacity: 0.5;
-						}
-
-            &.owl-prev {
-                font-size: 26px;
-                left: 0;
-								color: lighten($text, 20%);
-								background-color: #fff;
-								opacity:0;
-  							visibility:hidden;
-								transform:translateX(50px);
-								transition: all 600ms;
-								&:hover {
-									color: $text;
-									transition: all .3s;
-								}
-							&:active {
-								color: lighten($text, 40%);
-								transition: all .3s;
-							}
-							
-						}
-						
-            &.owl-next {
-                font-size: 26px;
-                right: 0;
-                color: $text;
-								background-color: #fff;
-								opacity:0;
-  							visibility:hidden;
-								transform:translateX(-50px);
-								transition: all 600ms;
-								color: lighten($text, 20%);
-								transition: all 250ms;
-									&:hover {
-										color: $text;
-										transition: all .3s;
-									}
-								&:active {
-									color: lighten($text, 40%);
-									transition: all .3s;
-								}
-            }
+	}
+	&__content {
+		padding: 7%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	&__wraper {
+		margin: auto;
+		text-align: center;
+		width: 100%;
+	}
+	&__title {
+		text-transform: uppercase;
+		font-weight: $light;
+		display: block;
+		font-size: $fz--xbase;
+		line-height: 1;
+		margin-top: 5px;
+		span {
+			display: block;
+			@include h3;
+		}
+	}
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		margin-bottom: 15px;
+		font-weight: 300;
+		li {
+			padding: 5px;
+			border-bottom: 1px solid rgba(#000, .12);
+			font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+			font-weight: 300;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+	&__image {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: .8;
+		transition: opacity .5s ease;
+	}
+	.owl-item {
+		&:nth-child(2n+2) {
+			.carousel-services__item {
+				flex-direction: column;
+			}
+		}
+	}
+	.owl-nav {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		>button {
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			text-align: center;
+			line-height: 54px;
+			opacity: 0;
+			outline: none;
+			&:active {
+				opacity: 0.5;
+			}
+			&.owl-prev {
+				font-size: 26px;
+				left: 0;
+				color: lighten($text, 20%);
+				background-color: #fff;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateX(50px);
+				transition: all 600ms;
+				&:hover {
+					color: $text;
+					transition: all .3s;
 				}
-				
-    }
+				&:active {
+					color: lighten($text, 40%);
+					transition: all .3s;
+				}
+			}
+			&.owl-next {
+				font-size: 26px;
+				right: 0;
+				color: $text;
+				background-color: #fff;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateX(-50px);
+				transition: all 600ms;
+				color: lighten($text, 20%);
+				transition: all 250ms;
+				&:hover {
+					color: $text;
+					transition: all .3s;
+				}
+				&:active {
+					color: lighten($text, 40%);
+					transition: all .3s;
+				}
+			}
+		}
+	}
 }
 
 .owl-carousel {
-    .owl-item {
-        backface-visibility: inherit;
-    }
+	.owl-item {
+		backface-visibility: inherit;
+	}
 }
