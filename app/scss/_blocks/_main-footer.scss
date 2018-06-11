@@ -1,21 +1,103 @@
 .main-footer {
-	padding: 3% 0;
-	color: #fff;
-	font-size: $fz--small;
+  padding: 30px 0;
+  color: #fff;
+  font-size: $fz--small;
+  &__column {
+    margin: 15px 0;
+  }
+  &__title {
+    @include h5;
+    color: $accent2;
+    text-decoration: underline;
+  }
+  &__list {
+    text-decoration: none;
+    list-style: none;
+    padding-top: 5px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+   
+  }
+  &__item {
+    font-size: $fz--xxsmall;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    position: relative;
+    &--contakt i {
+			opacity: 0.7;
+      margin-right: 8px;
+      font-size: 11px;
+    }
+    &--contakt a {
+      display: block;
+      margin-top: 5px;
+      position: relative;
+      color: #fff;
+		}
+		
+		&--requisites i{
+			opacity: 0.7;
+      margin-right: 8px;
+      font-size: 11px;
+		}
 
-	&__column {
-		margin: 15px 0;
-	}
-	&__title {
-		@include h5;
-	}
-	&__list {
-		text-decoration: none;
-		list-style: none;
-	}
-	&__item {
-		font-size: $fz--xxsmall;
-	}
-
+		&--part a{
+			display: block;
+      margin-top: 5px;
+      position: relative;
+      padding-left: 20px;
+      color: #fff;
+      opacity: 1;
+			&::before {
+        position: absolute;
+        font-family: FA;
+        content: "\f111";
+				left: 0;
+				top: 4px;
+				font-size: 7px;
+				opacity: 0.7;
+      }
+		}
+    &--line {
+      padding-bottom: 4px;
+      border-bottom: 1px solid rgba(196, 196, 196, 0.3);
+			cursor: pointer;
+			margin-bottom: 4px;
+    }
+    &--line:last-child {
+      border-bottom: none;
+    }
+    &--line a {
+      display: block;
+      margin-top: 2px;
+      position: relative;
+      padding-left: 20px;
+      color: #fff;
+      opacity: 0.7;
+      &::before {
+        position: absolute;
+        font-family: FA;
+        content: "\f2a0";
+        left: 0;
+      }
+		}
+		
+		&--part:hover {
+      a {
+        color: $accent2;
+        opacity: 1;
+      }
+		}
+		
+    &--contakt a:hover {
+      color: $accent2;
+    }
+    &--line:hover {
+      a {
+        color: $accent2;
+        opacity: 1;
+      }
+    }
+  }
 }
-
