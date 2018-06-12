@@ -29,7 +29,6 @@
 
 @import "_blocks/top-info";
 @import "_blocks/s-news";
-
 @import "_blocks/s-services"; 
 @import "_blocks/s-parters"; 
 @import "_blocks/s-info-materials";
@@ -113,6 +112,33 @@ $colors: rgba(255, 0, 19, 0.5), $accent2, #72a8ff;
 	} 
 }
 
-
+.top {
+	position: fixed;
+	bottom: 25px;
+	right: -100px;
+	background-color: #e0e0e0;
+	z-index: 99;
+	border-radius: 50%;
+	color: #666;
+	font-size: 26px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	transition: all .3s ease;
+	opacity: .5;
+	i {
+		line-height: 0;
+	}
+	&:hover {
+		color: #fff;
+		background-color: $accent2;
+		opacity: 1;
+	}
+	&.active {
+		right: 25px;
+	}
+}
 
 @import "media"; // Always at the end

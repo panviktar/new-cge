@@ -3917,6 +3917,34 @@ section {
 .carousel-services .owl-item:nth-child(3n+3) {
   background-color: #72a8ff; }
 
+.top {
+  position: fixed;
+  bottom: 25px;
+  right: -100px;
+  background-color: #e0e0e0;
+  z-index: 99;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #666;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  opacity: .5; }
+  .top i {
+    line-height: 0; }
+  .top:hover {
+    color: #fff;
+    background-color: #e2b11a;
+    opacity: 1; }
+  .top.active {
+    right: 25px; }
+
 /* 10px */
 /* 11px */
 /* 12px */
@@ -4127,9 +4155,13 @@ section {
   .carousel-services__title {
     font-size: 16px; }
     .carousel-services__title span {
-      font-size: 24px; }
+      font-size: 20px; }
+  .carousel-services__list li {
+    font-size: 15px;
+    padding: 2px; }
   .carousel-services__btn {
-    font-size: 12px; }
+    font-size: 12px;
+    margin-top: -5px; }
   .s-news .section-title-wraper .section-title {
     margin-right: 20px; }
   .s-news .section-title-wraper .btn-link {
@@ -4226,6 +4258,8 @@ section {
     left: -2px; }
   /*==========  header end  ==========*/
   /*==========  MY-CONTENT  ==========*/
+  .section-title {
+    font-size: 16px; }
   .console {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -4327,6 +4361,8 @@ section {
     left: -4px; }
   /*==========  header end  ==========*/
   /*==========  MY-CONTENT  ==========*/
+  .section-title {
+    font-size: 16px; }
   .console {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4375,7 +4411,27 @@ section {
     font-size: 10px; }
   .s-news .card__id {
     font-size: 10px; }
-  /*==========  MY-CONTENT END ==========*/ }
+  .carousel-services__content {
+    padding: 6%; }
+  .carousel-services__title {
+    font-size: 15px; }
+    .carousel-services__title span {
+      font-size: 18px; }
+  .carousel-services__list li {
+    font-size: 13px;
+    padding: 2px; }
+  .carousel-services__btn {
+    font-size: 12px;
+    margin-top: -5px; }
+  /*==========  MY-CONTENT END ==========*/
+  .main-footer__wrapper {
+    padding: 15px; }
+  .main-footer__title {
+    font-size: 15px; }
+  .main-footer__item {
+    font-size: 12px; }
+  .main-footer__copyright {
+    font-size: 12px; } }
 
 @media (max-width: 575.98px) {
   /*==========  HEADER  ==========*/

@@ -66,14 +66,22 @@
 	} // TOP-INFO END-----------------//
 	// S-SERVICES-----------------
 	.carousel-services {
+	
 		&__title {
 			font-size: $fz--base;
 			span {
-				font-size: $fz--xmedium;
+				font-size: $fz--medium;
+			}
+		}
+		&__list {
+			li {
+				font-size: $fz--small;
+				padding: 2px;
 			}
 		}
 		&__btn {
 			font-size: $fz--xsmall;
+			margin-top: -5px;
 		}
 	} // S-SERVICES END-----------------
 	// S-NEWS
@@ -211,6 +219,9 @@
 	/*==========  header end  ==========*/
 	/*==========  MY-CONTENT  ==========*/
 	// TOP-INFO-----------------
+	.section-title {
+	font-size: $fz--base;
+	}
 	.console {
 		flex-direction: row;
 		&__item {
@@ -375,6 +386,9 @@
 	}
 	/*==========  header end  ==========*/
 	/*==========  MY-CONTENT  ==========*/
+	.section-title {
+		font-size: $fz--base;
+		}
 	// TOP-INFO-----------------
 	.console {
 		flex-direction: column;
@@ -447,9 +461,45 @@
 	}
 	// S-INFO END-------------------------
 	
-	
+		// S-SERVICES-----------------
+		.carousel-services {
+			&__content {
+				padding: 6%;
+			}
+			&__title {
+				font-size: $fz--small;
+				span {
+					font-size: $fz--xbase;
+				}
+			}
+			&__list {
+				li {
+					font-size: $fz--xxsmall;
+					padding: 2px;
+				}
+			}
+			&__btn {
+				font-size: $fz--xsmall;
+				margin-top: -5px;
+			}
+		} // S-SERVICES END-----------------
 
 	/*==========  MY-CONTENT END ==========*/
+	.main-footer {
+		&__wrapper {
+			padding: 15px;
+		}
+		&__title {
+			font-size: $fz--small;
+		}
+		&__item {
+			font-size: $fz--min;
+		}
+	
+		&__copyright {
+			font-size: $fz--min;
+		}
+	}
 }
 
 // ≥576px
