@@ -1,103 +1,151 @@
 .main-footer {
-  padding: 30px 0;
-  color: #fff;
-  font-size: $fz--small;
-  &__column {
-    margin: 15px 0;
-  }
-  &__title {
-    @include h5;
-    color: $accent2;
-    text-decoration: underline;
-  }
-  &__list {
-    text-decoration: none;
-    list-style: none;
-    padding-top: 5px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-   
-  }
-  &__item {
-    font-size: $fz--xxsmall;
-    margin-bottom: 10px;
-    line-height: 1.4;
-    position: relative;
-    &--contakt i {
+	&__wrapper {
+		padding: 30px 0;
+		color: #fff;
+		font-size: $fz--small;
+	}
+	
+	&__column {
+		margin: 8px 0;
+	}
+	&__title {
+		@include h5;
+		color: $accent2;
+		text-decoration: underline;
+		
+	}
+	&__list {
+		text-decoration: none;
+		list-style: none;
+		
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__item {
+		font-size: $fz--xxsmall;
+		margin-bottom: 3px;
+		line-height: 1.4;
+		position: relative;
+		transition: all .25s ease;
+		&--contakt {
+			a {
+				display: block;
+				position: relative;
+				color: #fff;
+				transition: all 0.3s ease;
+				&:hover {
+					color: $accent2;
+					opacity: 1;
+				
+				}
+				i {
+					opacity: 0.7;
+					margin-right: 8px;
+					font-size: 10px;
+					transition: all 0.3s ease;
+				}
+			}
+		}
+		&--requisites {
+			
+			i {
 			opacity: 0.7;
-      margin-right: 8px;
-      font-size: 11px;
-    }
-    &--contakt a {
-      display: block;
-      margin-top: 5px;
-      position: relative;
-      color: #fff;
+			margin-right: 8px;
+			font-size: 11px;
+		}
+	}
+		&--part {
+			margin-bottom: 3px;
+			a {
+				display: block;
+				position: relative;
+				padding-left: 20px;
+				color: #fff;
+				opacity: 1;
+				transition: all 0.25s ease;
+				&::before {
+					position: absolute;
+					font-family: FA;
+					content: "\f00c";
+					left: 0;
+					top: 4px;
+					font-size: 7px;
+					opacity: 0.7;
+					transition: all 0.3s ease;
+				}
+				&:hover {
+					color: $accent2;
+					opacity: 1;
+					transition: all .5 ease;
+				}
+			}
 		}
 		
-		&--requisites i{
-			opacity: 0.7;
-      margin-right: 8px;
-      font-size: 11px;
-		}
-
-		&--part a{
-			display: block;
-      margin-top: 5px;
-      position: relative;
-      padding-left: 20px;
-      color: #fff;
-      opacity: 1;
-			&::before {
-        position: absolute;
-        font-family: FA;
-        content: "\f111";
-				left: 0;
-				top: 4px;
-				font-size: 7px;
-				opacity: 0.7;
-      }
-		}
-    &--line {
-      padding-bottom: 4px;
-      border-bottom: 1px solid rgba(196, 196, 196, 0.3);
+		&--line {
+			padding-bottom: 4px;
+			border-bottom: 1px solid rgba(196, 196, 196, 0.3);
 			cursor: pointer;
 			margin-bottom: 4px;
-    }
-    &--line:last-child {
-      border-bottom: none;
-    }
-    &--line a {
-      display: block;
-      margin-top: 2px;
-      position: relative;
-      padding-left: 20px;
-      color: #fff;
-      opacity: 0.7;
-      &::before {
-        position: absolute;
-        font-family: FA;
-        content: "\f2a0";
-        left: 0;
-      }
+			&:hover {
+				a {
+					color: $accent2;
+					opacity: 1;
+				}
+			}
+			a {
+				display: block;
+				position: relative;
+				padding-left: 20px;
+				color: #fff;
+				opacity: 0.7;
+				transition: all 0.3s ease;
+				&::before {
+					position: absolute;
+					font-family: FA;
+					content: "\f2a0";
+					left: 0;
+					top: 1px;
+					font-size: 12px;
+				}
+			}
 		}
-		
-		&--part:hover {
-      a {
-        color: $accent2;
-        opacity: 1;
-      }
+		&--line:last-child {
+			border-bottom: none;
 		}
+		&--time {
+			
+			i {
+				color: #fff;
+				font-size: 12px;
+				position: relative;
+				top: 0;
+				left: 0;
+				margin-right: 5px;
+				opacity: 0.7;
+			}
+		}
+	}
+	&__map {
+		max-height: 205px;
+		opacity: .8;
+		transition: opacity .5s ease;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&__bottom {
+		background-color: #bcbcbc;
+		padding: 12px 0 1px 0;
 		
-    &--contakt a:hover {
-      color: $accent2;
-    }
-    &--line:hover {
-      a {
-        color: $accent2;
-        opacity: 1;
-      }
-    }
-  }
+	}
+	&__copyright {
+		color: $text;
+		font-size: $fz--xxsmall;
+		line-height: 1.2;
+		i {
+			color: $text;
+		}
+	}
 }

@@ -126,7 +126,26 @@
 		}
 			// S-PARTNERS-----------------end
 	/*==========  MY-CONTENT END ==========*/
+	/*==========  MY-FOOTER  ==========*/
+	.main-footer {
+		&__item {
+			&--line {
+				padding-bottom: 2px;
+				margin-bottom: 1px;
+			}
+			&--part {
+				margin-bottom: 1px;
+			}
+		}
+	
+		&__map {
+			margin-top: 15px;
+		}
+	}
+	/*==========  MY-FOOTER END ==========*/
 }
+
+
 
 // ≥992px
 @include media-breakpoint-down(md) {
@@ -296,7 +315,24 @@
 	// S-SERVICES END-----
 
 	/*==========  MY-CONTENT END ==========*/
+		/*==========  MY-FOOTER  ==========*/
+		.main-footer {
+			&__item {
+				&--line {
+					padding-bottom: 3px;
+					margin-bottom: 3px;
+				}
+			}
+		
+			&__map {
+				margin-top: 14px;
+			}
+		}
+		/*==========  MY-FOOTER END ==========*/
 }
+
+
+
 
 // ≥768px
 @include media-breakpoint-down(sm) {
