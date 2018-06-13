@@ -1,40 +1,54 @@
-
 // Customization FONTS"
-$default-font: "PTSansRegular-example", sans-serif;
-
+$default-font: "PTSansRegular-example",
+sans-serif;
 $fz--base: 16px;
-$fz--xmin: ceil($fz--base * 0.62); /* 10px */
-$fz--min: ceil($fz--base * 0.69); /* 11px */
-$fz--xsmall: ceil($fz--base * 0.75); /* 12px */
-$fz--xxsmall: ceil($fz--base * 0.81); /* 13px */
-$fz--small: ceil($fz--base * 0.88); /* 14px */
-$fz--xbase: ceil($fz--base * 1.1); /* 18px */
-$fz--medium: ceil($fz--base * 1.25); /* 20px */
-$fz--xmedium: ceil($fz--base * 1.5); /* 24px */
-$fz--large: ceil($fz--base * 1.88); /* 30px */
-$fz--xlarge: ceil($fz--base * 2.25); /* 36px */
-$fz--xxlarge: ceil($fz--base * 2.63); /* 42px */
+$fz--xmin: ceil($fz--base * 0.62);
+/* 10px */
 
+$fz--min: ceil($fz--base * 0.69);
+/* 11px */
+
+$fz--xsmall: ceil($fz--base * 0.75);
+/* 12px */
+
+$fz--xxsmall: ceil($fz--base * 0.81);
+/* 13px */
+
+$fz--small: ceil($fz--base * 0.88);
+/* 14px */
+
+$fz--xbase: ceil($fz--base * 1.1);
+/* 18px */
+
+$fz--medium: ceil($fz--base * 1.25);
+/* 20px */
+
+$fz--xmedium: ceil($fz--base * 1.5);
+/* 24px */
+
+$fz--large: ceil($fz--base * 1.88);
+/* 30px */
+
+$fz--xlarge: ceil($fz--base * 2.25);
+/* 36px */
+
+$fz--xxlarge: ceil($fz--base * 2.63);
+/* 42px */
 
 $normal: 400;
 $bold: 700;
 $light: 300;
-
-
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;
 $grid-columns: 12;
 $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
 $gutter: $grid-gutter-width;
-
-
 // Customization COLOR"
 $accent: #2c923a;
 $accent2: #e2b11a;
 $text: #253031;
 $text--white: #fff;
-
 $white: #fff;
 $black: #000;
 $gray: #596262;
@@ -45,12 +59,9 @@ $olive: #a6b868;
 $yellow: #d1c361;
 $gold: #e2b11a;
 $salmon: #ff6666;
-
 $primaryColor: #4A90E2;
 $secondColor:#0087AC;
-
-
-.btn-bigslider{
+.btn-bigslider {
 	position: relative;
 	text-decoration: none;
 	font-weight: 500;
@@ -67,27 +78,28 @@ $secondColor:#0087AC;
 	transition: all 300ms ease;
 	box-shadow: 0px 4px 10px 2px rgba(black, 0.2);
 	z-index: 5;
-	
- 
-	&:before{
+	&:before {
 		position: absolute;
 		content: '';
-		width: 0%; height: 100%;
-		top: 0; left: 50%;
+		width: 0%;
+		height: 100%;
+		top: 0;
+		left: 50%;
 		z-index: -1;
 		transition: all 0ms ease;
 		background: $accent;
 	}
-	
-	&:hover{
-		color: white; 
-		box-shadow:none;
-		&:before{
+	&:hover {
+		color: white;
+		box-shadow: none;
+		&:before {
 			position: absolute;
 			content: '';
-			width: 100%; height: 100%;
+			width: 100%;
+			height: 100%;
 			background: $accent;
-			top: 0; left: 0%;
+			top: 0;
+			left: 0%;
 			z-index: -1;
 			transition: all 300ms ease;
 		}
@@ -98,8 +110,8 @@ $secondColor:#0087AC;
 	}
 }
 
-.btn-white{
-	font-size: $fz--small;
+.btn-white {
+	font-size: $fz--xsmall;
 	position: relative;
 	text-decoration: none;
 	font-weight: 500;
@@ -111,38 +123,35 @@ $secondColor:#0087AC;
 	letter-spacing: 2px;
 	outline: none;
 	font-weight: $light;
-	padding: 8px 25px;
+	padding: 8px 22px;
 	background-color: #fff;
 	transition: all 300ms ease;
 	box-shadow: 0px 4px 10px 2px rgba(black, 0.2);
 	z-index: 5;
 	border: none;
-	
-	
- 
-	&:before{
+	&:before {
 		position: absolute;
 		content: '';
-		width: 0%; height: 4px;
+		width: 0%;
+		height: 3px;
 		background: lighten($text, 20%);
-		top: 100%; left: 50%;
+		top: 100%;
+		left: 50%;
 		z-index: 1;
 		transition: all 0ms ease;
-
-		
 	}
-	
-	&:hover{
-		color: $text; 
-		box-shadow:none;
+	&:hover {
+		color: $text;
+		box-shadow: none;
 		opacity: 1;
-		&:before{
+		&:before {
 			position: absolute;
 			content: '';
-			width: 100%; 
+			width: 100%;
 			height: 4px;
 			background: lighten($text, 20%);
-			top: 100%; left: 0%;
+			top: 100%;
+			left: 0%;
 			z-index: -1;
 			transition: all 400ms ease;
 		}
@@ -153,44 +162,37 @@ $secondColor:#0087AC;
 	}
 }
 
-
 .btn-link {
 	display: block;
-  margin: auto;
-  padding: 1rem 1.25rem;
-  font-family: $default-font;
-  font-size: $fz--base;
-  text-decoration: none;
-  color: $text;
-  position: relative;
-  transition: all .3s cubic-bezier(.2, 0, 0, 1);
+	margin: auto;
+	padding: 1rem 1.25rem;
+	font-family: $default-font;
+	font-size: $fz--base;
+	text-decoration: none;
+	color: $text;
+	position: relative;
+	transition: all .3s cubic-bezier(.2, 0, 0, 1);
 	z-index: 1;
 	text-transform: uppercase;
-  
-  &:after {
-    content: '';
-    display: block;
-    height: 2px;
-    position: absolute;
-    bottom: 5px;
-    right: 1.25rem;
-    left: 1.25rem;
-    background-color: $accent;
-    transition: all .3s cubic-bezier(.2, 0, 0, 1);
-    transform-origin: bottom center;
-    z-index: -1;
-  }
-  
-  &:hover {
-    color: #fff;
-    
-    &:after {
-      right: 0;
-      left: 0;
-      height: 80%;
-    }
-  }
+	&:after {
+		content: '';
+		display: block;
+		height: 2px;
+		position: absolute;
+		bottom: 5px;
+		right: 1.25rem;
+		left: 1.25rem;
+		background-color: $accent;
+		transition: all .3s cubic-bezier(.2, 0, 0, 1);
+		transform-origin: bottom center;
+		z-index: -1;
+	}
+	&:hover {
+		color: #fff;
+		&:after {
+			right: 0;
+			left: 0;
+			height: 80%;
+		}
+	}
 }
-
-
-

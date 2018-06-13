@@ -1,12 +1,11 @@
+
 .s-info-materials {
-	margin-top: 30px;
-	margin-bottom: 30px;
 	position: relative;
 	z-index: 1;
-}
 
 .info-materials {
-	margin-top: -10px;
+	padding-top: 0;
+	margin-top: -20px;
 	
 	.info-material {
 		display: flex;
@@ -107,4 +106,5 @@
 			}
 		}
 	}
+}
 }
