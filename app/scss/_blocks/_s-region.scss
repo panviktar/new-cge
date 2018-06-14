@@ -1,0 +1,72 @@
+	.s-region {
+		.region__map {
+			width: 100%;
+			position: relative;
+		}
+		.svg_region {
+			fill: rgb(206, 206, 206);
+			stroke: #fff;
+			stroke-width: 1px;
+			box-sizing: border-box;
+			transition: all .2s ease;
+			cursor: pointer;
+			&:hover {
+				fill: lighten($accent,30%);
+			}
+			
+		}
+		
+		.svg_text {
+			font-weight: bold;
+			fill: $text;
+			font-size: 5px;
+			font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+			cursor: pointer;
+			background-color: transparent;
+					
+			&:hover .svg_region {
+				fill: lighten($accent,30%);
+			}
+
+			&:hover {
+				text-decoration: underline;
+			}
+			&-big {
+				font-size: 7px;
+			}
+		}
+		.svg_c1 {
+			fill-rule: evenodd;
+			clip-rule: evenodd;
+			fill: #888;
+		}
+
+		.svg_region--active {
+			fill: $accent;
+		&:hover {
+			fill: $accent;
+		}
+			}
+		
+		.svg_text--active {
+			fill:#fff;
+		}
+
+		.svg_c1--active {
+			fill:#fff;
+		}
+
+	
+		// .use {
+		// 	z-index: 100;
+		// 	font-size: 5px;
+		// 	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+		// 	cursor: pointer;
+		// 	fill: $accent;
+		// 	&:hover {
+		// 		fill: $accent2;
+			
+		// 	}
+		// }
+		
+	}

@@ -5,6 +5,8 @@ $(function () {
 $(".info-material__title").equalHeights();
 $(".card__title").equalHeights();
 
+
+// Стрелка вверх
 $(window).scroll(function() {
 	if ($(this).scrollTop() > $(this).height()) {
 		$(".top").addClass("active");
@@ -15,8 +17,8 @@ $(window).scroll(function() {
 	$(".top").click(function(){
 		$("html, body").stop().animate({scrollTop: 0}, "slow", "swing")
 	});
-
-
+// Стрелка вверх end
+// Измерение высоты элемента и подгонка блока
 function onResize() {
 	$('.card__title').equalHeights();
 	}onResize();
@@ -26,24 +28,19 @@ function onResize() {
 		$('.info-material__title').equalHeights();
 		}onResize();
 		window.onresize = function() {onResize()};
-	
+// Измерение высоты элемента и подгонка блока---end
 
-
-
+// Plagin superfish---------------
 $(".top-line .sf-menu").superfish({
 cssArrows: false,
 hoverClass: "no-class",
 delay: 200
 });
 });
-
-
-
 // Plagin superfish END---------------
 
+
 // Plagin mmenu START подключение и стилизация
-
-
 $(".sf-menu").after("<div id='my-menu'>");
 $(".sf-menu").clone().appendTo("#my-menu");
 $("#my-menu").find("*").attr("style", "");
@@ -70,16 +67,13 @@ api.bind("close:finish", function () {
 $(".hamburger").removeClass("is-active");
 })
 
-
 $(".hamburger").click(function () {
 var mmAPI = $("#my-menu").data("mmenu");
 mmAPI.open();
 });
-
 // Plagin mmenu END 
 
 // Карусель .s-services-------------
-
 $(".carousel-services").on('initialized.owl.carousel', function() {
 setTimeout(function() {
 carouselService()
@@ -119,18 +113,14 @@ var ths = $(this),
 });
 } carouselService();
 
-
-
 // Вставляем span для оформления заголовков в .s-services--------------
 $(".carousel-services__wraper .carousel-services__title").each(function() {
 var ths = $(this);
 ths.html(ths.html().replace(/(\S+)\s*$/, "<span>$1</span>"));
 });
-
 // Карусель .s-services-------------END
 
 // Карусель .s-partners-------------
-
 $(".partners").owlCarousel({
 loop: true,
 smartSpeed: 700,
@@ -160,9 +150,9 @@ responsive: {
 }
 }
 });
+// Карусель .s-partners-------------end
 
 // Карусель .s-info-materials---------
-
 $(".info-materials").owlCarousel({
 loop: true,
 smartSpeed: 700,
@@ -181,7 +171,6 @@ responsive: {
 768: {
 	items: 3
 },
-
 900: {
 	items: 3
 },
@@ -190,10 +179,6 @@ responsive: {
 }
 }
 });
-
-
-
-
 // Карусель .s-info-materials---------END
 
 // Resize window
@@ -201,10 +186,6 @@ function onResize() {
 $('.carousel-services__content').equalHeights();
 }onResize();
 window.onresize = function() {onResize()};
-
-
-
-// Custom JS
 
 // BigSlider-------------------------
 // Params
@@ -293,14 +274,13 @@ var navSliderOptions = {
 	}
 };
 var navSlider = new Swiper(navSliderSelector, navSliderOptions);
-
 // Matching sliders
 mainSlider.controller.control = navSlider;
 navSlider.controller.control = mainSlider;
+// BigSlider end--------------------
 
-// BigSlider END--------------------
-
-
+// Preloader
 $(window).on("load", function() {
 	$(".preloader").delay(1000).fadeOut("slow");
 });
+// Preloader end
