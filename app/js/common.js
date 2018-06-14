@@ -183,7 +183,7 @@ responsive: {
 },
 
 900: {
-	items: 4
+	items: 3
 },
 1200: {
 	items: 4
@@ -299,11 +299,8 @@ mainSlider.controller.control = navSlider;
 navSlider.controller.control = mainSlider;
 
 // BigSlider END--------------------
-foo.onclick = function(){
-this.classList.toggle('rotate')
-};
-
-// s-news карточки
 
 
-
+$(window).on("load", function() {
+	$(".preloader").delay(1000).fadeOut("slow");
+});
