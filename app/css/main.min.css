@@ -3691,49 +3691,6 @@ html.mm-opened {
   width: 100%;
   position: relative; }
 
-.s-region .svg_region {
-  fill: #cecece;
-  stroke: #fff;
-  stroke-width: 1px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
-  cursor: pointer; }
-  .s-region .svg_region:hover {
-    fill: #7fd88b; }
-
-.s-region .svg_text {
-  font-weight: bold;
-  fill: #253031;
-  font-size: 5px;
-  font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
-  cursor: pointer;
-  background-color: transparent; }
-  .s-region .svg_text:hover .svg_region {
-    fill: #7fd88b; }
-  .s-region .svg_text:hover {
-    text-decoration: underline; }
-  .s-region .svg_text-big {
-    font-size: 7px; }
-
-.s-region .svg_c1 {
-  fill-rule: evenodd;
-  clip-rule: evenodd;
-  fill: #888; }
-
-.s-region .svg_region--active {
-  fill: #2c923a; }
-  .s-region .svg_region--active:hover {
-    fill: #2c923a; }
-
-.s-region .svg_text--active {
-  fill: #fff; }
-
-.s-region .svg_c1--active {
-  fill: #fff; }
-
 /* =====  End of my-content  ====== */
 /* ==============================
 =            Footer           =
