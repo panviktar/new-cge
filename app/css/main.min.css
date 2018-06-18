@@ -3687,9 +3687,35 @@ html.mm-opened {
         .s-info-materials .info-materials .owl-nav > button.owl-next {
           right: -40px; }
 
-.s-region .region__map {
-  width: 100%;
-  position: relative; }
+.s-region {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .s-region .region__map {
+    position: relative;
+    text-align: center; }
+    .s-region .region__map .region__map-all {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%; }
+    .s-region .region__map .map-region {
+      fill: #c6c6c6;
+      opacity: 0;
+      -webkit-transition: opacity 0.3s ease;
+      -o-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease; }
+      .s-region .region__map .map-region:hover {
+        fill: #a6e4ae;
+        opacity: 0.4; }
+      .s-region .region__map .map-region:active {
+        fill: #cdf0d2;
+        opacity: 0.3; }
+      .s-region .region__map .map-region--active {
+        fill: #57cd68;
+        opacity: 0.4; }
 
 /* =====  End of my-content  ====== */
 /* ==============================
