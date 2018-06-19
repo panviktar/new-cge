@@ -196,3 +196,23 @@ $secondColor:#0087AC;
 		}
 	}
 }
+
+.c-link {
+	
+	opacity: 1;
+	text-decoration: underline;
+	
+	font-family: $default-font;
+	font-size: $fz--base;
+	color: $text;
+	position: relative;
+	transition: all 0.4s ease;
+	&:hover {
+		opacity: 0.8;
+		text-decoration: none;
+		color: $accent;
+	}
+	&:active {
+		opacity: 0.5;
+	}	
+}

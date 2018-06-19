@@ -168,6 +168,23 @@
       left: 0;
       height: 80%; }
 
+.c-link {
+  opacity: 1;
+  text-decoration: underline;
+  font-family: "PTSansRegular-example", sans-serif;
+  font-size: 16px;
+  color: #253031;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  .c-link:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    color: #2c923a; }
+  .c-link:active {
+    opacity: 0.5; }
+
 @font-face {
   font-family: "PTSansRegular-example";
   font-weight: bold;
@@ -3733,6 +3750,8 @@ html.mm-opened {
         -ms-flex-pack: center;
             justify-content: center;
     border: 1px solid #dbdfdf;
+    -webkit-box-shadow: 0px 0px 14px 5px #e4e4e4;
+            box-shadow: 0px 0px 14px 5px #e4e4e4;
     padding: 30px 30px 10px 30px;
     position: relative;
     z-index: 1;
@@ -3748,13 +3767,14 @@ html.mm-opened {
     text-align: center;
     margin-bottom: 35px;
     position: relative;
-    line-height: 1.4; }
+    line-height: 1.4;
+    font-size: 18px; }
     .s-region .region__legend-title::before {
       content: "";
       position: absolute;
       width: 100%;
-      height: 1px;
-      background-color: #c1c6c6;
+      height: 2px;
+      background-color: #2c923a;
       bottom: -20px;
       left: 0; }
   .s-region .region__legend__list {
@@ -3763,13 +3783,7 @@ html.mm-opened {
   .s-region .region__legend__item {
     padding: 6px 0; }
     .s-region .region__legend__item a {
-      font-size: 16px;
-      color: #253031;
-      -webkit-transition: all 0.4s ease;
-      -o-transition: all 0.4s ease;
-      transition: all 0.4s ease; }
-      .s-region .region__legend__item a:hover {
-        text-decoration: underline; }
+      font-size: 16px; }
     .s-region .region__legend__item i {
       margin-right: 10px;
       font-size: 13px;
@@ -3787,9 +3801,9 @@ html.mm-opened {
     .s-region .region__map .map-region {
       fill: #c6c6c6;
       opacity: 0;
-      -webkit-transition: opacity 0.3s ease;
-      -o-transition: opacity 0.3s ease;
-      transition: opacity 0.3s ease; }
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
       .s-region .region__map .map-region:hover {
         fill: #a6e4ae;
         opacity: 0.4; }
@@ -3798,7 +3812,10 @@ html.mm-opened {
         opacity: 0.3; }
       .s-region .region__map .map-region--active {
         fill: #57cd68;
-        opacity: 0.4; }
+        opacity: 0.5; }
+        .s-region .region__map .map-region--active:hover {
+          fill: #57cd68;
+          opacity: 0.5; }
 
 /* =====  End of my-content  ====== */
 /* ==============================
@@ -4294,6 +4311,23 @@ section {
       right: 0;
       left: 0;
       height: 80%; }
+
+.c-link {
+  opacity: 1;
+  text-decoration: underline;
+  font-family: "PTSansRegular-example", sans-serif;
+  font-size: 16px;
+  color: #253031;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  .c-link:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    color: #2c923a; }
+  .c-link:active {
+    opacity: 0.5; }
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
