@@ -285,18 +285,16 @@ $(window).on("load", function() {
 });
 // Preloader end
 
-// $("#svg8").on("click", ".map-region", function(){
+$("#svg8").on("click", ".map-region", function(){
 
-// 				$("#svg8 .map-region").removeClass("map-region--active"); //удаляем класс во всех вкладках
+				$("#svg8 .map-region").removeClass("map-region--active"); //удаляем класс во всех вкладках
 
-// 				$(this).addClass(" map-region--active"); //добавляем класс текущей (нажатой)
+				$(this).addClass(" map-region--active"); //добавляем класс текущей (нажатой)
 	
-// 		});
+		});
 
+		
 		$("#svg8").on("click", ".map-region", function(){
 			$(".region__info").html($(this).attr("description-data"));
 			$(".region__info").fadeIn();
-		// 	},
-		// function(){
-		// 	$(".region__info--grodno").fadeOut(50);
 		});

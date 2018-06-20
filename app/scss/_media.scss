@@ -304,6 +304,42 @@
 			}
 		}
 	} // S-SERVICES END-----
+	// S-REGION---------------
+	.s-region {
+		.region__legend {
+			margin-top: -50px;
+			}
+		.region__title {
+			font-size: $fz--xbase;
+			margin-bottom: 20px;
+		}
+	.region__info {
+		padding: 20px 20px 10px 20px;
+	}
+	.region__legend-title {
+		font-size: $fz--small;
+		margin-bottom: 25px;
+	}
+	.region__legend__item {
+		padding: 2px 0;
+		a {
+		font-size: $fz--xxsmall;	
+		}
+
+		span {
+			font-size: $fz--xxsmall;	
+		}
+		
+		i {
+			margin-right: 6px;
+			font-size: 10px;
+		}
+	}
+	.region__map-png {
+		width: 350px;
+	}
+	}
+	// S-REGION---------------END
 	/*==========  MY-CONTENT END ==========*/
 	/*==========  MY-FOOTER  ==========*/
 	.main-footer {
@@ -481,6 +517,61 @@
 			}
 		}
 	} // S-INFO-MATERIALS ------------END-
+		// S-REGION---------------
+		.s-region { 
+			position: relative;
+			.region__legend {
+				position: absolute;
+				top: 10px;
+				left: 0;
+				margin-top: 0;
+			}
+
+		.region__title {
+				display: none;
+				// font-size: $fz--base;
+				// padding: 7px 10px;
+				// margin-bottom: 20px;
+			}
+		.region__info {
+			width: 55%;
+			padding: 10px 10px 0 10px;
+			border: none;
+		}
+		.region__legend-title {
+			font-size: $fz--xxsmall;
+			margin-bottom: 10px;
+			&::before {
+				bottom: -10px;
+			}
+		}
+		.region__legend__item {
+			padding: 0;
+			a {
+			font-size: $fz--xsmall;	
+			line-height: 1.1;
+			}
+	
+			span {
+				font-size: $fz--xsmall;	
+				line-height: 1.1;
+			}
+			
+			i {
+				margin-right: 3px;
+				font-size: 8px;
+			}
+		}
+		.region__map {
+			margin-left: 100px;
+			margin-top: 20px;
+	
+		}
+		.region__map-png {
+			width: 350px;
+		}
+		}
+		// S-REGION---------------END
 	/*==========  MY-CONTENT END ==========*/
 	.main-footer {
 		&__wrapper {
@@ -603,6 +694,28 @@
 			}
 		}
 	} // S-PARTNERS-----------------end
+		// S-REGION---------------
+		.s-region { 
+			
+		.region__info {
+			width: 100%;
+			padding: 10px 10px 0 10px;
+			border: none;
+			position: relative;
+			z-index: 1;
+		}
+			
+		.region__map {
+			margin-left: 0;
+			margin-top: 180px;
+			position: relative;
+			z-index: 99;
+			}
+		.region__map-png {
+			width: 250px;
+		}
+		}
+		// S-REGION---------------END
 	/*==========  MY-CONTENT END ==========*/
 }
 
