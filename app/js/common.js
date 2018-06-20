@@ -294,8 +294,8 @@ $(window).on("load", function() {
 // 		});
 
 		$("#svg8").on("click", ".map-region", function(){
-			$(".region__info--grodno").html($(this).attr("description-data"));
-			$(".region__info--grodno").fadeIn();
+			$(".region__info").html($(this).attr("description-data"));
+			$(".region__info").fadeIn();
 		// 	},
 		// function(){
 		// 	$(".region__info--grodno").fadeOut(50);
