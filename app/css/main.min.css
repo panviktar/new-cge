@@ -3831,6 +3831,118 @@ html.mm-opened {
 
 /* =====  End of my-content  ====== */
 /* ==============================
+=            DEPORT       =
+============================== */
+.s-deport-aids {
+  padding: 0; }
+  .s-deport-aids__title-wraper {
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .s-deport-aids__title {
+    font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+    font-size: 43px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 2px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    letter-spacing: 1.4;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end; }
+  .s-deport-aids__contakt {
+    padding: 20px 0 0 0;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    position: relative; }
+    .s-deport-aids__contakt::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 0.3; }
+  .s-deport-aids__contakt-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    list-style: none; }
+    .s-deport-aids__contakt-list:last-child {
+      margin-right: 0; }
+  .s-deport-aids__contakt-item {
+    font-size: 15px;
+    margin-bottom: 3px;
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    margin-right: 40px;
+    text-align: center; }
+    .s-deport-aids__contakt-item a {
+      color: #fff;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .s-deport-aids__contakt-item a:hover {
+        color: #e2b11a;
+        opacity: 1; }
+      .s-deport-aids__contakt-item a i {
+        opacity: 0.7;
+        margin-right: 8px;
+        font-size: 10px;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+  .s-deport-aids.principal {
+    display: block; }
+  .s-deport-aids__contakt-photo {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+
+/* =====  deport  ====== */
+/* ==============================
 =            Footer           =
 ============================== */
 .main-footer__wrapper {

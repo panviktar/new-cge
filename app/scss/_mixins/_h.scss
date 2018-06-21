@@ -16,6 +16,17 @@
 	padding: 12px 20px;
 }
 
+@mixin h2-deport {
+	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+	font-size: $fz--xxlarge;
+	line-height: 1;
+	font-weight: $bold;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 2px;	
+}
+
 @mixin h3 {
 	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
 	font-size: $fz--xmedium;
