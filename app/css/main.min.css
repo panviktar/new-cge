@@ -3064,11 +3064,7 @@ html.mm-opened {
   .swiper-container .swiper-slide-active {
     visibility: visible; }
   .swiper-container:hover .slide-bgimg::before {
-<<<<<<< HEAD
     opacity: .5; }
-=======
-    opacity: .4; }
->>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
   .swiper-container.nav-slider {
     padding: 0 0 0 15px; }
     .swiper-container.nav-slider .swiper-slide {
@@ -3129,11 +3125,7 @@ html.mm-opened {
     padding-right: 10%;
     padding-left: 10%;
     color: #fff;
-<<<<<<< HEAD
     text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 2px;
-=======
-    text-shadow: #000 1px 1px 2px;
->>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3227,59 +3219,9 @@ html.mm-opened {
 .s-news {
   color: #253031;
   text-rendering: optimizeLegibility; }
-<<<<<<< HEAD
-  .s-news .section-title-wraper .section-title {
-    margin-right: 20px; }
-  .s-news .section-title-wraper .btn-link {
-<<<<<<< HEAD
-=======
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 12px;
-    opacity: 0.88; }
-    .s-news .section-title-wraper .btn-link:hover {
-      opacity: 1; }
-  .s-news .s-news-wraper {
-    padding-top: 50px;
-    padding-bottom: 30px;
-    position: relative;
-    z-index: 5; }
-    .s-news .s-news-wraper::before {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      content: "";
-      background-color: #fff;
-      z-index: 1;
-      opacity: 0.9; }
-  .s-news a.btn-card {
-    background: #2c923a;
-    -webkit-border-radius: 4px;
-            border-radius: 4px;
-    -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
-            box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
-    color: #fff;
->>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 12px;
-    opacity: 0.88; }
-    .s-news .section-title-wraper .btn-link:hover {
-      opacity: 1; }
-=======
->>>>>>> map
   .s-news .s-news-wraper {
     position: relative;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    z-index: 5;
-    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
-=======
     z-index: 5; }
->>>>>>> map
     .s-news .s-news-wraper::before {
       position: absolute;
       width: 100%;
@@ -3291,32 +3233,6 @@ html.mm-opened {
       z-index: 1;
       opacity: 0.9; }
   .s-news .cards-news {
-=======
-    text-decoration: none;
-    -webkit-transition: all 0.1s 0s ease-out;
-    -o-transition: all 0.1s 0s ease-out;
-    transition: all 0.1s 0s ease-out; }
-  .s-news .btn-card:hover {
-    background: #32a642;
-    -webkit-box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
-            box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
-    -webkit-transform: translateY(-2px);
-        -ms-transform: translateY(-2px);
-            transform: translateY(-2px);
-    -webkit-transition: all 0.25s 0s ease-out;
-    -o-transition: all 0.25s 0s ease-out;
-    transition: all 0.25s 0s ease-out; }
-  .s-news .btn-card:active {
-    background: #206b2a;
-    -webkit-box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
-            box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
-    -webkit-transform: translate3d(0, 1px, 0);
-            transform: translate3d(0, 1px, 0);
-    -webkit-transition: all 0.025s 0s ease-out;
-    -o-transition: all 0.025s 0s ease-out;
-    transition: all 0.025s 0s ease-out; }
-  .s-news .cards {
->>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
     text-align: center;
     display: -webkit-box;
     display: -webkit-flex;
@@ -3326,12 +3242,8 @@ html.mm-opened {
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
-<<<<<<< HEAD
             flex-direction: row;
     position: relative; }
-=======
-            flex-direction: row; }
->>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
   .s-news .card {
     -webkit-perspective: 1000;
             perspective: 1000;
@@ -3340,7 +3252,6 @@ html.mm-opened {
     -webkit-transition: all 0.3s 0s ease-in;
     -o-transition: all 0.3s 0s ease-in;
     transition: all 0.3s 0s ease-in;
-<<<<<<< HEAD
     z-index: 10;
     margin-bottom: 20px; }
     .s-news .card:last-child {
@@ -3469,132 +3380,6 @@ html.mm-opened {
       line-height: 1.3;
       text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 2px;
       font-size: 20px; }
-=======
-    z-index: 10; }
-    .s-news .card:hover {
-      -webkit-transform: scale(1.02) !important;
-          -ms-transform: scale(1.02) !important;
-              transform: scale(1.02) !important; }
-    .s-news .card img {
-      width: 100%; }
-    .s-news .card .card-title {
-      padding: 10px 0 10px 0;
-      position: relative;
-      z-index: 20; }
-      .s-news .card .card-title a.toggle-info {
-        -webkit-border-radius: 32px;
-                border-radius: 32px;
-        height: 32px;
-        padding: 0;
-        position: absolute;
-        right: 15px;
-        bottom: 5px;
-        width: 32px; }
-        .s-news .card .card-title a.toggle-info span {
-          background: #fff;
-          display: block;
-          height: 2px;
-          position: absolute;
-          top: 16px;
-          -webkit-transition: all 0.15s 0s ease-out;
-          -o-transition: all 0.15s 0s ease-out;
-          transition: all 0.15s 0s ease-out;
-          width: 12px; }
-        .s-news .card .card-title a.toggle-info span.left {
-          right: 14px;
-          -webkit-transform: rotate(45deg);
-              -ms-transform: rotate(45deg);
-                  transform: rotate(45deg); }
-        .s-news .card .card-title a.toggle-info span.right {
-          left: 14px;
-          -webkit-transform: rotate(-45deg);
-              -ms-transform: rotate(-45deg);
-                  transform: rotate(-45deg); }
-      .s-news .card .card-title .card-id {
-        font-size: 12px;
-        text-transform: uppercase;
-        border: 1px solid #2c923a;
-        padding: 1px 5px;
-        color: #51696b; }
-      .s-news .card .card-title h5 {
-        font-size: 16px;
-        font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
-        line-height: 1.3;
-        font-weight: 700;
-        text-transform: uppercase;
-        padding-right: 15px;
-        padding-top: 8px; }
-      .s-news .card .card-title .card-data {
-        font-style: italic;
-        font-size: 12px;
-        color: #51696b; }
-    .s-news .card .card-description {
-      padding: 10px 3px 10px 8px;
-      position: absolute;
-      font-size: 15px;
-      line-height: 1.2;
-      z-index: 50;
-      background: #fff;
-      -webkit-box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.15);
-              box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.15); }
-    .s-news .card .card-flap {
-      background: #d9d9d9;
-      position: absolute;
-      -webkit-transform-origin: top;
-          -ms-transform-origin: top;
-              transform-origin: top;
-      -webkit-transform: rotateX(-87deg);
-              transform: rotateX(-87deg);
-      opacity: 0;
-      position: relative;
-      z-index: 55; }
-    .s-news .card .flap1 {
-      -webkit-transition: all 0.3s 0.3s ease-out;
-      -o-transition: all 0.3s 0.3s ease-out;
-      transition: all 0.3s 0.3s ease-out; }
-    .s-news .card .btn-link {
-      display: inline-block;
-      padding: 15px 20px;
-      font-size: 13px;
-      margin-top: -15px; }
-  .s-news div.cards.showing div.card {
-    cursor: pointer;
-    opacity: 0.6;
-    -webkit-transform: scale(0.88);
-        -ms-transform: scale(0.88);
-            transform: scale(0.88); }
-  .s-news div.cards.showing div.card:hover {
-    opacity: 0.94;
-    -webkit-transform: scale(0.92);
-        -ms-transform: scale(0.92);
-            transform: scale(0.92); }
-  .s-news div.card.show {
-    opacity: 1 !important;
-    -webkit-transform: scale(1) !important;
-        -ms-transform: scale(1) !important;
-            transform: scale(1) !important; }
-    .s-news div.card.show div.card-title .toggle-info {
-      background: #ff6666 !important; }
-      .s-news div.card.show div.card-title .toggle-info span {
-        top: 15px; }
-      .s-news div.card.show div.card-title .toggle-info span.left {
-        right: 10px; }
-      .s-news div.card.show div.card-title .toggle-info span.right {
-        left: 10px; }
-    .s-news div.card.show div.card-flap {
-      background: #fff;
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      opacity: 1; }
-    .s-news div.card.show div.flap1 {
-      -webkit-transition: all 0.3s 0s ease-out;
-      -o-transition: all 0.3s 0s ease-out;
-      transition: all 0.3s 0s ease-out; }
-    .s-news div.card.show div.flap2 {
-      -webkit-transition: all 0.3s 0.2s ease-out;
-      -o-transition: all 0.3s 0.2s ease-out;
-      transition: all 0.3s 0.2s ease-out; }
->>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 
 .s-services .carousel-services {
   background-color: #596262; }
@@ -4616,18 +4401,7 @@ section {
     padding: 2px; }
   .s-services .carousel-services__btn {
     font-size: 12px;
-<<<<<<< HEAD
-    opacity: 0.88;
-    margin-right: -5px; }
-    .s-news .section-title-wraper .btn-link:hover {
-      opacity: 1; }
-  .s-news .s-news-wraper {
-<<<<<<< HEAD
-    padding-top: 30px;
-    padding-bottom: 30px; }
-=======
     margin-top: -5px; }
->>>>>>> map
   .info-materials .owl-nav > button.owl-prev {
     left: -15px; }
   .info-materials .owl-nav > button.owl-next {
@@ -4646,11 +4420,6 @@ section {
   .main-footer__map {
     margin-top: 15px; }
   /*==========  MY-FOOTER END ==========*/ }
-=======
-    padding-top: 40px;
-    padding-bottom: 30px; }
-  /*==========  MY-CONTENT END ==========*/ }
->>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 
 @media (max-width: 991.98px) {
   section {
@@ -4764,47 +4533,10 @@ section {
         line-height: 1.4; }
       .swiper-container .content .swiper-slide-btn {
         font-size: 12px; }
-<<<<<<< HEAD
-  .s-news {
-    margin-top: 5px;
-    margin-bottom: 20px; }
-    .s-news .section-title-wraper .section-title {
-      margin-right: 0;
-      font-size: 18px; }
-    .s-news .section-title-wraper .btn-link {
-<<<<<<< HEAD
-      padding: 5px 20px 10px 20px;
-      margin-right: -10px; }
-    .s-news .s-news-wraper {
-      padding-top: 30px;
-      padding-bottom: 30px; }
-    .s-news .card__info {
-      padding: 8px; }
-    .s-news .card__title {
-      padding-top: 5px;
-      font-size: 15px; }
-    .s-news .card__title--big {
-      padding-right: 10px;
-      padding-top: 8px;
-      font-size: 18px; }
-    .s-news .card__text {
-      font-size: 13px; }
-    .s-news .card__data--big {
-      font-size: 12px;
-      margin-top: 5px; }
-=======
-      padding: 5px 20px;
-      margin-right: -10px; }
->>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
-  .section-title {
-    font-size: 20px; }
-  .carousel-services__title {
-=======
   .s-news .card__info {
     padding: 8px; }
   .s-news .card__title {
     padding-top: 5px;
->>>>>>> map
     font-size: 15px; }
   .s-news .card__title--big {
     padding-right: 10px;
@@ -4819,9 +4551,6 @@ section {
     padding: 7%; }
   .s-services .carousel-services__title {
     font-size: 15px; }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     .s-services .carousel-services__title span {
       font-size: 18px; }
   .s-services .carousel-services__btn {
@@ -4849,7 +4578,6 @@ section {
       font-size: 10px; }
   .s-region .region__map-png {
     width: 350px; }
->>>>>>> map
   /*==========  MY-CONTENT END ==========*/
   /*==========  MY-FOOTER  ==========*/
   .main-footer__item--line {
@@ -4858,9 +4586,6 @@ section {
   .main-footer__map {
     margin-top: 14px; }
   /*==========  MY-FOOTER END ==========*/ }
-=======
-  /*==========  MY-CONTENT END ==========*/ }
->>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 
 @media (max-width: 767.98px) {
   .section-title-wraper .section-title {
@@ -4930,13 +4655,6 @@ section {
       .swiper-container .content .caption {
         font-size: 15px;
         line-height: 1.25; }
-<<<<<<< HEAD
-<<<<<<< HEAD
-  .s-news .section-title-wraper .section-title {
-    font-size: 15px;
-    padding: 7px 10px; }
-=======
->>>>>>> map
   .s-news .s-news-wraper {
     padding-bottom: 10px; }
   .s-news .card--big {
@@ -4947,11 +4665,6 @@ section {
     font-size: 10px; }
   .s-news .card__id {
     font-size: 10px; }
-<<<<<<< HEAD
-=======
->>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
-  /*==========  MY-CONTENT END ==========*/ }
-=======
   .carousel-services__content {
     padding: 6%; }
   .carousel-services__title {
@@ -5023,7 +4736,6 @@ section {
     font-size: 12px; }
   .main-footer__copyright {
     font-size: 12px; } }
->>>>>>> map
 
 @media (max-width: 575.98px) {
   /*==========  HEADER  ==========*/
@@ -5088,7 +4800,6 @@ section {
       .swiper-container .content .caption {
         font-size: 13px;
         line-height: 1.2; }
-<<<<<<< HEAD
   .s-news .cards-news {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -5104,10 +4815,6 @@ section {
     left: 15px; }
   .partners .owl-nav > button.owl-next {
     right: 15px; }
-<<<<<<< HEAD
-=======
->>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
-=======
   .s-region .region__info {
     width: 100%;
     padding: 10px 10px 0 10px;
@@ -5121,7 +4828,6 @@ section {
     z-index: 99; }
   .s-region .region__map-png {
     width: 250px; }
->>>>>>> map
   /*==========  MY-CONTENT END ==========*/ }
 
 /*==========  Mobile First  ==========*/
