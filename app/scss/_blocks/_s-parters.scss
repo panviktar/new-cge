@@ -1,7 +1,8 @@
 .s-parters {
-	margin-top: 30px;
-	margin-bottom: 60px;
-}
+	margin-bottom: 20px;
+	padding-bottom: 40px;
+	padding-top: 10px;
+
 
 .partners {
 
@@ -64,11 +65,12 @@
 			padding: 10px;
 			
 			&.owl-prev {
-				left: -30px;
+				left: -40px;
 			}
 			&.owl-next {
-				right: -30px;
+				right: -40px;
 			}
 		}
 	}
+}
 }

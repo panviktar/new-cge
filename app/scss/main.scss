@@ -32,10 +32,10 @@
 
 @import "_blocks/top-info";
 @import "_blocks/s-news";
-
 @import "_blocks/s-services"; 
 @import "_blocks/s-parters"; 
 @import "_blocks/s-info-materials";
+@import "_blocks/s-region";
 /* =====  End of my-content  ====== */
 
 
@@ -66,6 +66,7 @@ body {
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $text;
+	background-color: rgb(242, 242, 242);
 
 	input, textarea {
 		border: #666 1px solid;
@@ -92,6 +93,67 @@ body {
 	text-align: center;
 }
 
+
+@mixin opacity($opacity) {
+	opacity: $opacity / 100;
+	filter: alpha(opacity=$opacity);
+	}
+.preloader {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	background-color: #000;
+	.pulse {
+		position: relative;
+		left: 50%;
+		top: 50vh;
+		margin: -40px -40px 0 0;
+		&::before, &::after {
+			content: "";
+			border: 5px solid #323232;
+			width: 80px;
+			height: 80px;
+			border-radius: 500px;
+			position: absolute;
+		}
+		&::before{
+			animation: pulse-outer .8s ease-in infinite; 
+			
+		}
+		&::after{
+			animation: pulse-inner .8s linear infinite; 
+			
+		}
+	}
+	}
+	@keyframes pulse-outer {
+		0% {
+			@include opacity(100);
+		}
+		50% {
+			@include opacity(50);
+		}
+		100% {
+			@include opacity(0);
+		}
+	}
+	@keyframes pulse-inner {
+		0% {
+			@include opacity(0);
+			transform: scale(0);
+		}
+	
+		100% {
+			@include opacity(100);
+			transform: scale(1);
+		}
+	}
+
+	
+
 b, strong {
 	font-weight: bold;
 }
@@ -101,6 +163,30 @@ section  {
 	background-size: cover;
 	background-position: center;
 	background-color: #fff;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15),inset 0 -1px 0 0 rgba(0,0,0,0.2);
+}
+
+.section-title-wraper {
+	margin-bottom: 15px;
+	.section-title {
+		@include h2;
+		margin-right: 10px;
+		display: inline-block;
+	}
+	.btn-link {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: $fz--min;
+		opacity: 0.88;
+		&:hover {
+			opacity: 1;
+		}
+	}
 }
 
 
@@ -116,6 +202,33 @@ $colors: rgba(255, 0, 19, 0.5), $accent2, #72a8ff;
 	} 
 }
 
-
+.top {
+	position: fixed;
+	bottom: 25px;
+	right: -100px;
+	background-color: #e0e0e0;
+	z-index: 99;
+	border-radius: 50%;
+	color: #666;
+	font-size: 26px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	transition: all .3s ease;
+	opacity: .5;
+	i {
+		line-height: 0;
+	}
+	&:hover {
+		color: #fff;
+		background-color: $accent2;
+		opacity: 1;
+	}
+	&.active {
+		right: 30px;
+	}
+}
 
 @import "media"; // Always at the end
