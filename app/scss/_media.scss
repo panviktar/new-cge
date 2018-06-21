@@ -89,6 +89,7 @@
 				margin-right: -5px;
 				&:hover {
 					opacity: 1;
+<<<<<<< HEAD
 				}
 			}
 		}
@@ -143,6 +144,17 @@
 		}
 	}
 	/*==========  MY-FOOTER END ==========*/
+=======
+				}
+			}
+		}
+		.s-news-wraper {
+			padding-top: 40px;
+			padding-bottom: 30px;
+		}
+	} // S-NEWS END
+	/*==========  MY-CONTENT END ==========*/
+>>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 }
 
 
@@ -247,6 +259,7 @@
 	.s-news {
 		margin-top: 5px;
 		margin-bottom: 20px;
+<<<<<<< HEAD
 
 		.section-title-wraper {
 			.section-title {
@@ -291,6 +304,21 @@
 	}
 	
 		}
+=======
+
+		.section-title-wraper {
+			.section-title {
+				margin-right: 0;
+				font-size: $fz--xbase;
+			}
+			.btn-link {
+				padding: 5px 20px;
+				margin-right: -10px;
+			}
+		}
+
+	}
+>>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 	// S-NEWS END---------------------
 	// S-SERVICES-----------------
 	.section-title {
@@ -309,6 +337,7 @@
 		&__list {
 			li {
 				font-size: $fz--small;
+<<<<<<< HEAD
 			}
 		}
 	} 
@@ -329,6 +358,14 @@
 			}
 		}
 		/*==========  MY-FOOTER END ==========*/
+=======
+			}
+		}
+	} 
+	// S-SERVICES END-----
+
+	/*==========  MY-CONTENT END ==========*/
+>>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 }
 
 
@@ -420,6 +457,7 @@
 			}
 		}
 	} // TOP-INFO END-----------------//
+<<<<<<< HEAD
 	// S-INFO-------------------------
 	.s-news {
 		.section-title-wraper {
@@ -449,6 +487,8 @@
 	
 	
 
+=======
+>>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 	/*==========  MY-CONTENT END ==========*/
 }
 
@@ -520,6 +560,7 @@
 				line-height: 1.2;
 			}
 		}
+<<<<<<< HEAD
 	} 
 	.s-news {
 		.cards-news {
@@ -562,6 +603,9 @@
 			// S-PARTNERS-----------------end
 			
 
+=======
+	} // TOP-INFO END-----------------//
+>>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 	/*==========  MY-CONTENT END ==========*/
 }
 

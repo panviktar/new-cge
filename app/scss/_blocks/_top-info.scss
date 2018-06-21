@@ -72,7 +72,11 @@
 	}
 	&:hover {
 		.slide-bgimg::before {
+<<<<<<< HEAD
 			opacity: .5;
+=======
+			opacity: .4;
+>>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 		}
 	}
 	&.nav-slider {
@@ -142,8 +146,12 @@
 		padding-right: 10%;
 		padding-left: 10%;
 		color: $text--white;
+<<<<<<< HEAD
 		
 		text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 2px;
+=======
+		text-shadow: #000 1px 1px 2px;
+>>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
@@ -189,7 +197,10 @@
 			opacity: 0;
 			transition: opacity .2s ease, transform .4s ease;
 			line-height: 1.4;
+<<<<<<< HEAD
 			
+=======
+>>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 			&.show {
 				transform: translateX(0);
 				opacity: 1;

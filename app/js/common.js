@@ -3,6 +3,7 @@
 // Подключение equalHeights выравнивание контейнера по высоте
 $(function () {
 $(".info-material__title").equalHeights();
+<<<<<<< HEAD
 $(".card__title").equalHeights();
 
 
@@ -18,6 +19,10 @@ function onResize() {
 	
 
 
+=======
+$(".info-material__text").equalHeights();
+$(".card-title p").equalHeights();
+>>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 
 $(".top-line .sf-menu").superfish({
 cssArrows: false,
@@ -126,6 +131,7 @@ smartSpeed: 700,
 dots: false, 	
 nav: true,
 navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+<<<<<<< HEAD
 
 responsiveClass: true,
 responsive: {
@@ -146,6 +152,27 @@ responsive: {
 
 1200: {
 	items: 5
+=======
+
+responsiveClass: true,
+responsive: {
+0: {
+	items: 1
+},
+
+
+
+768: {
+	items: 2
+},
+
+990: {
+	items: 3
+},
+
+1200: {
+	items: 4
+>>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 }
 }
 });
@@ -168,6 +195,7 @@ responsive: {
 },
 
 768: {
+<<<<<<< HEAD
 	items: 3
 },
 
@@ -176,6 +204,16 @@ responsive: {
 },
 1200: {
 	items: 5
+=======
+	items: 2
+},
+
+900: {
+	items: 3
+},
+1200: {
+	items: 4
+>>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 }
 }
 });
@@ -294,5 +332,52 @@ this.classList.toggle('rotate')
 
 // s-news карточки
 
+<<<<<<< HEAD
 
+=======
+$(document).ready(function(){
+var zindex = 10;
+
+$("div.card").click(function(e){
+e.preventDefault();
+
+var isShowing = false;
+
+if ($(this).hasClass("show")) {
+	isShowing = true
+}
+
+if ($("div.cards").hasClass("showing")) {
+	// a card is already in view
+	$("div.card.show")
+		.removeClass("show");
+
+	if (isShowing) {
+		// this card was showing - reset the grid
+		$("div.cards")
+			.removeClass("showing");
+	} else {
+		// this card isn't showing - get in with it
+		$(this)
+			.css({zIndex: zindex})
+			.addClass("show");
+
+	}
+
+	zindex++;
+
+} else {
+	// no cards in view
+	$("div.cards")
+		.addClass("showing");
+	$(this)
+		.css({zIndex:zindex})
+		.addClass("show");
+
+	zindex++;
+}
+
+});
+});
+>>>>>>> a81f4bdbfb5cd03ed469125c321eb9be11f6ea8f
 
