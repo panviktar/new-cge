@@ -1,3 +1,5 @@
+@import "_mixins/h";
+
 // Customization FONTS"
 $default-font: "PTSansRegular-example",
 sans-serif;
@@ -61,6 +63,11 @@ $gold: #e2b11a;
 $salmon: #ff6666;
 $primaryColor: #4A90E2;
 $secondColor:#0087AC;
+
+
+/* ==============================
+=            Кнопки           =
+============================== */
 .btn-bigslider {
 	position: relative;
 	text-decoration: none;
@@ -196,12 +203,13 @@ $secondColor:#0087AC;
 		}
 	}
 }
+/* =====  End of buttons  ====== */
+
+// Ссылки в тексте
 
 .c-link {
-	
 	opacity: 1;
 	text-decoration: underline;
-	
 	font-family: $default-font;
 	font-size: $fz--base;
 	color: $text;
@@ -215,4 +223,24 @@ $secondColor:#0087AC;
 	&:active {
 		opacity: 0.5;
 	}	
+}
+
+// Заголовки секций 
+.section-title-wraper {
+	margin-bottom: 15px;
+	.section-title {
+		@include h2;
+		margin-right: 10px;
+		display: inline-block;
+	}
+	
+	.btn-link {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: $fz--min;
+		opacity: 0.88;
+		&:hover {
+			opacity: 1;
+		}
+	}
 }

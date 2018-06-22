@@ -13,6 +13,9 @@
 /* 30px */
 /* 36px */
 /* 42px */
+/* ==============================
+=            Кнопки           =
+============================== */
 @import url(../libs/font-awesome/css/fontawesome-all.min.css);
 @import url(../libs/hamburger/hamburgers.min.css);
 @import url(../libs/mmenu/mmenu/jquery.mmenu.all.css);
@@ -168,6 +171,7 @@
       left: 0;
       height: 80%; }
 
+/* =====  End of buttons  ====== */
 .c-link {
   opacity: 1;
   text-decoration: underline;
@@ -184,6 +188,27 @@
     color: #2c923a; }
   .c-link:active {
     opacity: 0.5; }
+
+.section-title-wraper {
+  margin-bottom: 15px; }
+  .section-title-wraper .section-title {
+    font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #253031;
+    border: 1px solid #dbdfdf;
+    padding: 12px 20px;
+    margin-right: 10px;
+    display: inline-block; }
+  .section-title-wraper .btn-link {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0.88; }
+    .section-title-wraper .btn-link:hover {
+      opacity: 1; }
 
 @font-face {
   font-family: "PTSansRegular-example";
@@ -3833,16 +3858,16 @@ html.mm-opened {
 /* ==============================
 =            DEPORT       =
 ============================== */
-.s-deport-aids {
+.deport-top {
   padding: 0; }
-  .s-deport-aids__title-wraper {
+  .deport-top__title-wraper {
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;
@@ -3857,7 +3882,7 @@ html.mm-opened {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-  .s-deport-aids__title {
+  .deport-top__title {
     font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
     font-size: 43px;
     line-height: 1;
@@ -3874,13 +3899,28 @@ html.mm-opened {
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
             align-self: flex-end; }
-  .s-deport-aids__contakt {
-    padding: 20px 0 0 0;
+  .deport-top__contakt {
+    padding: 10px 0 0 0;
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
             align-self: flex-end;
-    position: relative; }
-    .s-deport-aids__contakt::before {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #fff;
+    font-size: 15px; }
+    .deport-top__contakt::before {
       position: absolute;
       content: "";
       top: 0;
@@ -3889,7 +3929,7 @@ html.mm-opened {
       height: 100%;
       background-color: #000;
       opacity: 0.3; }
-  .s-deport-aids__contakt-list {
+  .deport-top__contakt-list {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3897,49 +3937,69 @@ html.mm-opened {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     text-decoration: none;
     list-style: none; }
-    .s-deport-aids__contakt-list:last-child {
+    .deport-top__contakt-list:last-child {
       margin-right: 0; }
-  .s-deport-aids__contakt-item {
-    font-size: 15px;
-    margin-bottom: 3px;
-    -webkit-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
-    margin-right: 40px;
-    text-align: center; }
-    .s-deport-aids__contakt-item a {
+  .deport-top__contakt-item {
+    margin-bottom: 2px; }
+    .deport-top__contakt-item a {
       color: #fff;
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
-      .s-deport-aids__contakt-item a:hover {
+      transition: all 0.3s ease;
+      font-size: 15px;
+      -webkit-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease; }
+      .deport-top__contakt-item a:hover {
         color: #e2b11a;
         opacity: 1; }
-      .s-deport-aids__contakt-item a i {
+      .deport-top__contakt-item a i {
         opacity: 0.7;
         margin-right: 8px;
         font-size: 10px;
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease; }
-  .s-deport-aids.principal {
-    display: block; }
-  .s-deport-aids__contakt-photo {
-    width: 80px;
-    height: 80px;
+  .deport-top__principal {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 10px 0;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .deport-top__principal span {
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      color: #fff; }
+  .deport-top__contakt-photo {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    width: 90px;
+    height: 90px;
     background-color: #fff;
     -webkit-background-size: contain;
             background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     -webkit-border-radius: 50%;
-            border-radius: 50%; }
+            border-radius: 50%;
+    margin-right: 15px; }
 
 /* =====  deport  ====== */
 /* ==============================
@@ -4219,27 +4279,6 @@ section {
   -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 -1px 0 0 rgba(0, 0, 0, 0.2); }
 
-.section-title-wraper {
-  margin-bottom: 15px; }
-  .section-title-wraper .section-title {
-    font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
-    font-size: 24px;
-    line-height: 1;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #253031;
-    border: 1px solid #dbdfdf;
-    padding: 12px 20px;
-    margin-right: 10px;
-    display: inline-block; }
-  .section-title-wraper .btn-link {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 12px;
-    opacity: 0.88; }
-    .section-title-wraper .btn-link:hover {
-      opacity: 1; }
-
 .carousel-services .owl-item:nth-child(3n+1) {
   background-color: rgba(255, 0, 19, 0.5); }
 
@@ -4288,6 +4327,9 @@ section {
 /* 30px */
 /* 36px */
 /* 42px */
+/* ==============================
+=            Кнопки           =
+============================== */
 .btn-bigslider {
   position: relative;
   text-decoration: none;
@@ -4436,6 +4478,7 @@ section {
       left: 0;
       height: 80%; }
 
+/* =====  End of buttons  ====== */
 .c-link {
   opacity: 1;
   text-decoration: underline;
@@ -4452,6 +4495,27 @@ section {
     color: #2c923a; }
   .c-link:active {
     opacity: 0.5; }
+
+.section-title-wraper {
+  margin-bottom: 15px; }
+  .section-title-wraper .section-title {
+    font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #253031;
+    border: 1px solid #dbdfdf;
+    padding: 12px 20px;
+    margin-right: 10px;
+    display: inline-block; }
+  .section-title-wraper .btn-link {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0.88; }
+    .section-title-wraper .btn-link:hover {
+      opacity: 1; }
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {

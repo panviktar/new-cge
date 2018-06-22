@@ -1,30 +1,33 @@
-.s-deport-aids  {
+.deport-top {
 	padding: 0;
 	&__title-wraper {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
-  height: 80vh;
-	box-sizing: border-box;
-	display: flex;
-	justify-content: center;
-	position: relative;
-	flex-wrap: wrap;
-	
-}
-&__title {
-	@include h2-deport;
-	display: flex;
-	letter-spacing: 1.4;
-	align-self:flex-end;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		width: 100%;
+		height: 70vh;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		flex-wrap: wrap;
 	}
-
+	&__title {
+		@include h2-deport;
+		display: flex;
+		letter-spacing: 1.4;
+		align-self: flex-end;
+	}
 	&__contakt {
-		padding: 20px 0 0 0;
+		padding: 10px 0 0 0;
 		align-self: flex-end;
 		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		color: #fff;
+		font-size: $fz--small;
 		&::before {
 			position: absolute;
 			content: "";
@@ -36,10 +39,10 @@
 			opacity: 0.3;
 		}
 	}
-
 	&__contakt-list {
 		display: flex;
 		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: center;
 		text-decoration: none;
 		list-style: none;
@@ -47,16 +50,13 @@
 			margin-right: 0;
 		}
 	}
-
 	&__contakt-item {
-		font-size: $fz--small;
-		margin-bottom: 3px;
-		transition: all .25s ease;
-		margin-right: 40px;
-		text-align: center;
+		margin-bottom: 2px;
 		a {
 			color: #fff;
 			transition: all 0.3s ease;
+			font-size: $fz--small;
+			transition: all .25s ease;
 			&:hover {
 				color: $accent2;
 				opacity: 1;
@@ -69,18 +69,24 @@
 			}
 		}
 	}
-
-	&.principal {
-		display: block;
+	&__principal {
+		display: flex;
+		margin: 0 0 10px 0;
+		justify-content: flex-end;
+		span {
+			align-self: center;
+			color: #fff;
+		}
 	}
-
 	&__contakt-photo {
-		width: 80px;
-		height: 80px;
+		align-self: center;
+		width: 90px;
+		height: 90px;
 		background-color: #fff;
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
 		border-radius: 50%;
+		margin-right: 15px;
 	}
 }
