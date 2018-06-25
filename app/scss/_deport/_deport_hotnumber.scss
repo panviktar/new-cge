@@ -1,0 +1,40 @@
+.s-deport-hotphone {
+	&__wraper {
+		padding: 0 20px;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+	}
+
+	&__img {
+		width: 40%;
+		margin-right: 10px;
+		img {
+		width: 100%;
+		}
+	}
+
+	&__info {
+		p {
+			font-size: $fz--xxsmall;
+			line-height: 1.5;
+		}
+		span {
+			text-transform: uppercase;
+			font-weight:$bold;
+			font-size: $fz--small;
+		}
+		a {
+			@include link;
+			border: 1px solid $accent;
+			padding:  8px 15px;
+			&:hover {
+				text-decoration: none;
+			}
+
+		
+		}
+	}
+}

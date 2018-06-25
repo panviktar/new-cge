@@ -12,6 +12,7 @@
 
   &:active {
     color: $green;
-    text-decoration: none;
+		text-decoration: none;
+		opacity: 0.6;
   }
 }
