@@ -1,0 +1,23 @@
+
+.s-deport-function {
+
+	&__wraper {
+		padding: 0 40px;
+	}
+
+	&__title {
+		@include h2;
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+	}
+
+	&__item {
+		font-size: $fz--small;
+	}
+
+};

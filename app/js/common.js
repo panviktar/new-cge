@@ -4,8 +4,12 @@
 $(function () {
 	$(".info-material__title").equalHeights();
 	$(".card__title").equalHeights();
-	
-	
+
+	// Гармошка, кнопка открытия всех элементов
+		$("#all").click(function () {
+		$('input:checkbox').not(this).prop('checked', this.checked);
+});
+
 	// Стрелка вверх
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > $(this).height()) {
@@ -298,3 +302,6 @@ $(function () {
 				$(".region__info").html($(this).attr("description-data"));
 				$(".region__info").fadeIn();
 			});
+
+
+
