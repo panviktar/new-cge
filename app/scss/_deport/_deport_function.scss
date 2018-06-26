@@ -1,27 +1,37 @@
-.s-deport-function {
-
+.s-deport-container {
 	&__wraper {
 		padding: 0 40px;
 		width: 80%;
 		margin: 0 auto;
 	}
 
-	&__title {
-		@include h2;
-		display: inline-block;
+	.section-title-wraper {
+		display: flex;
+		justify-content: center;
 		margin-bottom: 0;
 	}
+	
 	&__title-min {
+		font-size: $fz--small;
 		text-transform: uppercase;
 		font-weight: $bold;
+		
 	}
 
 	&__list {
 		margin: 0 0 0 0;
-		padding: 15px 15px 15px 25px;
+		padding: 5px 15px 15px 25px;
 	}
 
 	&__item {
 		font-size: $fz--xxsmall;
 	}
-};
+}
+
+.s-info-materials--deport {
+	.section-title-wraper {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+}
