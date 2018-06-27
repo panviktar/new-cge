@@ -308,38 +308,35 @@
 	.s-region {
 		.region__legend {
 			margin-top: -50px;
-			}
+		}
 		.region__title {
 			font-size: $fz--xbase;
 			margin-bottom: 20px;
 		}
-	.region__info {
-		padding: 20px 20px 10px 20px;
-	}
-	.region__legend-title {
-		font-size: $fz--small;
-		margin-bottom: 25px;
-	}
-	.region__legend__item {
-		padding: 2px 0;
-		a {
-		font-size: $fz--xxsmall;	
+		.region__info {
+			padding: 20px 20px 10px 20px;
 		}
-
-		span {
-			font-size: $fz--xxsmall;	
+		.region__legend-title {
+			font-size: $fz--small;
+			margin-bottom: 25px;
 		}
-		
-		i {
-			margin-right: 6px;
-			font-size: 10px;
+		.region__legend__item {
+			padding: 2px 0;
+			a {
+				font-size: $fz--xxsmall;
+			}
+			span {
+				font-size: $fz--xxsmall;
+			}
+			i {
+				margin-right: 6px;
+				font-size: 10px;
+			}
 		}
-	}
-	.region__map-png {
-		width: 350px;
-	}
-	}
-	// S-REGION---------------END
+		.region__map-png {
+			width: 350px;
+		}
+	} // S-REGION---------------END
 	/*==========  MY-CONTENT END ==========*/
 	/*==========  MY-FOOTER  ==========*/
 	.main-footer {
@@ -354,6 +351,52 @@
 		}
 	}
 	/*==========  MY-FOOTER END ==========*/
+	/*==========  S-DEPORT  ==========*/
+	.deport-top {
+		&__contakt {
+			font-size: $fz--xxsmall;
+		}
+		&__contakt-item {
+			a {
+				font-size: $fz--xxsmall;
+			}
+		}
+		&__contakt-photo {
+			width: 70px;
+			height: 70px;
+			margin-right: 8px;
+		}
+	}
+	.s-deport-container {
+		&__wraper {
+			width: 100%;
+			padding: 0 20px;
+		}
+	}
+	.s-deport-hotphone {
+		&__wraper {
+			padding: 0;
+		}
+		&__img {
+			width: 40%;
+			&--green {
+				width: 35%;
+			}
+		}
+		&__info {
+			p {
+				font-size: $fz--xsmall;
+			}
+			span {
+				font-size: $fz--xxsmall;
+			}
+			a {
+				padding: 5px 10px;
+				font-size: $fz--small;
+			}
+		}
+	}
+	/*==========  S-DEPORT END ==========*/
 }
 
 // ≥768px
@@ -508,7 +551,6 @@
 					margin-bottom: 3px;
 				}
 				&__img {
-				
 					img {
 						width: 80px;
 						height: 80px;
@@ -517,22 +559,20 @@
 			}
 		}
 	} // S-INFO-MATERIALS ------------END-
-		// S-REGION---------------
-		.s-region { 
-			position: relative;
-			.region__legend {
-				position: absolute;
-				top: 10px;
-				left: 0;
-				margin-top: 0;
-			}
-
+	// S-REGION---------------
+	.s-region {
+		position: relative;
+		.region__legend {
+			position: absolute;
+			top: 10px;
+			left: 0;
+			margin-top: 0;
+		}
 		.region__title {
-				display: none;
-				// font-size: $fz--base;
-				// padding: 7px 10px;
-				// margin-bottom: 20px;
-			}
+			display: none; // font-size: $fz--base;
+			// padding: 7px 10px;
+			// margin-bottom: 20px;
+		}
 		.region__info {
 			width: 55%;
 			padding: 10px 10px 0 10px;
@@ -548,15 +588,13 @@
 		.region__legend__item {
 			padding: 0;
 			a {
-			font-size: $fz--xsmall;	
-			line-height: 1.1;
-			}
-	
-			span {
-				font-size: $fz--xsmall;	
+				font-size: $fz--xsmall;
 				line-height: 1.1;
 			}
-			
+			span {
+				font-size: $fz--xsmall;
+				line-height: 1.1;
+			}
 			i {
 				margin-right: 3px;
 				font-size: 8px;
@@ -565,14 +603,13 @@
 		.region__map {
 			margin-left: 100px;
 			margin-top: 20px;
-	
 		}
 		.region__map-png {
 			width: 350px;
 		}
-		}
-		// S-REGION---------------END
+	} // S-REGION---------------END
 	/*==========  MY-CONTENT END ==========*/
+	/*==========  MAIN-FOOTER  ==========*/
 	.main-footer {
 		&__wrapper {
 			padding: 15px;
@@ -587,6 +624,78 @@
 			font-size: $fz--min;
 		}
 	}
+	/*==========  MAIN-FOOTER END ==========*/
+	/*==========  S-DEPORT  ==========*/
+	.deport-top {
+		&__title-wraper {
+			height: 60vh;
+		}
+		&__title {
+			font-size: $fz--xlarge;
+		}
+		&__contakt {
+			font-size: $fz--xxsmall;
+		}
+		&__contakt-item {
+			a {
+				font-size: $fz--xxsmall;
+			}
+		}
+		&__contakt-photo {
+			width: 70px;
+			height: 70px;
+			margin-right: 12px;
+		}
+	}
+	.s-deport-container {
+		&__wraper {
+			padding: 0 10px;
+			p{
+				font-size: $fz--xsmall;
+			}
+			ul,
+			ol {
+			margin: 0 0 0 0;
+			padding: 5px 10px 10px 10px;
+			li {
+				font-size: $fz--xsmall;
+			}
+		}
+		}
+	}
+	.s-deport-hotphone {
+		&__item {
+			align-items: flex-start;
+		}
+		&__img {
+			display: none;
+		}
+	}
+	.s-accordion {
+		&__all {
+			label {
+				font-size: $fz--xsmall;
+				padding: 3px 20px;
+			}
+		}
+		.s-accordion__accordion {
+			.s-accordion__trigger {
+				.s-accordion__checkbox {
+					font-size: $fz--xxsmall;
+					i {
+						&:before,
+						&:after {
+							height: 2px;
+						}
+						&:before {
+							transform: translate(-4px, 8px) rotate(45deg);
+						}
+					}
+				}
+			}
+		}
+	}
+	/*==========  S-DEPORT END ==========*/
 }
 
 // ≥576px
@@ -694,9 +803,8 @@
 			}
 		}
 	} // S-PARTNERS-----------------end
-		// S-REGION---------------
-		.s-region { 
-			
+	// S-REGION---------------
+	.s-region {
 		.region__info {
 			width: 100%;
 			padding: 10px 10px 0 10px;
@@ -704,19 +812,89 @@
 			position: relative;
 			z-index: 1;
 		}
-			
 		.region__map {
 			margin-left: 0;
 			margin-top: 180px;
 			position: relative;
 			z-index: 99;
-			}
+		}
 		.region__map-png {
 			width: 250px;
 		}
-		}
-		// S-REGION---------------END
+	} // S-REGION---------------END
 	/*==========  MY-CONTENT END ==========*/
+		/*==========  S-DEPORT  ==========*/
+		.deport-top {
+			&__title-wraper {
+				height: 70vh;
+			}
+			&__title {
+				font-size: $fz--large;
+				padding: 0 10px;
+				line-height: 1.2;
+			}
+					&__contakt-list {
+				align-content: center;
+			}
+		
+			&__principal {
+				justify-content: center;
+			}		
+		}
+		.s-deport-container {
+			&__wraper {
+				padding: 0;
+				
+				ul,
+				ol {
+							padding: 5px 5px 5px 5px;
+							}
+			}
+		}
+		.s-deport-hotphone {
+			&__wraper {
+				padding-bottom: 10px;
+				:last-child {
+					margin-bottom: 0;
+				}
+			}
+			&__item {
+				justify-content: center;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			&__info {
+				p {
+					margin-bottom: 10px;				
+				}
+			}
+		
+		}
+		.s-accordion {
+			&__all {
+				label {
+					font-size: $fz--xsmall;
+					padding: 3px 20px;
+				}
+			}
+			.s-accordion__accordion {
+				.s-accordion__trigger {
+					.s-accordion__checkbox {
+						font-size: $fz--xxsmall;
+						i {
+							&:before,
+							&:after {
+								height: 2px;
+							}
+							&:before {
+								transform: translate(-4px, 8px) rotate(45deg);
+							}
+						}
+					}
+				}
+			}
+		}
+		/*==========  S-DEPORT END ==========*/
 }
 
 /*==========  Mobile First  ==========*/

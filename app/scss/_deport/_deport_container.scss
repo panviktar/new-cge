@@ -3,6 +3,14 @@
 		padding: 0 40px;
 		width: 80%;
 		margin: 0 auto;
+		ul,
+		ol {
+			margin: 0 0 0 0;
+			padding: 5px 15px 15px 25px;
+			li {
+				font-size: $fz--xxsmall;
+			}
+		}
 	}
 
 	.section-title-wraper {
@@ -16,15 +24,6 @@
 		text-transform: uppercase;
 		font-weight: $bold;
 		
-	}
-
-	&__list {
-		margin: 0 0 0 0;
-		padding: 5px 15px 15px 25px;
-	}
-
-	&__item {
-		font-size: $fz--xxsmall;
 	}
 }
 

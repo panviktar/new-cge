@@ -4086,21 +4086,36 @@ html.mm-opened {
   .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-3,
   .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-4,
   .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-5,
-  .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-6 {
+  .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-6,
+  .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-7,
+  .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-8,
+  .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-9,
+  .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-10,
+  .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-11 {
     display: none; }
     .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-1:checked + label,
     .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-2:checked + label,
     .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-3:checked + label,
     .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-4:checked + label,
     .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-5:checked + label,
-    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-6:checked + label {
+    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-6:checked + label,
+    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-7:checked + label,
+    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-8:checked + label,
+    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-9:checked + label,
+    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-10:checked + label,
+    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-11:checked + label {
       background-color: slategray; }
       .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-1:checked + label i:before,
       .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-2:checked + label i:before,
       .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-3:checked + label i:before,
       .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-4:checked + label i:before,
       .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-5:checked + label i:before,
-      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-6:checked + label i:before {
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-6:checked + label i:before,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-7:checked + label i:before,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-8:checked + label i:before,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-9:checked + label i:before,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-10:checked + label i:before,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-11:checked + label i:before {
         -webkit-transform: translate(3px, 8px) rotate(45deg);
             -ms-transform: translate(3px, 8px) rotate(45deg);
                 transform: translate(3px, 8px) rotate(45deg); }
@@ -4109,7 +4124,12 @@ html.mm-opened {
       .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-3:checked + label i:after,
       .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-4:checked + label i:after,
       .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-5:checked + label i:after,
-      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-6:checked + label i:after {
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-6:checked + label i:after,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-7:checked + label i:after,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-8:checked + label i:after,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-9:checked + label i:after,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-10:checked + label i:after,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-11:checked + label i:after {
         -webkit-transform: translate(-5px, 8px) rotate(-45deg);
             -ms-transform: translate(-5px, 8px) rotate(-45deg);
                 transform: translate(-5px, 8px) rotate(-45deg); }
@@ -4169,10 +4189,6 @@ html.mm-opened {
     transition: max-height 500ms ease-in-out; }
     .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__content__content-wraper {
       padding: 10px 20px; }
-    .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__content h3 {
-      margin: 30px 0 15px 30px; }
-    .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__content p {
-      margin: 0 30px 30px; }
   .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__content-wraper {
     padding: 20px; }
 
@@ -4181,7 +4197,12 @@ html.mm-opened {
 .s-accordion #checkbox-3:checked ~ .s-accordion__content,
 .s-accordion #checkbox-4:checked ~ .s-accordion__content,
 .s-accordion #checkbox-5:checked ~ .s-accordion__content,
-.s-accordion #checkbox-6:checked ~ .s-accordion__content {
+.s-accordion #checkbox-6:checked ~ .s-accordion__content,
+.s-accordion #checkbox-7:checked ~ .s-accordion__content,
+.s-accordion #checkbox-8:checked ~ .s-accordion__content,
+.s-accordion #checkbox-9:checked ~ .s-accordion__content,
+.s-accordion #checkbox-10:checked ~ .s-accordion__content,
+.s-accordion #checkbox-11:checked ~ .s-accordion__content {
   max-height: 350px;
   -webkit-transition: max-height 500ms ease-in-out;
   -o-transition: max-height 500ms ease-in-out;
@@ -4191,6 +4212,13 @@ html.mm-opened {
   padding: 0 40px;
   width: 80%;
   margin: 0 auto; }
+  .s-deport-container__wraper ul,
+  .s-deport-container__wraper ol {
+    margin: 0 0 0 0;
+    padding: 5px 15px 15px 25px; }
+    .s-deport-container__wraper ul li,
+    .s-deport-container__wraper ol li {
+      font-size: 13px; }
 
 .s-deport-container .section-title-wraper {
   display: -webkit-box;
@@ -4207,13 +4235,6 @@ html.mm-opened {
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700; }
-
-.s-deport-container__list {
-  margin: 0 0 0 0;
-  padding: 5px 15px 15px 25px; }
-
-.s-deport-container__item {
-  font-size: 13px; }
 
 .s-info-materials--deport .section-title-wraper {
   display: -webkit-box;
@@ -4262,7 +4283,8 @@ html.mm-opened {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid #2c923a;
-  padding: 8px 15px; }
+  padding: 8px 15px;
+  font-size: 16px; }
   .s-deport-hotphone__info a:hover {
     color: #2c923a;
     text-decoration: underline; }
@@ -5059,7 +5081,33 @@ section {
     margin-bottom: 3px; }
   .main-footer__map {
     margin-top: 14px; }
-  /*==========  MY-FOOTER END ==========*/ }
+  /*==========  MY-FOOTER END ==========*/
+  /*==========  S-DEPORT  ==========*/
+  .deport-top__contakt {
+    font-size: 13px; }
+  .deport-top__contakt-item a {
+    font-size: 13px; }
+  .deport-top__contakt-photo {
+    width: 70px;
+    height: 70px;
+    margin-right: 8px; }
+  .s-deport-container__wraper {
+    width: 100%;
+    padding: 0 20px; }
+  .s-deport-hotphone__wraper {
+    padding: 0; }
+  .s-deport-hotphone__img {
+    width: 40%; }
+    .s-deport-hotphone__img--green {
+      width: 35%; }
+  .s-deport-hotphone__info p {
+    font-size: 12px; }
+  .s-deport-hotphone__info span {
+    font-size: 13px; }
+  .s-deport-hotphone__info a {
+    padding: 5px 10px;
+    font-size: 15px; }
+  /*==========  S-DEPORT END ==========*/ }
 
 @media (max-width: 767.98px) {
   .section-title-wraper .section-title {
@@ -5202,6 +5250,7 @@ section {
     .s-region .region__map-png {
       width: 350px; }
   /*==========  MY-CONTENT END ==========*/
+  /*==========  MAIN-FOOTER  ==========*/
   .main-footer__wrapper {
     padding: 15px; }
   .main-footer__title {
@@ -5209,7 +5258,51 @@ section {
   .main-footer__item {
     font-size: 12px; }
   .main-footer__copyright {
-    font-size: 12px; } }
+    font-size: 12px; }
+  /*==========  MAIN-FOOTER END ==========*/
+  /*==========  S-DEPORT  ==========*/
+  .deport-top__title-wraper {
+    height: 60vh; }
+  .deport-top__title {
+    font-size: 36px; }
+  .deport-top__contakt {
+    font-size: 13px; }
+  .deport-top__contakt-item a {
+    font-size: 13px; }
+  .deport-top__contakt-photo {
+    width: 70px;
+    height: 70px;
+    margin-right: 12px; }
+  .s-deport-container__wraper {
+    padding: 0 10px; }
+    .s-deport-container__wraper p {
+      font-size: 12px; }
+    .s-deport-container__wraper ul,
+    .s-deport-container__wraper ol {
+      margin: 0 0 0 0;
+      padding: 5px 10px 10px 10px; }
+      .s-deport-container__wraper ul li,
+      .s-deport-container__wraper ol li {
+        font-size: 12px; }
+  .s-deport-hotphone__item {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .s-deport-hotphone__img {
+    display: none; }
+  .s-accordion__all label {
+    font-size: 12px;
+    padding: 3px 20px; }
+  .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__checkbox {
+    font-size: 13px; }
+    .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__checkbox i:before, .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__checkbox i:after {
+      height: 2px; }
+    .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__checkbox i:before {
+      -webkit-transform: translate(-4px, 8px) rotate(45deg);
+          -ms-transform: translate(-4px, 8px) rotate(45deg);
+              transform: translate(-4px, 8px) rotate(45deg); }
+  /*==========  S-DEPORT END ==========*/ }
 
 @media (max-width: 575.98px) {
   /*==========  HEADER  ==========*/
@@ -5302,6 +5395,52 @@ section {
     z-index: 99; }
   .s-region .region__map-png {
     width: 250px; }
-  /*==========  MY-CONTENT END ==========*/ }
+  /*==========  MY-CONTENT END ==========*/
+  /*==========  S-DEPORT  ==========*/
+  .deport-top__title-wraper {
+    height: 70vh; }
+  .deport-top__title {
+    font-size: 31px;
+    padding: 0 10px;
+    line-height: 1.2; }
+  .deport-top__contakt-list {
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center; }
+  .deport-top__principal {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .s-deport-container__wraper {
+    padding: 0; }
+    .s-deport-container__wraper ul,
+    .s-deport-container__wraper ol {
+      padding: 5px 5px 5px 5px; }
+  .s-deport-hotphone__wraper {
+    padding-bottom: 10px; }
+    .s-deport-hotphone__wraper :last-child {
+      margin-bottom: 0; }
+  .s-deport-hotphone__item {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-bottom: 20px; }
+  .s-deport-hotphone__info p {
+    margin-bottom: 10px; }
+  .s-accordion__all label {
+    font-size: 12px;
+    padding: 3px 20px; }
+  .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__checkbox {
+    font-size: 13px; }
+    .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__checkbox i:before, .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__checkbox i:after {
+      height: 2px; }
+    .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__checkbox i:before {
+      -webkit-transform: translate(-4px, 8px) rotate(45deg);
+          -ms-transform: translate(-4px, 8px) rotate(45deg);
+              transform: translate(-4px, 8px) rotate(45deg); }
+  /*==========  S-DEPORT END ==========*/ }
 
 /*==========  Mobile First  ==========*/
