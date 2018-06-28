@@ -5,6 +5,15 @@ $(function () {
 	$(".info-material__title").equalHeights();
 	$(".card__title").equalHeights();
 
+
+	$("#svg8").on("click", ".map-region", function(){
+		$(".region__info").html($(this).attr("description-data"));
+		$(".region__info").fadeIn();
+	});
+
+	
+
+
 	// Гармошка, кнопка открытия всех элементов
 		$("#all").click(function () {
 		$('input:checkbox').not(this).prop('checked', this.checked);
@@ -185,8 +194,6 @@ $(function () {
 	});
 	// Карусель .s-info-materials---------END
 
-	
-
 			
 	// Resize window
 	function onResize() {
@@ -299,12 +306,13 @@ $(function () {
 					$(this).addClass(" map-region--active"); //добавляем класс текущей (нажатой)
 		
 			});
+
+
+
+
+			
 	
 			
-			$("#svg8").on("click", ".map-region", function(){
-				$(".region__info").html($(this).attr("description-data"));
-				$(".region__info").fadeIn();
-			});
-
+			
 
 

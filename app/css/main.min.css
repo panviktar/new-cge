@@ -4317,6 +4317,8 @@ html.mm-opened {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 0; }
+  .s-deport-container .section-title-wraper--tabs {
+    display: block; }
 
 .s-deport-container__title-min {
   font-size: 15px;
@@ -4346,8 +4348,41 @@ html.mm-opened {
   margin-bottom: 50px;
   margin-top: 50px; }
 
+.deport-organisation__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 30px;
+  background-color: #d1d11d;
+  position: relative;
+  z-index: 1; }
+  .deport-organisation__item::after, .deport-organisation__item::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    background-color: #e2b11a; }
+  .deport-organisation__item::before {
+    top: -7px;
+    left: -45px;
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg); }
+  .deport-organisation__item::after {
+    top: -7px;
+    right: -45px;
+    -webkit-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+            transform: rotate(-20deg); }
+
 .s-deport-hotphone__wraper {
-  padding: 0 20px; }
+  padding: 0 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .s-deport-hotphone__item {
   display: -webkit-box;
@@ -4376,12 +4411,12 @@ html.mm-opened {
       text-decoration: none; }
 
 .s-deport-hotphone__img {
-  width: 30%;
+  width: 150px;
   margin-right: 10px; }
   .s-deport-hotphone__img img {
     width: 100%; }
   .s-deport-hotphone__img--vk {
-    width: 17%;
+    width: 140px;
     margin-right: 20px; }
 
 .s-deport-hotphone__info p {
@@ -4412,6 +4447,68 @@ html.mm-opened {
     opacity: 0.6; }
   .s-deport-hotphone__link:hover {
     text-decoration: none; }
+
+.s-deport-container__wraper--tabs {
+  position: relative;
+  padding: 0 40px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px; }
+  .s-deport-container__wraper--tabs *, .s-deport-container__wraper--tabs *:before, .s-deport-container__wraper--tabs *:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .s-deport-container__wraper--tabs p {
+    margin: 0 0 20px;
+    line-height: 1.5; }
+  .s-deport-container__wraper--tabs section {
+    min-width: 320px;
+    max-width: 800px;
+    padding: 50px;
+    margin: 0 auto;
+    background: #fff; }
+  .s-deport-container__wraper--tabs article {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd; }
+  .s-deport-container__wraper--tabs input {
+    display: none; }
+  .s-deport-container__wraper--tabs label {
+    font-size: 15px;
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 700;
+    color: #bbb;
+    border: 1px solid transparent; }
+  .s-deport-container__wraper--tabs label:before {
+    font-family: "FA";
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 10px; }
+  .s-deport-container__wraper--tabs label:hover {
+    color: #888;
+    cursor: pointer; }
+  .s-deport-container__wraper--tabs input:checked + label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid #2c923a;
+    border-bottom: 1px solid #fff; }
+  .s-deport-container__wraper--tabs #tab1:checked ~ #content1,
+  .s-deport-container__wraper--tabs #tab2:checked ~ #content2,
+  .s-deport-container__wraper--tabs #tab3:checked ~ #content3,
+  .s-deport-container__wraper--tabs #tab4:checked ~ #content4 {
+    display: block; }
+  @media screen and (max-width: 650px) {
+    .s-deport-container__wraper--tabs label {
+      font-size: 0; }
+    .s-deport-container__wraper--tabs label:before {
+      margin: 0;
+      font-size: 14px; } }
+  @media screen and (max-width: 400px) {
+    .s-deport-container__wraper--tabs label {
+      padding: 15px; } }
 
 /* =====  deport  ====== */
 /* ==============================
@@ -5214,10 +5311,8 @@ section {
     padding: 0 20px; }
   .s-deport-hotphone__wraper {
     padding: 0; }
-  .s-deport-hotphone__img {
-    width: 40%; }
-    .s-deport-hotphone__img--green {
-      width: 35%; }
+  .s-deport-hotphone__img--green {
+    width: 35%; }
   .s-deport-hotphone__info p {
     font-size: 12px; }
   .s-deport-hotphone__info span {

@@ -17,6 +17,9 @@
 		display: flex;
 		justify-content: center;
 		margin-bottom: 0;
+		&--tabs {
+			display: block;
+		}
 	}
 	
 	&__title-min {
@@ -40,5 +43,36 @@
 	justify-content: center;
 	margin-bottom: 50px;
 	margin-top: 50px;
+}
 
+.deport-organisation {
+	&__item {
+		display: flex;
+		padding: 20px 30px;
+		background-color: #d1d11d;
+		position: relative;
+		z-index: 1;
+		&::after,
+		&::before {
+			content: "";
+			z-index: -1;
+			position: absolute;
+			
+			width: 60px;
+			height: 100%;
+			background-color: $accent2;
+			
+		}
+		&::before {
+			top: -7px;
+			left: -45px;
+			transform: rotate(20deg);
+		}
+
+		&::after {
+		top: -7px;
+		right: -45px;
+		transform: rotate(-20deg);
+	}
+}
 }
