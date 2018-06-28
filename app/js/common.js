@@ -158,7 +158,7 @@ $(function () {
 	
 	// Карусель .s-info-materials---------
 	$(".info-materials").owlCarousel({
-	loop: true,
+	// loop: true,
 	smartSpeed: 700,
 	dots: false, 	
 	nav: true,
@@ -184,7 +184,10 @@ $(function () {
 	}
 	});
 	// Карусель .s-info-materials---------END
+
 	
+
+			
 	// Resize window
 	function onResize() {
 	$('.carousel-services__content').equalHeights();
