@@ -390,12 +390,13 @@
 			span {
 				font-size: $fz--xxsmall;
 			}
-			a {
-				padding: 5px 10px;
-				font-size: $fz--small;
-			}
+			
 		}
-	}
+		&__link {
+			padding: 5px 10px;
+			font-size: $fz--small;
+		}
+		}
 	/*==========  S-DEPORT END ==========*/
 }
 
@@ -695,6 +696,13 @@
 			}
 		}
 	}
+	.deport-btn-news-wraper {
+		margin-bottom: 30px;
+		margin-top: 30px;
+		>.btn-bigslider {
+			font-size: $fz--xxsmall;
+		}
+	}
 	/*==========  S-DEPORT END ==========*/
 }
 
@@ -844,7 +852,6 @@
 		.s-deport-container {
 			&__wraper {
 				padding: 0;
-				
 				ul,
 				ol {
 							padding: 5px 5px 5px 5px;

@@ -6,13 +6,24 @@
 	&__item {
 		display: flex;
 		align-items: center;
+		&--a {
+			@include link;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	
 	}
 
 	&__img {
-		width: 40%;
+		width: 30%;
 		margin-right: 10px;
 		img {
 		width: 100%;
+		}
+		&--vk {
+			width: 17%;
+			margin-right: 20px;
 		}
 	}
 
@@ -26,16 +37,17 @@
 			font-weight:$bold;
 			font-size: $fz--small;
 		}
-		a {
-			@include link;
-			border: 1px solid $accent;
-			padding:  8px 15px;
-			font-size: $fz--base;
-			&:hover {
-				text-decoration: none;
-			}
-
 		
+		
+	}
+	&__link {
+		@include link;
+		border: 1px solid $accent;
+		padding:  8px 15px;
+		font-size: $fz--base;
+		&:hover {
+			text-decoration: none;
 		}
 	}
+	
 }
