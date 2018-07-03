@@ -28,7 +28,15 @@ section {
 article {
   display: none;
   padding: 20px 0 0;
-  border-top: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	position: relative;
+	:last-child {
+		margin-bottom: 0;
+	}
+	
+	div {
+		margin-bottom: 20px;
+	}
 }
 
 input {
@@ -72,23 +80,67 @@ input:checked + label {
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
   display: block;
 }
+}
 
-@media screen and (max-width: 650px) {
+
+// ≤768px
+@include media-breakpoint-down(md) {
+	.s-deport-container__wraper--tabs {
+		margin-top: 20px;
+
+	label {
+		font-size: $fz--xxsmall;
+	}
+
+	article {
+		padding: 10px 0 0;
+		div {
+			margin-bottom: 10px;
+			font-size: $fz--small;
+		}
+	}
+}
+}
+
+// ≤576px
+@include media-breakpoint-down(sm) {
+	.s-deport-container__wraper--tabs {
+		margin-top: 20px;
   label {
-    font-size: 0;
+		font-size: $fz--xxsmall;
+		padding: 10px;
   }
   label:before {
     margin: 0;
-    font-size: 14px;
-  }
+    font-size: 10px;
+	}
+	article {
+		padding: 5px 0 0;
+		div {
+			
+			font-size: $fz--xxsmall;
+		}
+	}
+}
 }
 
-@media screen and (max-width: 400px) {
+// ≥576px
+@include media-breakpoint-down(xs) {
+	.s-deport-container__wraper--tabs {
+		margin-top: 10px;
   label {
-    padding: 15px;
+		font-size: $fz--xxsmall;
+		padding: 10px;
   }
+  article {
+		padding: 5px 0 0;
+		div {
+			font-size: $fz--xxsmall;
+		}
+	}
 }
 }

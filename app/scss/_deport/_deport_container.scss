@@ -75,4 +75,30 @@
 		transform: rotate(-20deg);
 	}
 }
+
 }
+
+.s-deport-container {
+	
+	&__principal {
+		font-size: $fz--base;
+		padding-left: 160px;
+	}
+	&__contakt {
+		a {
+			color: $text;
+			border: 1px solid $accent;
+			padding: 5px 10px;
+			i {
+				font-size: 13px;
+				margin-right: 5px;
+			
+			}
+		}
+	}
+
+	&__list-title {
+		text-transform: uppercase;
+	}	
+}
+

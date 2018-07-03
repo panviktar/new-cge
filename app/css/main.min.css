@@ -2776,12 +2776,14 @@ html {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-  .site-header__left h1 {
-    padding: 8px 20px 0 0;
-    font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
-    font-size: 31px;
-    line-height: 1;
-    font-weight: 700; }
+    .site-header__left .h1_index {
+      padding: 8px 20px 0 0;
+      font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
+      font-size: 31px;
+      line-height: 1;
+      font-weight: 700; }
+    .site-header__left span {
+      font-size: 16px; }
   .site-header__right {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4377,6 +4379,21 @@ html.mm-opened {
         -ms-transform: rotate(-20deg);
             transform: rotate(-20deg); }
 
+.s-deport-container__principal {
+  font-size: 16px;
+  padding-left: 160px; }
+
+.s-deport-container__contakt a {
+  color: #253031;
+  border: 1px solid #2c923a;
+  padding: 5px 10px; }
+  .s-deport-container__contakt a i {
+    font-size: 13px;
+    margin-right: 5px; }
+
+.s-deport-container__list-title {
+  text-transform: uppercase; }
+
 .s-deport-hotphone__wraper {
   padding: 0 20px;
   -webkit-box-pack: center;
@@ -4393,6 +4410,11 @@ html.mm-opened {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .s-deport-hotphone__item--gigiena {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
   .s-deport-hotphone__item--a {
     font-family: "PTSansRegular-example", sans-serif;
     color: #253031;
@@ -4414,7 +4436,7 @@ html.mm-opened {
   width: 150px;
   margin-right: 10px; }
   .s-deport-hotphone__img img {
-    width: 100%; }
+    width: 80%; }
   .s-deport-hotphone__img--vk {
     width: 140px;
     margin-right: 20px; }
@@ -4471,7 +4493,12 @@ html.mm-opened {
   .s-deport-container__wraper--tabs article {
     display: none;
     padding: 20px 0 0;
-    border-top: 1px solid #ddd; }
+    border-top: 1px solid #ddd;
+    position: relative; }
+    .s-deport-container__wraper--tabs article :last-child {
+      margin-bottom: 0; }
+    .s-deport-container__wraper--tabs article div {
+      margin-bottom: 20px; }
   .s-deport-container__wraper--tabs input {
     display: none; }
   .s-deport-container__wraper--tabs label {
@@ -4498,17 +4525,45 @@ html.mm-opened {
   .s-deport-container__wraper--tabs #tab1:checked ~ #content1,
   .s-deport-container__wraper--tabs #tab2:checked ~ #content2,
   .s-deport-container__wraper--tabs #tab3:checked ~ #content3,
-  .s-deport-container__wraper--tabs #tab4:checked ~ #content4 {
+  .s-deport-container__wraper--tabs #tab4:checked ~ #content4,
+  .s-deport-container__wraper--tabs #tab5:checked ~ #content5 {
     display: block; }
-  @media screen and (max-width: 650px) {
+
+@media (max-width: 991.98px) {
+  .s-deport-container__wraper--tabs {
+    margin-top: 20px; }
     .s-deport-container__wraper--tabs label {
-      font-size: 0; }
+      font-size: 13px; }
+    .s-deport-container__wraper--tabs article {
+      padding: 10px 0 0; }
+      .s-deport-container__wraper--tabs article div {
+        margin-bottom: 10px;
+        font-size: 15px; } }
+
+@media (max-width: 767.98px) {
+  .s-deport-container__wraper--tabs {
+    margin-top: 20px; }
+    .s-deport-container__wraper--tabs label {
+      font-size: 13px;
+      padding: 10px; }
     .s-deport-container__wraper--tabs label:before {
       margin: 0;
-      font-size: 14px; } }
-  @media screen and (max-width: 400px) {
+      font-size: 10px; }
+    .s-deport-container__wraper--tabs article {
+      padding: 5px 0 0; }
+      .s-deport-container__wraper--tabs article div {
+        font-size: 13px; } }
+
+@media (max-width: 575.98px) {
+  .s-deport-container__wraper--tabs {
+    margin-top: 10px; }
     .s-deport-container__wraper--tabs label {
-      padding: 15px; } }
+      font-size: 13px;
+      padding: 10px; }
+    .s-deport-container__wraper--tabs article {
+      padding: 5px 0 0; }
+      .s-deport-container__wraper--tabs article div {
+        font-size: 13px; } }
 
 /* =====  deport  ====== */
 /* ==============================
@@ -5058,7 +5113,7 @@ section {
     font-size: 12px;
     margin-right: -5px; }
   /*==========  HEADER  ==========*/
-  .site-header__name h1 {
+  .site-header__name .h1_index {
     padding: 8px 10px 0 0; }
   .site-header__info {
     font-size: 13px;
@@ -5177,7 +5232,7 @@ section {
             order: 1; }
   .site-header__logo {
     width: 75px; }
-  .site-header__name h1 {
+  .site-header__name .h1_index {
     font-size: 24px;
     padding: 8px 5px 0 0; }
   .site-header__name span {
@@ -5311,12 +5366,16 @@ section {
     padding: 0 20px; }
   .s-deport-hotphone__wraper {
     padding: 0; }
+  .s-deport-hotphone__item:last-child {
+    margin-bottom: 0; }
   .s-deport-hotphone__img--green {
     width: 35%; }
-  .s-deport-hotphone__info p {
-    font-size: 12px; }
-  .s-deport-hotphone__info span {
-    font-size: 13px; }
+  .s-deport-hotphone__info {
+    margin-bottom: 20px; }
+    .s-deport-hotphone__info p {
+      font-size: 12px; }
+    .s-deport-hotphone__info span {
+      font-size: 13px; }
   .s-deport-hotphone__link {
     padding: 5px 10px;
     font-size: 15px; }
@@ -5333,7 +5392,7 @@ section {
     padding-right: 0; }
   .site-header__logo {
     width: 55px; }
-  .site-header__name h1 {
+  .site-header__name .h1_index {
     font-size: 20px;
     padding-right: 20px; }
   .site-header__name span {
@@ -5501,9 +5560,23 @@ section {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .s-deport-hotphone__item:last-child {
+      margin-bottom: 0; }
   .s-deport-hotphone__img {
     display: none; }
+  .s-deport-hotphone__info {
+    margin-bottom: 25px; }
+    .s-deport-hotphone__info p {
+      font-size: 13px;
+      line-height: 1.5; }
+    .s-deport-hotphone__info span {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 15px; }
   .s-accordion__all label {
     font-size: 12px;
     padding: 3px 20px; }
@@ -5528,7 +5601,7 @@ section {
     min-height: 140px; }
   .site-header__logo {
     width: 50px; }
-  .site-header__name h1 {
+  .site-header__name .h1_index {
     font-size: 16px;
     padding-right: 20px; }
   .site-header__bottom {

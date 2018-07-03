@@ -17,11 +17,15 @@
 	}
 	&__left {
 		display: flex;
+		.h1_index {
+			padding: 8px 20px 0 0;
+			@include h1;
+		}
+		span {
+			font-size: $fz--base;
+		}
 	}
-	&__left h1 {
-		padding: 8px 20px 0 0;
-		@include h1;
-	}
+	
 	&__right {
 		display: flex;
 		align-items: center;

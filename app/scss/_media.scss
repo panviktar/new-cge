@@ -12,9 +12,11 @@
 	}
 	/*==========  HEADER  ==========*/
 	.site-header {
-		&__name h1 {
+		&__name {
+		.h1_index {
 			padding: 8px 10px 0 0;
 		}
+	}
 		&__info {
 			font-size: 13px;
 			padding: 12px 10px 12px 20px;
@@ -179,10 +181,12 @@
 		&__logo {
 			width: 75px;
 		}
-		&__name h1 {
+		&__name {
+			.h1_index {
 			font-size: $fz--xmedium;
 			padding: 8px 5px 0 0;
 		}
+	}
 		&__name span {
 			font-size: $fz--small;
 			display: flex;
@@ -377,6 +381,11 @@
 		&__wraper {
 			padding: 0;
 		}
+		&__item:last-child {
+				margin-bottom: 0;
+			}
+		
+	
 		&__img {
 		
 			&--green {
@@ -384,6 +393,7 @@
 			}
 		}
 		&__info {
+			margin-bottom: 20px;
 			p {
 				font-size: $fz--xsmall;
 			}
@@ -419,10 +429,12 @@
 		&__logo {
 			width: 55px;
 		}
-		&__name h1 {
-			font-size: $fz--medium;
-			padding-right: 20px;
-		}
+		&__name {
+			.h1_index {
+				font-size: $fz--medium;
+				padding-right: 20px;
+			}
+				}
 		&__name span {
 			font-size: $fz--xsmall;
 		}
@@ -667,9 +679,25 @@
 	.s-deport-hotphone {
 		&__item {
 			align-items: flex-start;
-		}
+			flex-wrap: wrap;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			}
 		&__img {
 			display: none;
+		}
+		&__info {
+			margin-bottom: 25px;
+			p {
+				font-size: $fz--xxsmall;
+				line-height: 1.5;
+			}
+			span {
+				text-transform: uppercase;
+				font-weight:$bold;
+				font-size: $fz--small;
+			}
 		}
 	}
 	.s-accordion {
@@ -716,9 +744,12 @@
 		&__logo {
 			width: 50px;
 		}
-		&__name h1 {
-			font-size: $fz--base;
-			padding-right: 20px;
+		&__name  {
+			.h1_index {
+				font-size: $fz--base;
+				padding-right: 20px;
+			}
+		
 		}
 		&__bottom {
 			padding-left: 20px;

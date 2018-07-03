@@ -7,7 +7,11 @@
 	&__item {
 		display: flex;
 		align-items: center;
-		
+	
+		&--gigiena {
+			align-items: flex-end;
+		}
+			
 		&--a {
 			@include link;
 			&:hover {
@@ -21,7 +25,7 @@
 		width: 150px;
 		margin-right: 10px;
 		img {
-		width: 100%;
+		width: 80%;
 		}
 		&--vk {
 			width: 140px;
@@ -39,9 +43,8 @@
 			font-weight:$bold;
 			font-size: $fz--small;
 		}
-		
-		
 	}
+	
 	&__link {
 		@include link;
 		border: 1px solid $accent;
