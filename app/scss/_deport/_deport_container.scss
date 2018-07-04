@@ -1,8 +1,14 @@
 .s-deport-container {
+	
 	&__wraper {
 		padding: 0 40px;
 		width: 80%;
 		margin: 0 auto;
+		&--max {
+			width: 100%;
+			padding: 0 40px;
+		}
+	
 		ul,
 		ol {
 			margin: 0 0 0 0;
@@ -10,6 +16,10 @@
 			li {
 				font-size: $fz--xxsmall;
 			}
+		}
+		a {
+		@include link;
+		text-decoration: underline;
 		}
 	}
 
@@ -57,7 +67,6 @@
 			content: "";
 			z-index: -1;
 			position: absolute;
-			
 			width: 60px;
 			height: 100%;
 			background-color: $accent2;
@@ -75,7 +84,6 @@
 		transform: rotate(-20deg);
 	}
 }
-
 }
 
 .s-deport-container {
@@ -84,11 +92,16 @@
 		font-size: $fz--base;
 		padding-left: 160px;
 	}
+
 	&__contakt {
 		a {
-			color: $text;
+			color: lighten( $text, 20%);
 			border: 1px solid $accent;
 			padding: 5px 10px;
+			transition: all 0.3s;
+			&:hover {
+				color: $text;
+			}
 			i {
 				font-size: 13px;
 				margin-right: 5px;
@@ -99,6 +112,17 @@
 
 	&__list-title {
 		text-transform: uppercase;
+	
 	}	
+	&__img {
+		display: flex;
+		align-items: center;
+		align-content: center;
+		margin-top: 10px;
+		
+		img {
+			max-width: 100%;
+		}
+	}
 }
 

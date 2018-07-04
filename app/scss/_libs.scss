@@ -1,8 +1,14 @@
 @import "../libs/bootstrap/scss/bootstrap-reboot.scss";
 @import "../libs/bootstrap/scss/bootstrap-grid.scss";
+// @import "../libs/bootstrap/scss/_variables.scss";
+
 @import "../libs/bootstrap/scss/utilities/_sizing.scss";
 @import "../libs/bootstrap/scss/_breadcrumb.scss";
-// @import "../libs/bootstrap/scss/_variables.scss";
+
+// @import "../libs/bootstrap/scss/_mixins/_table-row.scss";
+
+
+
 @import "../libs/superfish/dist/css/superfish";
 
 // @import "../libs/bootstrap/scss/navbar.scss";
@@ -13,7 +19,7 @@
 @import "../libs/hamburger/hamburgers.min.css";
 @import "../libs/mmenu/mmenu/jquery.mmenu.all.css";
 @import "../libs/OwlCarousel/dist/assets/owl.carousel.min.css";
-@import "../libs/OwlCarousel/dist/assets/owl.carousel.min.css";
+
 @import "../libs/OwlCarousel/dist/assets/owl.theme.default.min.css";
 @import "../libs/swiper/dist/css/swiper.min.css";
 
