@@ -1,0 +1,58 @@
+$color = #00A1B6
+
+.btn-circle-download
+  height: 48px
+  width: 48px
+  border: 2px solid #C8CCD4
+  border-radius: 100%
+  cursor: pointer
+  transition: all .2s ease
+  svg#arrow
+    position: absolute
+    top: 14px
+    left: 17px
+    transition: all .2s ease
+  svg#check
+    position: absolute
+    top: 17px
+    left: 13px
+    transform: scale(0)
+  &:hover
+    background: rgba($color,.1)
+    border-color: $color
+    svg#arrow path,
+    svg#arrow polyline
+      stroke: $color
+  &.active
+    background: $color
+    border: 0
+    animation: rubberBand .8s
+    svg#arrow
+      display: none
+    svg#check
+      transform: scale(1)
+      transition: all .2s ease
+      transition-delay: .2s
+
+
+@keyframes rubberBand
+  from
+    transform: scale(1, 1, 1)
+  30%
+    transform: scale3d(1.15, 0.75, 1)
+  40%
+    transform: scale3d(0.75, 1.15, 1)
+  50%
+    transform: scale3d(1.10, 0.85, 1)
+  65%
+    transform: scale3d(.95, 1.05, 1)
+  75%
+    transform: scale3d(1.05, .95, 1)
+  to
+    transform: scale3d(1, 1, 1)
+  
+.cntr
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)

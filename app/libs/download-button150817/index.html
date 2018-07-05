@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Download button</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      .btn-circle-download {
+  height: 48px;
+  width: 48px;
+  border: 2px solid #c8ccd4;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-circle-download svg#arrow {
+  position: absolute;
+  top: 14px;
+  left: 17px;
+  transition: all 0.2s ease;
+}
+.btn-circle-download svg#check {
+  position: absolute;
+  top: 17px;
+  left: 13px;
+  transform: scale(0);
+}
+.btn-circle-download:hover {
+  background: rgba(0,161,182,0.1);
+  border-color: #00a1b6;
+}
+.btn-circle-download:hover svg#arrow path,
+.btn-circle-download:hover svg#arrow polyline {
+  stroke: #00a1b6;
+}
+.btn-circle-download.active {
+  background: #00a1b6;
+  border: 0;
+  animation: rubberBand 0.8s;
+}
+.btn-circle-download.active svg#arrow {
+  display: none;
+}
+.btn-circle-download.active svg#check {
+  transform: scale(1);
+  transition: all 0.2s ease;
+  transition-delay: 0.2s;
+}
+.cntr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@-moz-keyframes rubberBand {
+  from {
+    transform: scale(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.15, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.15, 1);
+  }
+  50% {
+    transform: scale3d(1.1, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes rubberBand {
+  from {
+    transform: scale(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.15, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.15, 1);
+  }
+  50% {
+    transform: scale3d(1.1, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-o-keyframes rubberBand {
+  from {
+    transform: scale(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.15, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.15, 1);
+  }
+  50% {
+    transform: scale3d(1.1, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes rubberBand {
+  from {
+    transform: scale(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.15, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.15, 1);
+  }
+  50% {
+    transform: scale3d(1.1, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  <div class="cntr">
+
+  <div class="btn-circle-download">
+  
+    
+    <svg id="arrow" width="14px" height="20px" viewBox="17 14 14 20">
+        <path d="M24,15 L24,32" stroke="#CACED6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+        <polyline stroke="#CACED6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" points="30 27 24 33 18 27"></polyline>
+    </svg>
+    
+    
+    <svg id="check" width="21px" height="15px" viewBox="13 17 21 15">
+        <polyline stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" points="32.5 18.5 20 31 14.5 25.5"></polyline>
+    </svg>
+
+  </div>
+
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
