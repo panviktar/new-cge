@@ -1,9 +1,10 @@
 .s-deport-container {
-	
+		
 	&__wraper {
 		padding: 0 40px;
 		width: 80%;
 		margin: 0 auto;
+	
 		&--max {
 			width: 100%;
 			padding: 0 40px;
@@ -20,6 +21,10 @@
 		a {
 		@include link;
 		text-decoration: underline;
+		}
+		p, dt, dd {
+			font-size: $fz--xxsmall;
+			line-height: 1.3;
 		}
 	}
 
