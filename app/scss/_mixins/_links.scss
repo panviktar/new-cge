@@ -2,7 +2,6 @@
 @mixin link {
 	font-family: $default-font;
   color: $text;
-  text-decoration: none;
   transition: all 0.3s;
 
   &:hover {
