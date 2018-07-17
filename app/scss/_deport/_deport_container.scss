@@ -1,4 +1,84 @@
 .s-deport-container {
+	&--top {
+		margin-top: 50px;
+	}
+
+	&__title-2 {
+		@include h3-deport;
+	}
+
+	&__allotment {
+		padding: 0.6rem 1.2rem;
+		background-color: lighten($accent, 57%);
+		border-radius: 5px;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+	}
+
+	&__map {
+		width: 100%;
+		height: 400px;
+	}
+
+	.btn-bigslider {
+		&:hover {
+			color: #fff;
+			text-decoration: 	none;
+		}
+	}
+	
+	&__principal {
+		font-size: $fz--base;
+		padding-left: 160px;
+	}
+
+	&__contakt {
+		a {
+			color: lighten( $text, 20%);
+			padding: 5px 10px;
+			transition: all 0.3s;
+			&:hover {
+				color: $accent;
+			}
+			&:active {
+				color: $accent;
+				opacity: 0.5;
+			}
+			i {
+				font-size: 12px;
+				margin-right: 10px;
+				color: $accent2;
+			}
+		
+		}
+	
+	}
+	&__clock {
+		p {
+			position: relative;
+			padding-left: 20px;
+			.fa-clock {
+				font-size: 12px;
+				position: relative;
+				top: 0;
+			}		
+			}
+		}
+
+	&__list-title {
+		text-transform: uppercase;
+	
+	}	
+	&__img {
+		display: flex;
+		align-items: center;
+		align-content: center;
+		margin-top: 10px;
+		
+		img {
+			max-width: 100%;
+		}
+	}
+
 	&__colums {
 		margin-top: 15px;
 		display: flex;
@@ -31,31 +111,35 @@
 	}
 		
 	&__wraper {
+		margin-top: 25px;
 		padding: 0 40px;
 		width: 80%;
 		margin: 0 auto;
-	
+			
 		&--max {
 			width: 100%;
 			padding: 0 40px;
-		}
-
-	
+		}	
 	
 		ul,
 		ol {
 			margin: 0 0 0 0;
 			padding: 5px 15px 15px 25px;
 			li {
-				font-size: $fz--xxsmall;
+				font-size: $fz--small;
+				line-height: 1.6;
 			}
 		}
 		a {
 		@include link;
 		}
 		p, dt, dd {
-			font-size: $fz--xxsmall;
-			line-height: 1.3;
+			font-size: $fz--small;
+			line-height: 1.4;
+		}
+		i {
+			font-size: 0.8rem;
+			margin-right: 13px;
 		}
 	}
 
@@ -122,68 +206,5 @@
 }
 }
 
-.s-deport-container {
-	&__wraper {
-		margin-top: 25px;
-	}
-	.btn-bigslider {
-		&:hover {
-			color: #fff;
-			text-decoration: 	none;
-		}
-	}
-	
-	&__principal {
-		font-size: $fz--base;
-		padding-left: 160px;
-	}
 
-	&__contakt {
-		a {
-			color: lighten( $text, 20%);
-			padding: 5px 10px;
-			transition: all 0.3s;
-			&:hover {
-				color: $accent;
-			}
-			&:active {
-				color: $accent;
-				opacity: 0.5;
-			}
-			i {
-				font-size: 12px;
-				margin-right: 10px;
-				color: $accent2;
-			}
-		
-		}
-	
-	}
-	&__clock {
-		p {
-			position: relative;
-			padding-left: 20px;
-			.fa-clock {
-				font-size: 12px;
-				position: relative;
-				top: 0;
-			}		
-			}
-		}
-
-	&__list-title {
-		text-transform: uppercase;
-	
-	}	
-	&__img {
-		display: flex;
-		align-items: center;
-		align-content: center;
-		margin-top: 10px;
-		
-		img {
-			max-width: 100%;
-		}
-	}
-}
 
