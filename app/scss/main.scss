@@ -100,6 +100,21 @@ body {
 	}
 }
 
+a {
+	color: $accent;
+	text-decoration: underline;
+	&:hover,
+	&:focus{
+		color: $accent;
+	}
+	&:active {
+		color: $accent;
+		text-decoration: none;
+		opacity: 0.6;
+	}
+
+}
+
 .text-center {
 	text-align: center;
 }

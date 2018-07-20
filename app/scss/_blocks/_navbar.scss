@@ -1,110 +1,93 @@
-
-
 .top-line {
 	background-color: $accent;
 	text-align: left;
-	
-				
 	a {
 		color: $white;
 	}
-
-	ul, li {
+	ul,
+	li {
 		list-style-type: none;
 		padding: 0;
 		margin: 0;
 		background-color: $accent;
-	}	
+	}
 }
 
 .sf-menu {
-	
 	display: inline-block;
 	float: none;
 	font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
 	font-size: $fz--base;
 	background-color: $accent;
-	
-
 	a {
 		border-left: transparent;
 		border-top: 1px solid transparent;
 		outline: none;
 	}
-		>li {
-			background-color: transparent;
-
-			&.active {
-				background-color: darken($accent, 5%);
-				>a {
-					color:$accent2;
-				}
-				:hover {
-					text-decoration: none;
-				}
-			}
-			
+	>li {
+		background-color: transparent;
+		&.active {
+			background-color: darken($accent, 5%);
 			>a {
-				color: $white;
-				padding: 12px 24px;
-				border-color: transparent;
-				
-				.fa {
-					font-size: 11px;
-					margin-left: 1px;
-				}
+				color: $accent2;
 			}
-			&:hover {
-				background-color: darken($accent, 5%);
-				transition: all 0.5s;
-				>a {
-					text-decoration: underline;
-					transition: text-decoration 0.5s;
-				}
+			:hover {
+				text-decoration: none;
 			}
-			ul {
-				margin-top: 1px;
-				
-				
-				li {
-					background-color: lighten($accent,60%);
-					text-align: left;
-
-					ul {
-						margin-top: 0;
+		}
+		>a {
+			color: $white;
+			padding: 12px 24px;
+			border-color: transparent;
+			.fa {
+				font-size: 11px;
+				margin-left: 1px;
+			}
+		}
+		&:hover {
+			background-color: darken($accent, 5%);
+			transition: all 0.5s;
+			>a {
+				text-decoration: underline;
+				transition: text-decoration 0.5s;
+			}
+		}
+		ul {
+			margin-top: 1px;
+			li {
+				background-color: lighten($accent, 60%);
+				text-align: left;
+				ul {
+					margin-top: 0;
+				}
+				&:hover {
+					background-color: lighten($accent, 50%);
+					>a {
+						color: $accent;
+						transition: color 0.3s;
 					}
-				
-					
-					&:hover {
-						
-						background-color: lighten($accent,50%);
-						
-						>a {
-							color: $accent;
-							transition: color 0.3s;
-						}
-					}
-					a {
-						padding: 11px 20px;
-						color: $text;
-						font-size: $fz--small;
-						line-height: 1.2;
-						border-top: 1px solid lighten($accent, 50%);
-						border-right: 1px solid lighten($accent, 50%);
-						
-					}
+				}
+				a {
+					padding: 11px 20px;
+					color: $text;
+					font-size: $fz--small;
+					line-height: 1.2;
+					border-top: 1px solid lighten($accent, 50%);
+					border-right: 1px solid lighten($accent, 50%);
 				}
 			}
 		}
 	}
+}
 
-.top-line ul, .top-line li {
+.top-line ul,
+.top-line li {
 	margin-bottom: -3px;
-	}
+}
 
 .sf-menu ul {
-	 box-shadow: rgba(0, 0, 0, 0.2) 2px 6px 6px;
- 	 min-width: 12em;
+	box-shadow: rgba(0, 0, 0, 0.2) 2px 6px 6px;
+	min-width: 12em;
 }
 
 .fa-caret-down {
@@ -112,44 +95,34 @@
 	margin-left: 3px;
 }
 
-
-
-
 // ------------------Mobile-menu -----------------//
-
 .mobile-mnu {
-	background-color: $accent;
-	// padding: 12px 15px 5px 15px;
-
-		
+	background-color: $accent; // padding: 12px 15px 5px 15px;
 	&__wraper {
 		position: relative;
 		display: flex;
 		justify-content: flex-end;
-	
-		}
+	}
 }
 
 // Гамбургер start-------------
-
-.hamburger  {
+.hamburger {
 	margin: 0;
 	padding: 8px 0 9px 0;
-	display: flex; 
+	display: flex;
 	text-decoration: none;
 	align-items: center;
-
-	.hamburger .hamburger--emphatic a:hover{
+	.hamburger .hamburger--emphatic a:hover {
 		text-decoration: none;
 		color: transparent;
 	}
-
 	.hamburger-box {
 		width: 34px;
 		margin-top: 3px;
 	}
-
-	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+	.hamburger-inner,
+	.hamburger-inner:after,
+	.hamburger-inner:before {
 		border-radius: none;
 		width: 34px;
 		height: 2px;
@@ -166,12 +139,8 @@
 		display: flex;
 		line-height: 0;
 	}
-	}
-
-	// Гамбургер end--------------
-
-	// Стилизация mmenu плагина start------------
-
+} // Гамбургер end--------------
+// Стилизация mmenu плагина start------------
 .mm-menu_offcanvas {
 	z-index: 5;
 	.fa {
@@ -185,21 +154,19 @@
 	position: absolute;
 	border-bottom: none;
 	padding: 0 10px;
-
-	&__title  {
+	&__title {
 		margin: 0;
-		
 		img {
-		width: 25px;
-		height: auto;
-		margin-right: 10px;
+			width: 25px;
+			height: auto;
+			margin-right: 10px;
 		}
 		b {
 			color: $text;
 			font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
 		}
 	}
-}  
+}
 
 .mm-panel_has-navbar.mm-panel_has-searchfield {
 	padding-top: 95px;
@@ -209,40 +176,44 @@
 	}
 }
 
-.mm-panel:after, .mm-panel:before {
+.mm-panel:after,
+.mm-panel:before {
 	height: 0;
 }
 
 // Убираем некрасивый скролл
-
-.mm-panels > .mm-panel_has-navbar {
+.mm-panels>.mm-panel_has-navbar {
 	right: -18px;
 }
 
 a:hover {
 	text-decoration: none;
-} 
+}
 
 html.mm-opened {
 	overflow-y: scroll;
 }
 
 // Убираем некрасивый скролл END-------
-
 .mm-listitem::after {
 	display: none;
 }
 
-.mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next::before, .mm-listitem::after, .mm-listview {
+.mm-listitem,
+.mm-listitem .mm-btn_next,
+.mm-listitem .mm-btn_next::before,
+.mm-listitem::after,
+.mm-listview {
 	border: none;
 }
 
-.mm-menu_theme-white .mm-listitem_selected > a:not(.mm-btn_next), .mm-menu_theme-white .mm-listitem_selected > span {
+.mm-menu_theme-white .mm-listitem_selected>a:not(.mm-btn_next),
+.mm-menu_theme-white .mm-listitem_selected>span {
 	background-color: lighten($accent, 55%);
 	color: $accent;
 }
 
-.mm-listview > li.active {
+.mm-listview>li.active {
 	&>a {
 		color: $accent2;
 	}
@@ -251,13 +222,14 @@ html.mm-opened {
 	}
 }
 
-.mm-menu_theme-white .mm-navbar a, .mm-menu_theme-white .mm-navbar > * {
+.mm-menu_theme-white .mm-navbar a,
+.mm-menu_theme-white .mm-navbar>* {
 	color: $accent2;
 }
 
 .mm-listview {
-	> li {
-		> a {
+	>li {
+		>a {
 			transition: all .25s ease;
 			padding-left: 5%;
 			padding-right: 5%;
@@ -274,6 +246,5 @@ html.mm-opened {
 		}
 	}
 }
- 
 
 // mmenu END------------

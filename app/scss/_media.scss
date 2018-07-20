@@ -472,7 +472,7 @@
 		font-size: $fz--base;
 	} // TOP-INFO-----------------
 	.console {
-		flex-direction: column;
+		
 		&__item {
 			padding-left: 80px;
 			padding-right: 7px;
@@ -782,14 +782,15 @@
 	.console {
 		flex-direction: column;
 		&__item {
-			padding-left: 7px;
-			padding-right: 7px;
+			padding-left: 40px;
+			padding-right: 15px;
 			display: flex;
 			justify-content: flex-end;
-			align-items: center;
 			text-align: right;
 			min-height: 60px;
-		}
+			margin: 5px auto; 
+			width: 80%;
+			}
 		&__name {
 			text-shadow: #000 1px 1px 1px;
 			br {
