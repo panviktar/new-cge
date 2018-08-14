@@ -213,20 +213,21 @@ $secondColor:#0087AC;
 
 .c-link {
 	opacity: 1;
-	text-decoration: underline;
+	text-decoration: none;
 	font-family: $default-font;
 	font-size: $fz--base;
-	color: $text;
+	color: lighten($text, 35%);
 	position: relative;
-	transition: all 0.4s ease;
+	transition: color 0.4s ease;
+	
 	&:hover,
 	&:focus {
-		opacity: 0.8;
+		opacity: 0.9;
 		text-decoration: none;
 		color: $accent;
 	}
 	&:active {
-		opacity: 0.5;
+		opacity: 0.6;
 	}	
 }
 

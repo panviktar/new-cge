@@ -4,8 +4,10 @@
 		margin-top: 50px;
 	}
 
-	&__title-2 {
-		@include h3-deport;
+	.fas,
+	.fa {
+		color: $accent;
+		font-size: 0.8rem;
 	}
 
 	&__allotment {
@@ -66,13 +68,17 @@
 		}
 
 	&__list-title {
-		text-transform: uppercase;
+		@include h3-deport;
+		display: inline-block;
 	}	
+
+	&__title-2 {
+		@include h3-deport;
+		font-size: $fz--medium;
+	}
 
 	&__list-title-h5 {
 		@include h5;
-		margin-top: 30px;
-		display: block;
 	}
 
 	&__img {

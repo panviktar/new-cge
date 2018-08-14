@@ -1,47 +1,47 @@
-table#table { 
+.container-table {
+ 
   font-family: $default-font, sans-serif;
  	line-height: 1.2;
-	margin: 10px auto;
+	margin: 20px auto;
   border-collapse: collapse;
   font-weight: $normal; 
 	background:darken(#5a6773, 10%);
 	color: #fff;
   text-rendering: optimizeLegibility;
   border-radius: 5px; 
-}
 
 
-table#table thead th { 
+ thead th { 
 	font-weight: 600; 
 }
-table#table thead th, 
-table#miyazaki tbody td { 
+ thead th, 
+ tbody td { 
 	padding: 0.8rem 2rem; 
 	font-size: $fz--base;
 	text-align: center;
 }
 
 
-table#table tbody td { 
+ tbody td { 
 	padding: 1rem 2rem; 
 	font-size: $fz--small;
 	color: rgb(90, 103, 115);
 	text-align: center;
 	}
 
-	table#table tbody td a i {
+	 tbody td a i {
 		font-size: 0.8rem;
 		padding: 0.4rem 0.6rem;
 		color: rgb(90, 103, 115);
 		margin-right: 0;
 	}
 
-	table#table tbody td .link-open i,
-	table#table tbody td .link-download i{
+	 tbody td .link-open i,
+	 tbody td .link-download i{
 		font-size: 1.6rem;
 	}
 
-	table#table tbody td a {
+	 tbody td a {
 		color: rgb(90, 103, 115);
 		transition: color 0.35s ease;
 		&:hover {
@@ -50,28 +50,28 @@ table#table tbody td {
 		}
 	}
 
-	table#table tbody td a .fa-file-pdf,
-	table#table tbody td a .fa-file-word {
+	 tbody td a .fa-file-pdf,
+	 tbody td a .fa-file-word {
 		&:hover {
 			color: $accent;
 		}
 	}
 
-table#table tbody .td-first,
-table#table thead .td-first {
+ tbody .td-first,
+ thead .td-first {
 	text-align:left;
 	padding-left: 0.7rem;
 		}
 
-table#table tbody tr:nth-child(odd) {
+ tbody tr:nth-child(odd) {
   background-color: #eee;
 }
 
-table#table tbody tr:nth-child(even) {
+ tbody tr:nth-child(even) {
   background-color: #fcfcfc
 }
 
-table#table tbody tr {
+ tbody tr {
 	transition: all .3s ease;
 	&:hover {
 		background-color: lighten($accent, 60%);
@@ -79,41 +79,43 @@ table#table tbody tr {
 	}
 }
 
-table#table tbody tr:not(:last-child) { 
+ tbody tr:not(:last-child) { 
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;  
+}
 }
 
 
 
 @include media-breakpoint-down(sm)  {
- 
-	table#table thead	{ 
+	.container-table {
+	 thead	{ 
 		display: none; 
 	}
-	table#table thead th {
+	 thead th {
 		font-size: $fz--small;
 	}
-  table#table tbody td { 
+   tbody td { 
 		display: block; 
 		padding: .6rem; 
 		font-size: $fz--xxsmall;
   }
-  table#table tbody tr td:first-child { 
+   tbody tr td:first-child { 
     background: rgb(90, 103, 115); color: #fff; 
   }
-	table#table tbody td:before { 
+	 tbody td:before { 
     content: attr(data-th); 
     font-weight: bold;
     display: inline-block;
     width: 6rem;  
 	}
-	table#table tbody tr {
+	 tbody tr {
 		&:hover {
 			background-color: #fcfcfc;
 		
 		}
 	}
+}
 }
 
 
