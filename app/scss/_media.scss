@@ -675,15 +675,18 @@
 	
 		&__wraper {
 			padding: 0 10px;
-			p{
-				font-size: $fz--xsmall;
+			p,
+			a,
+			i {
+				font-size: $fz--xxsmall;
 			}
+			
 			ul,
 			ol {
 			margin: 0 0 0 0;
 			padding: 5px 10px 10px 10px;
 			li {
-				font-size: $fz--xsmall;
+				font-size: $fz--xxsmall;
 			}
 		}
 		}
@@ -709,7 +712,7 @@
 				text-transform: uppercase;
 				font-weight:$bold;
 				font-size: $fz--small;
-			}
+			}		
 		}
 	}
 	.s-accordion {
@@ -895,7 +898,8 @@
 		}
 		.s-deport-container {
 			&__wraper {
-				padding: 0;
+				width: 100%;
+				padding: 0 2%;
 				ul,
 				ol {
 							padding: 5px 5px 5px 5px;

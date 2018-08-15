@@ -31,7 +31,7 @@
 	
 	&__principal {
 		font-size: $fz--base;
-		padding-left: 160px;
+		// padding-left: 160px;
 	}
 
 	&__contakt {
@@ -70,6 +70,8 @@
 	&__list-title {
 		@include h3-deport;
 		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 15px;
 	}	
 
 	&__title-2 {
@@ -79,13 +81,14 @@
 
 	&__list-title-h5 {
 		@include h5;
+			
 	}
 
 	&__img {
 		display: flex;
 		align-items: center;
 		align-content: center;
-		margin-top: 10px;
+		
 		
 		img {
 			max-width: 100%;
@@ -124,14 +127,14 @@
 	}
 		
 	&__wraper {
+		position: relative;
 		margin-top: 25px;
 		padding: 0 40px;
-		width: 80%;
+		width: 85%;
 		margin: 0 auto;
 			
 		&--max {
 			width: 100%;
-			padding: 0 40px;
 		}	
 	
 		ul,
@@ -156,6 +159,12 @@
 		}
 	}
 
+	hr {
+		margin: 20px 0 15px 0;
+		border-color:#fff;
+		width: 80%;
+	}
+
 	.section-title-wraper {
 		display: flex;
 		justify-content: center;
@@ -163,6 +172,12 @@
 		&--tabs {
 			display: block;
 		}
+	}
+
+	h5 {
+		margin-top: 25px;
+		margin-bottom: 15px;
+		@include h5;
 	}
 	
 	&__title-min {
