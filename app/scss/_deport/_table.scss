@@ -1,5 +1,4 @@
 .container-table {
- 
   font-family: $default-font, sans-serif;
  	line-height: 1.2;
 	margin: 20px auto;
@@ -27,19 +26,7 @@
 	font-size: $fz--small;
 	color: rgb(90, 103, 115);
 	text-align: center;
-	}
-
-	 tbody td a i {
-		font-size: 0.8rem;
-		padding: 0.4rem 0.6rem;
-		color: rgb(90, 103, 115);
-		margin-right: 0;
-	}
-
-	 tbody td .link-open i,
-	 tbody td .link-download i{
-		font-size: 1.6rem;
-	}
+	}	
 
 	 tbody td a {
 		color: rgb(90, 103, 115);
@@ -50,9 +37,16 @@
 		}
 	}
 
-	 tbody td a .fa-file-pdf,
-	 tbody td a .fa-file-word {
-		&:hover {
+	 tbody td a .fas,
+	 tbody td a .fa,
+	 tbody td a .far {
+		font-size: 1.6rem;
+		padding: 0.4rem 0.6rem;
+		color: rgb(90, 103, 115);
+		margin-right: 0;
+		transition: color .25s ease;
+		&:hover,
+		&:focus {
 			color: $accent;
 		}
 	}

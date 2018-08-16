@@ -4424,7 +4424,8 @@ html.mm-opened {
             align-items: center;
     -webkit-align-content: center;
         -ms-flex-line-pack: center;
-            align-content: center; }
+            align-content: center;
+    margin-top: 15px; }
     .s-deport-container__img img {
       max-width: 100%; }
   .s-deport-container__colums {
@@ -4481,6 +4482,8 @@ html.mm-opened {
       .s-deport-container__wraper ol li {
         font-size: 15px;
         line-height: 1.6; }
+    .s-deport-container__wraper ul li {
+      position: relative; }
     .s-deport-container__wraper a {
       font-family: "PTSansRegular-example", sans-serif;
       color: #253031;
@@ -4504,6 +4507,11 @@ html.mm-opened {
     margin: 20px 0 15px 0;
     border-color: #fff;
     width: 80%; }
+  .s-deport-container .small-text {
+    font-size: 0.7rem;
+    font-style: italic; }
+    .s-deport-container .small-text ul > li {
+      font-size: 0.7rem; }
   .s-deport-container .section-title-wraper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4517,8 +4525,8 @@ html.mm-opened {
     .s-deport-container .section-title-wraper--tabs {
       display: block; }
   .s-deport-container h5 {
-    margin-top: 25px;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     font-size: 16px;
     font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
     line-height: 1.3;
@@ -4749,14 +4757,6 @@ html.mm-opened {
     font-size: 15px;
     color: #5a6773;
     text-align: center; }
-  .container-table tbody td a i {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.6rem;
-    color: #5a6773;
-    margin-right: 0; }
-  .container-table tbody td .link-open i,
-  .container-table tbody td .link-download i {
-    font-size: 1.6rem; }
   .container-table tbody td a {
     color: #5a6773;
     -webkit-transition: color 0.35s ease;
@@ -4765,9 +4765,22 @@ html.mm-opened {
     .container-table tbody td a:hover {
       color: #2c923a;
       text-decoration: none; }
-  .container-table tbody td a .fa-file-pdf:hover,
-  .container-table tbody td a .fa-file-word:hover {
-    color: #2c923a; }
+  .container-table tbody td a .fas,
+  .container-table tbody td a .fa,
+  .container-table tbody td a .far {
+    font-size: 1.6rem;
+    padding: 0.4rem 0.6rem;
+    color: #5a6773;
+    margin-right: 0;
+    -webkit-transition: color .25s ease;
+    -o-transition: color .25s ease;
+    transition: color .25s ease; }
+    .container-table tbody td a .fas:hover, .container-table tbody td a .fas:focus,
+    .container-table tbody td a .fa:hover,
+    .container-table tbody td a .fa:focus,
+    .container-table tbody td a .far:hover,
+    .container-table tbody td a .far:focus {
+      color: #2c923a; }
   .container-table tbody .td-first,
   .container-table thead .td-first {
     text-align: left;
