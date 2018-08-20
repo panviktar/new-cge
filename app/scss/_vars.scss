@@ -82,7 +82,7 @@ $secondColor:#0087AC;
 	font-weight: $light;
 	padding: 12px 35px;
 	border: 3px solid $accent;
-	transition: all 300ms ease;
+	transition: color 300ms ease;
 	box-shadow: 0px 4px 10px 2px rgba(black, 0.2);
 	z-index: 5;
 	&:before {
@@ -114,7 +114,7 @@ $secondColor:#0087AC;
 	}
 	&:active {
 		opacity: 0.5;
-		transition: all 300ms ease;
+		transition: opacity 300ms ease;
 	}
 }
 
@@ -240,16 +240,7 @@ $secondColor:#0087AC;
 		display: inline-block;
 	}
 	
-	.btn-link {
-		display: inline-block;
-		text-transform: uppercase;
-		font-size: $fz--min;
-		opacity: 0.88;
-		&:hover,
-		&:focus {
-			opacity: 1;
-		}
-	}
+
 }
 
 @keyframes swing {

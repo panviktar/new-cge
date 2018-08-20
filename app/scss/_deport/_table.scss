@@ -9,7 +9,14 @@
   text-rendering: optimizeLegibility;
   border-radius: 5px; 
 
-
+&__title-3 {
+		@include h2;
+		margin: 0 auto;
+	}
+&__title-4 {
+		@include h5;
+		font-weight: normal;
+	}
  thead th { 
 	font-weight: 600; 
 }
@@ -37,9 +44,10 @@
 		}
 	}
 
-	 tbody td a .fas,
-	 tbody td a .fa,
-	 tbody td a .far {
+	//  tbody td a .fas,
+	//  tbody td a .fa,
+	//  tbody td a .far 
+	 tbody td a i	 {
 		font-size: 1.6rem;
 		padding: 0.4rem 0.6rem;
 		color: rgb(90, 103, 115);
@@ -57,6 +65,14 @@
 	padding-left: 0.7rem;
 		}
 
+tbody .td-title {	
+	text-transform: uppercase;
+	background-color: lighten($accent, 40%);
+	i {
+		font-size: 0.8rem;
+	}
+}
+
  tbody tr:nth-child(odd) {
   background-color: #eee;
 }
@@ -69,14 +85,14 @@
 	transition: all .3s ease;
 	&:hover {
 		background-color: lighten($accent, 60%);
-	
-	}
+		}
 }
 
  tbody tr:not(:last-child) { 
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;  
 }
+ 
 }
 
 
@@ -93,6 +109,10 @@
 		display: block; 
 		padding: .6rem; 
 		font-size: $fz--xxsmall;
+		a,
+		.fas {
+			color: #fff;
+		}
   }
    tbody tr td:first-child { 
     background: rgb(90, 103, 115); color: #fff; 

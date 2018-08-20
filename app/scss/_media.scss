@@ -672,6 +672,14 @@
 		}
 	}
 	.s-deport-container {
+
+		&__services-card-title {
+			font-size: $fz--medium;
+		}
+
+		&__services-card-bg {
+			min-height: 150px;
+		}
 	
 		&__wraper {
 			padding: 0 10px;
