@@ -101,6 +101,7 @@ body {
 }
 
 a {
+	outline: none;
 	color: $accent;
 	// text-decoration: underline;
 	&:hover,

@@ -212,13 +212,14 @@ $secondColor:#0087AC;
 // Ссылки в тексте
 
 .c-link {
-	opacity: 1;
-	text-decoration: none;
+	opacity: 1;	
+	text-decoration: underline;
 	font-family: $default-font;
 	font-size: $fz--base;
 	color: lighten($text, 35%);
 	position: relative;
-	transition: color 0.4s ease;
+	transition: color 0.3s ease;
+	transition: opacity 0.3s ease;
 	
 	&:hover,
 	&:focus {

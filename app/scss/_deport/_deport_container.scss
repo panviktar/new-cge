@@ -1,49 +1,57 @@
 .s-deport-container {
 	margin-top: 40px;
+	&--bg {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		width: 100%;
+		min-height: 40vh;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		position: relative;
+		flex-wrap: wrap;
+	}
 	&--top {
 		margin-top: 50px;
 	}
-
 	.fas,
 	.fa {
 		color: $accent;
 		font-size: 0.8rem;
 	}
-
 	&__allotment {
 		padding: 0.6rem 1.2rem;
 		background-color: lighten($accent, 57%);
 		border-radius: 5px;
-		box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 	}
-
 	&__map {
 		display: flex;
-		align-items: center;		
+		align-items: center;
 		width: 100%;
 		height: 300px;
 		padding: 20px;
 	}
-
-	.btn-bigslider {	
+	.btn-bigslider {
 		font-size: $fz--xsmall;
-		padding: 8px 15px;	
+		padding: 8px 15px;
 		&:hover {
 			color: #fff;
 			text-decoration: none;
 		}
 	}
-	
 	&__principal {
-		font-size: $fz--base;
-		// padding-left: 160px;
+		font-size: $fz--base; // padding-left: 160px;
 	}
-
 	&__contakt {
 		a {
 			color: lighten( $text, 20%);
 			padding: 5px 10px;
-			transition: all 0.3s;
+			transition: color 0.3s;
+			transition: opacity 0.3s;
 			&:hover {
 				color: $accent;
 			}
@@ -56,9 +64,7 @@
 				margin-right: 10px;
 				color: $accent2;
 			}
-		
 		}
-	
 	}
 	&__clock {
 		p {
@@ -68,49 +74,41 @@
 				font-size: 12px;
 				position: relative;
 				top: 0;
-			}		
 			}
 		}
-
+	}
 	&__list-title {
 		@include h3-deport;
 		display: inline-block;
 		margin-top: 10px;
 		margin-bottom: 15px;
-	}	
-
+	}
 	&__title-2 {
 		@include h3-deport;
-		font-size: $fz--medium;		
+		font-size: $fz--medium;
 		margin: 20px 0;
 		display: inline-block;
 	}
-
 	&__list-title-h5 {
 		@include h5;
-	.fa-exclamation-circle {
-		font-size: 2rem;
-	}		
+		.fa-exclamation-circle {
+			font-size: 2rem;
+		}
 	}
-
 	&__img {
 		display: flex;
 		align-items: center;
 		align-content: center;
 		margin-top: 15px;
-				
 		img {
 			max-width: 100%;
 		}
 	}
-
-
 	&__colums {
 		margin-top: 15px;
 		display: flex;
 		justify-content: space-around;
 	}
-
 	&__colum {
 		font-size: $fz--xxsmall;
 		a {
@@ -130,21 +128,35 @@
 					font-family: "FA";
 					position: absolute;
 					left: 0;
-					top:1px;
+					top: 1px;
 					color: $accent2;
 				}
 			}
 		}
 	}
-
 	&__services-card {
 		padding: 15px;
-
 		ul>li {
 			padding: 0;
 		}
+		&--date {
+			text-align: center;
+			big {
+				border: 1px solid $accent2;
+				border-radius: 8px;
+				background: lighten($accent2, 10%);
+				padding: 8px 15px;
+				color: #fff;
+				text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 2px;
+				line-height: 2.5;
+			}
+			.fa-calendar-alt,
+			.fa-door-open {
+				font-size: 1.5rem;
+				color: #fff;
+			}
 		}
-
+	}
 	&__services-card-bg {
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -153,26 +165,22 @@
 		display: flex;
 		justify-content: center;
 	}
-
 	&__services-card-title {
-		@include  h2-deport;
-		font-size: $fz--xlarge;	
-		align-self: center;	
+		@include h2-deport;
+		font-size: $fz--xlarge;
+		align-self: center;
 		border: 1px solid #e5e5e5;
-		background-color: rgba(0,0,0,0.2);
+		background-color: rgba(0, 0, 0, 0.2);
 	}
-		
 	&__wraper {
 		position: relative;
 		padding: 0 40px;
 		width: 85%;
 		margin: 0 auto;
 		margin-top: 25px;
-			
 		&--max {
 			width: 100%;
-		}		
-	
+		}
 		ul,
 		ol {
 			margin: 0 0 0 0;
@@ -182,7 +190,6 @@
 				line-height: 1.6;
 			}
 		}
-
 		.ls-none {
 			padding: 0;
 			margin: 0;
@@ -195,8 +202,7 @@
 		ul {
 			li {
 				// list-style: none;
-				position: relative;
-				// &::before {
+				position: relative; // &::before {
 				// 	width: 8px;
 				// 	height: 8px;
 				// 	position: absolute;
@@ -219,9 +225,11 @@
 			}
 		}
 		a {
-		@include link;
+			@include link;
 		}
-		p, dt, dd {
+		p,
+		dt,
+		dd {
 			font-size: $fz--small;
 			line-height: 1.4;
 		}
@@ -230,21 +238,18 @@
 			margin-right: 13px;
 		}
 	}
-
 	hr {
 		margin: 20px 0 15px 0;
-		border-color:#fff;
+		border-color: #fff;
 		width: 80%;
 	}
-
 	.small-text {
 		font-size: 0.7rem;
 		font-style: italic;
-		ul > li {
+		ul>li {
 			font-size: 0.7rem;
 		}
 	}
-
 	.section-title-wraper {
 		display: flex;
 		justify-content: center;
@@ -253,18 +258,15 @@
 			display: block;
 		}
 	}
-
-	h5 {
+	&__title-h5 {
 		margin-top: 15px;
 		margin-bottom: 10px;
 		@include h5;
 	}
-	
 	&__title-min {
 		font-size: $fz--small;
 		text-transform: uppercase;
 		font-weight: $bold;
-		
 	}
 }
 
@@ -298,22 +300,16 @@
 			width: 60px;
 			height: 100%;
 			background-color: $accent2;
-			
 		}
 		&::before {
 			top: -7px;
 			left: -45px;
 			transform: rotate(20deg);
 		}
-
 		&::after {
-		top: -7px;
-		right: -45px;
-		transform: rotate(-20deg);
+			top: -7px;
+			right: -45px;
+			transform: rotate(-20deg);
+		}
 	}
-
-
 }
-}
-
-

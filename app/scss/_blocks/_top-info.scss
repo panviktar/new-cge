@@ -38,7 +38,8 @@
 		text-decoration: none;
 		&:hover .console__name {
 			text-decoration: underline;
-		}
+			outline: none;
+		}		
 	}
 }
 

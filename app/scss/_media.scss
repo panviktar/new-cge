@@ -232,7 +232,7 @@
 		padding-top: 20px;
 	}
 	.section-title {
-		font-size: $fz--base;
+		font-size: $fz--xbase;
 	}
 	.console {
 		flex-direction: row;
@@ -424,7 +424,7 @@
 @include media-breakpoint-down(sm) {
 	.section-title-wraper {
 		.section-title {
-			font-size: $fz--base;
+			font-size: $fz--xbase;
 			padding: 7px 10px;
 		}
 	}
@@ -476,7 +476,9 @@
 	/*==========  header end  ==========*/
 	/*==========  MY-CONTENT  ==========*/
 	.section-title {
-		font-size: $fz--base;
+		font-size: $fz--xbase;
+		text-align: center;
+	
 	} // TOP-INFO-----------------
 	.console {
 		

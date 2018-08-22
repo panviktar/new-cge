@@ -2,7 +2,7 @@
 @mixin link {
 	font-family: $default-font;
   color: $text;
-  transition: all 0.3s;
+  transition: color 0.3s;
 
   &:hover {
     color: $accent;
