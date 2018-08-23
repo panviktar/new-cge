@@ -18,7 +18,8 @@
 		margin-top: 50px;
 	}
 	.fas,
-	.fa {
+	.fa,
+	.fa-phone {
 		color: $accent;
 		font-size: 0.8rem;
 	}
@@ -139,8 +140,15 @@
 		ul>li {
 			padding: 0;
 		}
+		img {
+			width: 100%;
+			height: auto;			
+		}
 		&--date {
 			text-align: center;
+			.card-svg {
+				width: 50%;
+			}
 			big {
 				border: 1px solid $accent2;
 				border-radius: 8px;
@@ -232,6 +240,14 @@
 		dd {
 			font-size: $fz--small;
 			line-height: 1.4;
+		}
+dd {
+	text-transform: uppercase;
+	font-weight: $bold;
+}
+
+		dt {
+			font-style: italic;
 		}
 		i {
 			font-size: 0.8rem;

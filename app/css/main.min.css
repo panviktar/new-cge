@@ -4180,8 +4180,6 @@ html.mm-opened {
     border: 1px solid #2c923a;
     -webkit-border-radius: 99px;
             border-radius: 99px; }
-    .s-accordion__all label:before {
-      content: 'Открыть все'; }
 
 .s-accordion .s-accordion__accordion {
   position: relative;
@@ -4346,7 +4344,8 @@ html.mm-opened {
   .s-deport-container--top {
     margin-top: 50px; }
   .s-deport-container .fas,
-  .s-deport-container .fa {
+  .s-deport-container .fa,
+  .s-deport-container .fa-phone {
     color: #2c923a;
     font-size: 0.8rem; }
   .s-deport-container__allotment {
@@ -4507,8 +4506,13 @@ html.mm-opened {
     padding: 15px; }
     .s-deport-container__services-card ul > li {
       padding: 0; }
+    .s-deport-container__services-card img {
+      width: 100%;
+      height: auto; }
     .s-deport-container__services-card--date {
       text-align: center; }
+      .s-deport-container__services-card--date .card-svg {
+        width: 50%; }
       .s-deport-container__services-card--date big {
         border: 1px solid #e2b11a;
         -webkit-border-radius: 8px;
@@ -4595,6 +4599,11 @@ html.mm-opened {
     .s-deport-container__wraper dd {
       font-size: 15px;
       line-height: 1.4; }
+    .s-deport-container__wraper dd {
+      text-transform: uppercase;
+      font-weight: 700; }
+    .s-deport-container__wraper dt {
+      font-style: italic; }
     .s-deport-container__wraper i {
       font-size: 0.8rem;
       margin-right: 13px; }
@@ -4879,7 +4888,9 @@ html.mm-opened {
     .container-table tbody td a:hover {
       color: #2c923a;
       text-decoration: none; }
-  .container-table tbody td a i {
+  .container-table tbody td a .fas,
+  .container-table tbody td a .fa,
+  .container-table tbody td a .far {
     font-size: 1.6rem;
     padding: 0.4rem 0.6rem;
     color: #5a6773;
@@ -4887,8 +4898,15 @@ html.mm-opened {
     -webkit-transition: color .25s ease;
     -o-transition: color .25s ease;
     transition: color .25s ease; }
-    .container-table tbody td a i:hover, .container-table tbody td a i:focus {
+    .container-table tbody td a .fas:hover, .container-table tbody td a .fas:focus,
+    .container-table tbody td a .fa:hover,
+    .container-table tbody td a .fa:focus,
+    .container-table tbody td a .far:hover,
+    .container-table tbody td a .far:focus {
       color: #2c923a; }
+  .container-table tbody td a .fa-phone {
+    color: #2c923a;
+    font-size: 0.8rem; }
   .container-table tbody .td-first,
   .container-table thead .td-first {
     text-align: left;
