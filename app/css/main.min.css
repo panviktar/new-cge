@@ -4888,6 +4888,8 @@ html.mm-opened {
     .container-table tbody td a:hover {
       color: #2c923a;
       text-decoration: none; }
+  .container-table tbody td p {
+    margin: 0; }
   .container-table tbody td a .fas,
   .container-table tbody td a .fa,
   .container-table tbody td a .far {
@@ -4941,7 +4943,7 @@ html.mm-opened {
     font-size: 13px; }
     .container-table tbody td a,
     .container-table tbody td .fas {
-      color: #fff; }
+      color: #253031; }
   .container-table tbody tr td:first-child {
     background: #5a6773;
     color: #fff; }
@@ -4949,7 +4951,8 @@ html.mm-opened {
     content: attr(data-th);
     font-weight: bold;
     display: inline-block;
-    width: 6rem; }
+    width: 100%;
+    text-align: center; }
   .container-table tbody tr:hover {
     background-color: #fcfcfc; } }
 

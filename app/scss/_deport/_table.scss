@@ -44,6 +44,10 @@
 		}
 	}
 
+	tbody td p{
+		margin: 0;
+	}
+
 	 tbody td a .fas,
 	 tbody td a .fa,
 	 tbody td a .far 	 {
@@ -115,7 +119,7 @@ tbody .td-title {
 		font-size: $fz--xxsmall;
 		a,
 		.fas {
-			color: #fff;
+			color: $text;
 		}
   }
    tbody tr td:first-child { 
@@ -125,12 +129,12 @@ tbody .td-title {
     content: attr(data-th); 
     font-weight: bold;
     display: inline-block;
-    width: 6rem;  
+		width: 100%;  
+		text-align: center;
 	}
 	 tbody tr {
 		&:hover {
 			background-color: #fcfcfc;
-		
 		}
 	}
 }
