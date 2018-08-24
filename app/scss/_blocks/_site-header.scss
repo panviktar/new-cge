@@ -119,11 +119,7 @@
 		line-height: 1.4;
 		position: relative;
 		font-size: 14px;
-	}
-
-	&__info a {
-		@include link;
-	}
+	}	
 
 	.fa-eye {
 		font-size: $fz--xmedium;

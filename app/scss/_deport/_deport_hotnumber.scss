@@ -12,8 +12,7 @@
 			align-items: flex-end;
 		}
 			
-		&--a {
-			@include link;
+		&--a {		
 			&:hover {
 				text-decoration: none;
 			}
@@ -45,8 +44,7 @@
 		}
 	}
 	
-	&__link {
-		@include link;
+	&__link {		
 		border: 1px solid $accent;
 		padding:  8px 15px;
 		font-size: $fz--base;

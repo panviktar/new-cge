@@ -17,6 +17,10 @@
 	&--top {
 		margin-top: 50px;
 	}
+
+	&__block {
+		margin: 15px 0 0 0;
+	}
 	.fas,
 	.fa,
 	.fa-phone {
@@ -112,8 +116,7 @@
 	}
 	&__colum {
 		font-size: $fz--xxsmall;
-		a {
-			@include link;
+		a {		
 			text-decoration: underline;
 		}
 		&--servises {
@@ -142,7 +145,7 @@
 		}
 		img {
 			width: 100%;
-			height: auto;			
+			height: auto;
 		}
 		&--date {
 			text-align: center;
@@ -182,10 +185,9 @@
 	}
 	&__wraper {
 		position: relative;
-		padding: 0 40px;
+		padding: 40px 40px;
 		width: 85%;
-		margin: 0 auto;
-		margin-top: 25px;
+		margin: 0 auto;		
 		&--max {
 			width: 100%;
 		}
@@ -232,22 +234,20 @@
 				// }
 			}
 		}
-		a {
-			@include link;
-		}
+		
 		p,
 		dt,
 		dd {
 			font-size: $fz--small;
 			line-height: 1.4;
 		}
-dd {
-	text-transform: uppercase;
-	font-weight: $bold;
-}
-
+		dd {
+			text-transform: uppercase;
+			font-weight: $bold;
+		}
 		dt {
 			font-style: italic;
+			font-weight: normal;
 		}
 		i {
 			font-size: 0.8rem;
