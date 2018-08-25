@@ -17,6 +17,23 @@
 				text-decoration: none;
 			}
 		}
+
+		&--vk {	
+			color: $text;	
+			.s-deport-hotphone__info {
+				margin-top: 20px;
+			}
+			&:hover,
+			&:focus {
+				span {
+					text-decoration: underline;
+					color: $text;	
+				}
+				em {
+					color: $text;	
+				}
+			}
+		}
 	
 	}
 
@@ -52,5 +69,4 @@
 			text-decoration: none;
 		}
 	}
-	
 }

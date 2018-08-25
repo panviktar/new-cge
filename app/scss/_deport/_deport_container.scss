@@ -74,7 +74,7 @@
 	&__clock {
 		p {
 			position: relative;
-			padding-left: 20px;
+			padding-left: 10px;
 			.fa-clock {
 				font-size: 12px;
 				position: relative;
@@ -109,8 +109,7 @@
 			max-width: 100%;
 		}
 	}
-	&__colums {
-		margin-top: 15px;
+	&__colums {		
 		display: flex;
 		justify-content: space-around;
 	}
