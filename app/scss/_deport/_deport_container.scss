@@ -96,6 +96,7 @@
 	}
 	&__list-title-h5 {
 		@include h5;
+		margin-bottom: 15px;
 		.fa-exclamation-circle {
 			font-size: 2rem;
 		}

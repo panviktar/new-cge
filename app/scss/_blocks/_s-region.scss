@@ -3,31 +3,26 @@
 	align-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-
 	.region__wraper-title {
 		text-align: center;
 	}
-
-		.region__title {
-			display: inline-block;
-			@include h2;
-			margin-bottom: 30px;
-			border: 1px solid lighten($gray, 30%);
-			}
-	
-
+	.region__title {
+		display: inline-block;
+		@include h2;
+		margin-bottom: 30px;
+		border: 1px solid lighten($gray, 30%);
+	}
 	.region__legend {
 		flex-direction: column;
 		align-self: center;
 		margin-top: -70px;
-		}
-
+	}
 	.region__info {
 		flex-direction: column;
 		justify-content: center;
 		border: 1px solid lighten($gray, 50%);
 		box-shadow: 0px 0px 14px 5px #e4e4e4;
-		padding: 30px 30px 10px 30px;
+		padding: 40px 40px 25px 40px;
 		position: relative;
 		z-index: 1;
 		display: none;
@@ -37,87 +32,91 @@
 		&--active {
 			display: block;
 		}
+	}
+	.region__legend-title {
+		@include h5;
+		text-align: center;
+		margin-bottom: 35px;
+		position: relative;
+		line-height: 1.4;
+		font-size: $fz--xbase;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: $accent;
+			bottom: -20px;
+			left: 0;
+		}
+	}
+	.region__legend__list {
+		text-decoration: none;
+		list-style: none;
+	}
+	.region__legend__item {
+		padding: 6px 0;
+	
+		a {
+			font-size: $fz--base;
+			color: $text;
+			transition: color .3s ease;
+			
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+				color: $accent;
+			}
+			&:active {
+				text-decoration: none;
+				color: rgba($accent,20%);
+			}
+		}
+
+		span {
+			font-size: $fz--base;
 		}
 		
-		.region__legend-title {
-			@include h5;
-			text-align: center;
-			margin-bottom: 35px;
-			position: relative;
-			line-height: 1.4;
-			font-size: $fz--xbase;
-			&::before {
-				content: "";
-				position: absolute;
-				width: 100%;
-				height: 2px;
-				background-color: $accent;
-				bottom: -20px;
-				left: 0;
-			}
+		i {
+			margin-right: 10px;
+			font-size: 13px;
+			color: $accent;
 		}
-
-		.region__legend__list {
-			text-decoration: none;
-			list-style: none;
-		}
-
-		.region__legend__item {
-			padding: 6px 0;
-			a {
-			font-size: $fz--base;	
-			}
-
-			span {
-				font-size: $fz--base;	
-			}
-			
-			i {
-				margin-right: 10px;
-				font-size: 13px;
-				color: $accent;
-
-			}
-		}
-
-
+	}
 	.region__map {
 		position: relative;
 		text-align: center;
 	}
-		.region__map-png {
-			width: 400px;
+	.region__map-png {
+		width: 400px;
+	}
+	.region__map-all {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		cursor: pointer;
+	}
+	.map-region {
+		fill: #c6c6c6;
+		opacity: 0;
+		transition: all 0.3s ease;
+		&:hover {
+			fill: lighten($accent, 40%);
+			opacity: 0.4;
 		}
-		
-		.region__map-all {
-			position: absolute;
-			top: 0;
-			left:0;
-			height: 100%;
-			width: 100%;
-			cursor: pointer;
-			}
-		.map-region {
-			fill: #c6c6c6;
-			opacity:0;
-			transition: all 0.3s ease;
+		&:active {
+			fill: lighten($accent, 50%);
+			opacity: 0.3;
+		}
+		&--active {
+			fill: lighten($accent, 20%);
+			opacity: 0.5;
 			&:hover {
-				fill: lighten($accent, 40%);
-				opacity: 0.4;
-			}
-			&:active {
-				fill: lighten($accent, 50%);
-				opacity: 0.3;
-			}
-			&--active {
 				fill: lighten($accent, 20%);
 				opacity: 0.5;
-				&:hover {
-					fill: lighten($accent, 20%);
-					opacity: 0.5;
-				}
 			}
 		}
-	
 	}
-	
+}
