@@ -1,19 +1,44 @@
 .s-deport-container {
 	margin-top: 40px;
-	&--bg {
+	z-index: 99;	
+
+	&__bg {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-attachment: fixed;
 		width: 100%;
-		min-height: 40vh;
+		height: auto;
 		box-sizing: border-box;
 		display: flex;
 		justify-content: center;
 		align-content: center;
 		position: relative;
 		flex-wrap: wrap;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(#fff, .6);
+			box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15),inset 0 -1px 0 0 rgba(0,0,0,0.2);			
+		}
+
+		&--services {
+			background-image: url(/img/deport/labaratory/labaratory_bg6.jpg);
+		}
+		&--time {
+			background-image: url(/img/deport/labaratory/labaratory_bg-time.jpg);
+		}
+		&--services-2 {
+			background-image: url(/img/services/service_bg1.jpg);
+		}
+	
 	}
+
+
 	&--top {
 		margin-top: 50px;
 	}
@@ -142,7 +167,7 @@
 		padding: 15px;
 		ul>li {
 			padding: 0;
-		}
+		}	
 		img {
 			width: 100%;
 			height: auto;
@@ -160,6 +185,7 @@
 				color: #fff;
 				text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 2px;
 				line-height: 2.5;
+			
 			}
 			.fa-calendar-alt,
 			.fa-door-open {
@@ -175,14 +201,33 @@
 		padding: 15px;
 		display: flex;
 		justify-content: center;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(#000, .1);		
+			transition: background-color .3s ease;
+			z-index: 1;	
+		}	
 	}
+	&__services-card-bg:hover::before {			
+		background-color: rgba(#000, .2);		
+		}	
+
 	&__services-card-title {
 		@include h2-deport;
 		font-size: $fz--xlarge;
 		align-self: center;
 		border: 1px solid #e5e5e5;
 		background-color: rgba(0, 0, 0, 0.2);
-	}
+		z-index: 1;	
+		position: relative;
+		}
+
 	&__wraper {
 		position: relative;
 		padding: 40px 40px;
@@ -236,16 +281,17 @@
 		}
 		
 		p,
+		span,
 		dt,
 		dd {
 			font-size: $fz--small;
 			line-height: 1.4;
 		}
-		dd {
+		dt {
 			text-transform: uppercase;
 			font-weight: $bold;
 		}
-		dt {
+		dd {
 			font-style: italic;
 			font-weight: normal;
 		}
@@ -253,11 +299,17 @@
 			font-size: 0.8rem;
 			margin-right: 13px;
 		}
+		// &__services-card-title {
+			
+		// }
 	}
 	hr {
-		margin: 20px 0 15px 0;
-		border-color: #fff;
+		margin: 20px 0 20px 0;
+		background-color: rgba($text, .3);
+		border: 0px none;
 		width: 80%;
+		height:1px;
+		color: #e1e1e1;
 	}
 	.small-text {
 		font-size: 0.7rem;
@@ -273,6 +325,11 @@
 		&--tabs {
 			display: block;
 		}
+
+		&__logo {
+			display: block;
+			margin-right: 20px;
+		}
 	}
 	&__title-h5 {
 		margin-top: 15px;
@@ -284,6 +341,32 @@
 		text-transform: uppercase;
 		font-weight: $bold;
 	}
+
+
+	.cur {
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			text-align: center;
+		}
+		&__item {
+			border: 1px solid #e1e1e1;
+			padding: 30px 20px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			
+	&__title {
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+		
+		
+		}
+	}
+
 }
 
 .s-info-materials--deport {
@@ -328,4 +411,5 @@
 			transform: rotate(-20deg);
 		}
 	}
+	
 }
