@@ -4351,7 +4351,7 @@ html.mm-opened {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(255, 255, 255, 0.7);
       -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
               box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 -1px 0 0 rgba(0, 0, 0, 0.2); }
     .s-deport-container__bg--services {
@@ -4360,6 +4360,8 @@ html.mm-opened {
       background-image: url(/img/deport/labaratory/labaratory_bg-time.jpg); }
     .s-deport-container__bg--services-2 {
       background-image: url(/img/services/service_bg1.jpg); }
+    .s-deport-container__bg--services-3 {
+      background-image: url(/img/info-materials/consultation_bg.jpg); }
   .s-deport-container--top {
     margin-top: 50px; }
   .s-deport-container__block {
@@ -4539,6 +4541,8 @@ html.mm-opened {
         color: #fff;
         text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 2px;
         line-height: 2.5; }
+        .s-deport-container__services-card--date big a {
+          color: #ffffff; }
       .s-deport-container__services-card--date .fa-calendar-alt,
       .s-deport-container__services-card--date .fa-door-open {
         font-size: 1.5rem;
@@ -4676,11 +4680,13 @@ html.mm-opened {
     display: flex;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    text-align: center; }
+            flex-wrap: wrap; }
+    .s-deport-container .cur__list__title {
+      display: block;
+      margin-top: 10px; }
   .s-deport-container .cur__item {
     border: 1px solid #e1e1e1;
-    padding: 30px 20px;
+    padding: 20px 20px;
     width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -4690,11 +4696,24 @@ html.mm-opened {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
-    .s-deport-container .cur__item__title {
-      display: block;
-      margin-top: 20px;
-      margin-bottom: 20px; }
+            flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px; }
+  .s-deport-container .cur__title {
+    font-weight: 700;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-transform: uppercase; }
+  .s-deport-container .cur__text {
+    font-size: 13px;
+    line-height: 1.2;
+    color: rgba(37, 48, 49, 0.8); }
+  .s-deport-container .cur__img {
+    margin: 0 auto;
+    width: 80%;
+    height: auto; }
 
 .s-info-materials--deport .section-title-wraper {
   display: -webkit-box;

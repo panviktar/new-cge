@@ -4,6 +4,7 @@
 $(function () {
 	$(".info-material__title").equalHeights();
 	$(".card__title").equalHeights();
+	$(".cur__item").equalHeights();
 
 
 	

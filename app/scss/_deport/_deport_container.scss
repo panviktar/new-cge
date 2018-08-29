@@ -1,7 +1,6 @@
 .s-deport-container {
 	margin-top: 40px;
-	z-index: 99;	
-
+	z-index: 99;
 	&__bg {
 		background-position: center;
 		background-repeat: no-repeat;
@@ -14,7 +13,6 @@
 		align-content: center;
 		position: relative;
 		flex-wrap: wrap;
-
 		&::before {
 			content: "";
 			position: absolute;
@@ -22,10 +20,9 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(#fff, .6);
-			box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15),inset 0 -1px 0 0 rgba(0,0,0,0.2);			
+			background-color: rgba(#fff, .7);
+			box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
 		}
-
 		&--services {
 			background-image: url(/img/deport/labaratory/labaratory_bg6.jpg);
 		}
@@ -35,14 +32,13 @@
 		&--services-2 {
 			background-image: url(/img/services/service_bg1.jpg);
 		}
-	
+		&--services-3 {
+			background-image: url(/img/info-materials/consultation_bg.jpg);
+		}
 	}
-
-
 	&--top {
 		margin-top: 50px;
 	}
-
 	&__block {
 		margin: 15px 0 0 0;
 	}
@@ -135,13 +131,13 @@
 			max-width: 100%;
 		}
 	}
-	&__colums {		
+	&__colums {
 		display: flex;
 		justify-content: space-around;
 	}
 	&__colum {
 		font-size: $fz--xxsmall;
-		a {		
+		a {
 			text-decoration: underline;
 		}
 		&--servises {
@@ -167,7 +163,7 @@
 		padding: 15px;
 		ul>li {
 			padding: 0;
-		}	
+		}
 		img {
 			width: 100%;
 			height: auto;
@@ -185,7 +181,9 @@
 				color: #fff;
 				text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 2px;
 				line-height: 2.5;
-			
+				a {
+					color: #ffffff;
+				}
 			}
 			.fa-calendar-alt,
 			.fa-door-open {
@@ -209,30 +207,28 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(#000, .1);		
+			background-color: rgba(#000, .1);
 			transition: background-color .3s ease;
-			z-index: 1;	
-		}	
+			z-index: 1;
+		}
 	}
-	&__services-card-bg:hover::before {			
-		background-color: rgba(#000, .2);		
-		}	
-
+	&__services-card-bg:hover::before {
+		background-color: rgba(#000, .2);
+	}
 	&__services-card-title {
 		@include h2-deport;
 		font-size: $fz--xlarge;
 		align-self: center;
 		border: 1px solid #e5e5e5;
 		background-color: rgba(0, 0, 0, 0.2);
-		z-index: 1;	
+		z-index: 1;
 		position: relative;
-		}
-
+	}
 	&__wraper {
 		position: relative;
 		padding: 40px 40px;
 		width: 85%;
-		margin: 0 auto;		
+		margin: 0 auto;
 		&--max {
 			width: 100%;
 		}
@@ -279,7 +275,6 @@
 				// }
 			}
 		}
-		
 		p,
 		span,
 		dt,
@@ -298,9 +293,7 @@
 		i {
 			font-size: 0.8rem;
 			margin-right: 13px;
-		}
-		// &__services-card-title {
-			
+		} // &__services-card-title {
 		// }
 	}
 	hr {
@@ -308,7 +301,7 @@
 		background-color: rgba($text, .3);
 		border: 0px none;
 		width: 80%;
-		height:1px;
+		height: 1px;
 		color: #e1e1e1;
 	}
 	.small-text {
@@ -325,7 +318,6 @@
 		&--tabs {
 			display: block;
 		}
-
 		&__logo {
 			display: block;
 			margin-right: 20px;
@@ -341,32 +333,43 @@
 		text-transform: uppercase;
 		font-weight: $bold;
 	}
-
-
 	.cur {
 		&__list {
 			display: flex;
 			flex-wrap: wrap;
-			text-align: center;
+			&__title {
+				display: block;
+				margin-top: 10px;
+			}
 		}
 		&__item {
 			border: 1px solid #e1e1e1;
-			padding: 30px 20px;
+			padding: 20px 20px;
 			width: 100%;
 			display: flex;
 			flex-direction: column;
-			
-	&__title {
-		display: block;
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-	
-		
-		
+			text-align: center;
+			margin-bottom: 30px;			
+		}
+		&__title {
+			font-weight: $bold;
+			display: block;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: $fz--small;
+			text-transform: uppercase;			
+		}
+		&__text {
+			font-size: $fz--xxsmall;
+			line-height: 1.2;
+			color: rgba($text, .8);
+		}
+		&__img {
+			margin: 0 auto;
+width: 80%;
+height: auto;
 		}
 	}
-
 }
 
 .s-info-materials--deport {
@@ -411,5 +414,4 @@
 			transform: rotate(-20deg);
 		}
 	}
-	
 }
