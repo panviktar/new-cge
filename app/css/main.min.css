@@ -4528,6 +4528,10 @@ html.mm-opened {
     .s-deport-container__services-card img {
       width: 100%;
       height: auto; }
+    .s-deport-container__services-card a img {
+      cursor: pointer;
+      width: 40%;
+      margin: 0 auto; }
     .s-deport-container__services-card--date {
       text-align: center; }
       .s-deport-container__services-card--date .card-svg {
@@ -4551,7 +4555,7 @@ html.mm-opened {
     -webkit-background-size: cover;
             background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100%;
+    min-height: 30vh;
     padding: 15px;
     display: -webkit-box;
     display: -webkit-flex;
