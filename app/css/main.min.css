@@ -3411,6 +3411,12 @@ html.mm-opened {
       -webkit-transform: scale(1.05);
           -ms-transform: scale(1.05);
               transform: scale(1.05); }
+    .s-news .card:hover .card__title,
+    .s-news .card:hover .card__title--big {
+      text-decoration: underline; }
+    .s-news .card:hover .card__id {
+      background: #2c923a;
+      color: #ffffff; }
     .s-news .card:hover .card__image::before {
       opacity: 0;
       z-index: 10; }
@@ -3853,7 +3859,8 @@ html.mm-opened {
         position: absolute;
         top: 80px;
         outline: none;
-        padding: 15px; }
+        padding: 15px;
+        font-family: "FA"; }
         .s-info-materials .info-materials .owl-nav > button.owl-prev {
           left: -40px; }
         .s-info-materials .info-materials .owl-nav > button.owl-next {
@@ -3921,6 +3928,14 @@ html.mm-opened {
     height: 80%; }
     .s-region .region__info--active {
       display: block; }
+    .s-region .region__info:hover {
+      border: 1px solid #a6aeae;
+      -webkit-box-shadow: 0px 0px 10px 9px #e4e4e4;
+              box-shadow: 0px 0px 10px 9px #e4e4e4; }
+      .s-region .region__info:hover .region__legend-title::before {
+        width: 100%;
+        left: 0;
+        background-color: #2c923a; }
   .s-region .region__legend-title {
     font-size: 16px;
     font-family: "RobotoCondensedRegular-example", "PTSansRegular-example", sans-serif;
@@ -3936,16 +3951,23 @@ html.mm-opened {
     .s-region .region__legend-title::before {
       content: "";
       position: absolute;
-      width: 100%;
+      width: 80%;
       height: 2px;
-      background-color: #2c923a;
+      background-color: rgba(44, 146, 58, 0.7);
       bottom: -20px;
-      left: 0; }
+      left: 10%;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
   .s-region .region__legend__list {
     text-decoration: none;
     list-style: none; }
   .s-region .region__legend__item {
     padding: 6px 0; }
+    .s-region .region__legend__item:hover i {
+      font-size: 15px;
+      color: #2c923a;
+      margin-right: 8px; }
     .s-region .region__legend__item a {
       font-size: 16px;
       color: #253031;
@@ -3963,7 +3985,10 @@ html.mm-opened {
     .s-region .region__legend__item i {
       margin-right: 10px;
       font-size: 13px;
-      color: #2c923a; }
+      color: rgba(44, 146, 58, 0.7);
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
   .s-region .region__map {
     position: relative;
     text-align: center; }
@@ -4201,7 +4226,13 @@ html.mm-opened {
     .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-8,
     .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-9,
     .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-10,
-    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-11 {
+    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-11,
+    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-12,
+    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-13,
+    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-14,
+    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-15,
+    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-16,
+    .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-17 {
       display: none; }
       .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-1:checked + label,
       .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-2:checked + label,
@@ -4213,7 +4244,13 @@ html.mm-opened {
       .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-8:checked + label,
       .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-9:checked + label,
       .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-10:checked + label,
-      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-11:checked + label {
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-11:checked + label,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-12:checked + label,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-13:checked + label,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-14:checked + label,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-15:checked + label,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-16:checked + label,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-17:checked + label {
         background-color: slategray; }
         .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-1:checked + label i:before,
         .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-2:checked + label i:before,
@@ -4225,7 +4262,13 @@ html.mm-opened {
         .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-8:checked + label i:before,
         .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-9:checked + label i:before,
         .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-10:checked + label i:before,
-        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-11:checked + label i:before {
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-11:checked + label i:before,
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-12:checked + label i:before,
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-13:checked + label i:before,
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-14:checked + label i:before,
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-15:checked + label i:before,
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-16:checked + label i:before,
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-17:checked + label i:before {
           -webkit-transform: translate(3px, 8px) rotate(45deg);
               -ms-transform: translate(3px, 8px) rotate(45deg);
                   transform: translate(3px, 8px) rotate(45deg); }
@@ -4239,7 +4282,13 @@ html.mm-opened {
         .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-8:checked + label i:after,
         .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-9:checked + label i:after,
         .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-10:checked + label i:after,
-        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-11:checked + label i:after {
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-11:checked + label i:after,
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-12:checked + label i:after,
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-13:checked + label i:after,
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-14:checked + label i:after,
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-15:checked + label i:after,
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-16:checked + label i:after,
+        .s-accordion .s-accordion__accordion .s-accordion__trigger #checkbox-17:checked + label i:after {
           -webkit-transform: translate(-5px, 8px) rotate(-45deg);
               -ms-transform: translate(-5px, 8px) rotate(-45deg);
                   transform: translate(-5px, 8px) rotate(-45deg); }
@@ -4311,7 +4360,12 @@ html.mm-opened {
   .s-accordion #checkbox-8:checked ~ .s-accordion__content,
   .s-accordion #checkbox-9:checked ~ .s-accordion__content,
   .s-accordion #checkbox-10:checked ~ .s-accordion__content,
-  .s-accordion #checkbox-11:checked ~ .s-accordion__content {
+  .s-accordion #checkbox-11:checked ~ .s-accordion__content,
+  .s-accordion #checkbox-12:checked ~ .s-accordion__content,
+  .s-accordion #checkbox-13:checked ~ .s-accordion__content,
+  .s-accordion #checkbox-14:checked ~ .s-accordion__content,
+  .s-accordion #checkbox-15:checked ~ .s-accordion__content,
+  .s-accordion #checkbox-16:checked ~ .s-accordion__content {
     max-height: 350px;
     -webkit-transition: max-height 500ms ease-in-out;
     -o-transition: max-height 500ms ease-in-out;
@@ -4520,7 +4574,8 @@ html.mm-opened {
         position: absolute;
         left: 0;
         top: 1px;
-        color: #e2b11a; }
+        color: #e2b11a;
+        font-size: 0.8rem; }
   .s-deport-container__services-card {
     padding: 15px; }
     .s-deport-container__services-card ul > li {
@@ -4555,7 +4610,7 @@ html.mm-opened {
     -webkit-background-size: cover;
             background-size: cover;
     background-repeat: no-repeat;
-    min-height: 30vh;
+    min-height: 40vh;
     padding: 15px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -4634,9 +4689,6 @@ html.mm-opened {
     .s-deport-container__wraper dd {
       font-style: italic;
       font-weight: normal; }
-    .s-deport-container__wraper i {
-      font-size: 0.8rem;
-      margin-right: 13px; }
   .s-deport-container hr {
     margin: 20px 0 20px 0;
     background-color: rgba(37, 48, 49, 0.3);
@@ -4869,7 +4921,11 @@ html.mm-opened {
   .s-deport-container__wraper--tabs #tab7:checked ~ #content7,
   .s-deport-container__wraper--tabs #tab8:checked ~ #content8,
   .s-deport-container__wraper--tabs #tab9:checked ~ #content9,
-  .s-deport-container__wraper--tabs #tab10:checked ~ #content10 {
+  .s-deport-container__wraper--tabs #tab10:checked ~ #content10,
+  .s-deport-container__wraper--tabs #tab6:checked ~ #content11,
+  .s-deport-container__wraper--tabs #tab7:checked ~ #content12,
+  .s-deport-container__wraper--tabs #tab8:checked ~ #content13,
+  .s-deport-container__wraper--tabs #tab9:checked ~ #content14 {
     display: block; }
 
 @media (max-width: 991.98px) {

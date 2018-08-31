@@ -135,11 +135,13 @@
 		display: flex;
 		justify-content: space-around;
 	}
+	
 	&__colum {
 		font-size: $fz--xxsmall;
 		a {
 			text-decoration: underline;
 		}
+	
 		&--servises {
 			ul {
 				list-style: none;
@@ -155,8 +157,10 @@
 					left: 0;
 					top: 1px;
 					color: $accent2;
+					font-size: 0.8rem;
 				}
 			}
+			
 		}
 	}
 	&__services-card {
@@ -200,7 +204,7 @@
 	&__services-card-bg {
 		background-size: cover;
 		background-repeat: no-repeat;
-		min-height: 30vh;
+		min-height: 40vh;
 		padding: 15px;
 		display: flex;
 		justify-content: center;
@@ -237,6 +241,7 @@
 		&--max {
 			width: 100%;
 		}
+		
 		ul,
 		ol {
 			margin: 0 0 0 0;
@@ -294,12 +299,11 @@
 		dd {
 			font-style: italic;
 			font-weight: normal;
-		}
-		i {
-			font-size: 0.8rem;
-			margin-right: 13px;
-		} // &__services-card-title {
-		// }
+		}		
+
+	
+	
+		
 	}
 	hr {
 		margin: 20px 0 20px 0;

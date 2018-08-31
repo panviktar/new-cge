@@ -32,6 +32,15 @@
 		&--active {
 			display: block;
 		}
+		&:hover {
+		border: 1px solid lighten($gray, 30%);
+		box-shadow: 0px 0px 10px 9px #e4e4e4;
+		.region__legend-title::before {
+			width: 100%;
+			left: 0;
+			background-color: $accent;		
+		}
+		}
 	}
 	.region__legend-title {
 		@include h5;
@@ -40,14 +49,16 @@
 		position: relative;
 		line-height: 1.4;
 		font-size: $fz--xbase;
+		
 		&::before {
 			content: "";
 			position: absolute;
-			width: 100%;
+			width: 80%;
 			height: 2px;
-			background-color: $accent;
+			background-color: rgba($accent, .7);
 			bottom: -20px;
-			left: 0;
+			left: 10%;
+			transition: all .3s ease;
 		}
 	}
 	.region__legend__list {
@@ -56,6 +67,13 @@
 	}
 	.region__legend__item {
 		padding: 6px 0;
+		&:hover {
+			i {
+			font-size: 15px;
+			color: $accent;
+			margin-right: 8px;
+			}
+		}
 	
 		a {
 			font-size: $fz--base;
@@ -80,7 +98,8 @@
 		i {
 			margin-right: 10px;
 			font-size: 13px;
-			color: $accent;
+			color: rgba($accent, .7);			
+			transition: all .3s ease;
 		}
 	}
 	.region__map {

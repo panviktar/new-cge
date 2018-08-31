@@ -38,6 +38,17 @@
 			img {
 				transform: scale(1.05);
 			}
+
+			.card__title,
+			.card__title--big {
+				text-decoration: underline;
+			}
+
+			.card__id {
+				background: $accent;
+				color: #ffffff;
+			}
+
 			.card__image::before {
 				opacity: 0;
 				z-index: 10;

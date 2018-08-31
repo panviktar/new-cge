@@ -63,7 +63,11 @@ input:checked + label {
 #tab7:checked ~ #content7,
 #tab8:checked ~ #content8,
 #tab9:checked ~ #content9,
-#tab10:checked ~ #content10 {
+#tab10:checked ~#content10,
+#tab6:checked ~ #content11,
+#tab7:checked ~ #content12,
+#tab8:checked ~ #content13,
+#tab9:checked ~ #content14 {
   display: block;
 }
 }

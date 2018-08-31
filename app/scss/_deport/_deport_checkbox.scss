@@ -52,7 +52,13 @@
 		#checkbox-8,
 		#checkbox-9,
 		#checkbox-10,
-		#checkbox-11, {
+		#checkbox-11,
+		#checkbox-12,
+		#checkbox-13,
+		#checkbox-14,
+		#checkbox-15,
+		#checkbox-16,
+		#checkbox-17 {
 			display: none;
 
 			&:checked + label {
@@ -148,7 +154,12 @@
 #checkbox-8:checked ~ .s-accordion__content,
 #checkbox-9:checked ~ .s-accordion__content,
 #checkbox-10:checked ~ .s-accordion__content,
-#checkbox-11:checked ~ .s-accordion__content {
+#checkbox-11:checked ~ .s-accordion__content,
+#checkbox-12:checked ~ .s-accordion__content,
+#checkbox-13:checked ~ .s-accordion__content,
+#checkbox-14:checked ~ .s-accordion__content,
+#checkbox-15:checked ~ .s-accordion__content,
+#checkbox-16:checked ~ .s-accordion__content {
 	max-height: 350px;
 	transition: max-height 500ms ease-in-out;
 }

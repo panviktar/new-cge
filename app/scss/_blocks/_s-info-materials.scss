@@ -2,7 +2,7 @@
 .s-info-materials {
 	position: relative;
 	z-index: 1;
-
+	
 .info-materials {
 	padding: 15px 0;
 		
@@ -92,11 +92,14 @@
 		&:active {
 			opacity: .3;
 		}
+
+	
 		>button {
 			position: absolute;
 			top: 80px;
 			outline: none;
 			padding: 15px;
+			font-family: "FA";
 			
 			&.owl-prev {
 				left: -40px;
@@ -104,7 +107,7 @@
 			}
 			&.owl-next {
 				right: -40px;
-			}
+				}
 		}
 	}
 }
