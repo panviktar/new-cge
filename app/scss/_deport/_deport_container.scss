@@ -1,4 +1,4 @@
-.s-deport-container {
+.s-container {
 	margin-top: 40px;
 	z-index: 99;
 	&__bg {
@@ -258,6 +258,9 @@
 				list-style: none;
 				padding: 0;
 				margin: 0;
+				i {
+					margin-right: 10px;
+				}
 			}
 		}
 		ul {

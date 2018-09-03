@@ -1,4 +1,4 @@
-.s-deport-container__wraper--tabs { 
+.s-container__wraper--tabs { 
 	width: 100%;
 	padding: 40px 0;
 	
@@ -75,7 +75,7 @@ input:checked + label {
 
 // ≤768px
 @include media-breakpoint-down(md) {
-	.s-deport-container__wraper--tabs {
+	.s-container__wraper--tabs {
 		margin-top: 20px;
 		padding: 20px 0;
 	label {
@@ -86,7 +86,7 @@ input:checked + label {
 
 // ≤576px
 @include media-breakpoint-down(sm) {
-	.s-deport-container__wraper--tabs {
+	.s-container__wraper--tabs {
 		
   label {
 		padding: 10px;
@@ -100,7 +100,7 @@ input:checked + label {
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-	.s-deport-container__wraper--tabs {
+	.s-container__wraper--tabs {
 		margin-top: 10px;
   label {
 		font-size: $fz--xxsmall;
