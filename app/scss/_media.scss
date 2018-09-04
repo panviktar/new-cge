@@ -553,6 +553,16 @@
 			}
 		}
 	} 
+	.s-news-page {
+		.article-body {
+			.card__info {
+				width: 100%;			
+			}
+			.card__title-page {
+				font-size: $fz--medium;
+			}
+		}
+	}
 	
 	// S-NEWS END-------------------------
 	// S-SERVICES-----------------
@@ -700,8 +710,7 @@
 		&__wraper {
 			padding: 30px 30px;
 			p,
-			a,
-			i {
+			a {
 				font-size: $fz--xxsmall;
 			}
 			ul,
@@ -865,7 +874,8 @@
 				}
 			}
 		}
-	} // S-INFO-MATERIALS-----------------end
+	} 
+	// S-INFO-MATERIALS-----------------end
 	// S-PARTNERS-----------------
 	.partners {
 		.owl-nav {

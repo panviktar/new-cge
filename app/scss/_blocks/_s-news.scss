@@ -1,8 +1,10 @@
 .s-news {
 	text-rendering: optimizeLegibility;
+
 	.s-news-wraper {
 		position: relative;
 		z-index: 5;
+
 		&::before {
 			position: absolute;
 			width: 100%;
@@ -15,12 +17,14 @@
 			opacity: 0.9;
 		}
 	}
+
 	.cards-news {
 		text-align: center;
 		display: flex;
 		flex-direction: row;
 		position: relative;
 	}
+
 	.card {
 		perspective: 1000;
 		position: relative;
@@ -28,15 +32,18 @@
 		transition: transform 0.2s ease-in;
 		z-index: 10;
 		margin-bottom: 20px;
+
 		&:last-child {
 			margin-bottom: 0;
 		}
+
 		&--big {
 			margin-bottom: 0;
 		}
+
 		&:hover {
 			img {
-				transform: scale(1.05);
+				transform: scale(1.04);
 			}
 
 			.card__title,
@@ -50,32 +57,28 @@
 				color: #ffffff;
 			}
 
-			.card__image::before {
-				opacity: 0;
-				z-index: 10;
-			}
 			.card__image--big::before {
-				opacity: .5;
+				background-image: linear-gradient(rgba(#000, 0.2), rgba(#000, 0.7));
 			}
 		}
+
 		&__image {
 			border: 1px solid #f1f1f1;
 			border-bottom: none;
 			overflow: hidden;
 			position: relative;
-		
+
 			img {
 				width: 100%;
-				height: auto;			
+				height: auto;
 				transition: transform .35s ease;
 			}
-			&::before {
-				@include darken;
-			}
+
 			&--big::before {
-				opacity: 0.3;
+				@include dark-gradient;
 			}
 		}
+
 		&__info {
 			background: #fff;
 			padding: 15px 10px;
@@ -87,6 +90,7 @@
 			box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.02), inset 0 -1px 0 0 rgba(0, 0, 0, 0.05);
 			position: relative;
 			z-index: 99;
+
 			&--big {
 				position: absolute;
 				bottom: 0;
@@ -101,28 +105,33 @@
 				height: 100%;
 			}
 		}
+
 		&__id {
 			font-size: $fz--min;
 			text-transform: uppercase;
 			border: 1px solid $accent;
 			padding: 1px 5px;
-			color: lighten($text, 20%);		
+			color: lighten($text, 20%);
+
 			&--big {
 				color: #fff;
 				border: 1px solid #fff;
 				text-shadow: rgba(0, 0, 0, 0.8) 0px 2px 2px;
 			}
 		}
+
 		&__data {
 			font-style: italic;
 			font-size: $fz--xsmall;
 			color: lighten($text, 20%);
+
 			&--big {
 				color: #fff;
 				text-shadow: rgba(0, 0, 0, 0.8) 0px 2px 2px;
 				font-size: $fz--small;
 			}
 		}
+
 		&__title,
 		&__title-page {
 			@include h5;
@@ -132,6 +141,7 @@
 			padding-bottom: 0;
 			width: 100%;
 		}
+
 		&__title--big {
 			@include h5;
 			padding-right: 15px;
@@ -140,6 +150,7 @@
 			text-shadow: rgba(0, 0, 0, 0.8) 0px 2px 2px;
 			font-size: $fz--xmedium;
 		}
+
 		&__text {
 			color: #fff;
 			line-height: 1.3;
@@ -147,64 +158,162 @@
 			font-size: $fz--medium;
 		}
 	}
-	// Для страницы новостей
-	
+}
+
+// Для страницы списка новостей
+.s-news-list {
+	&__column {
+		flex-direction: row;
+
+		.cards-news {
+			flex-direction: column;
+		}
+	}
+
+	.card {
+		padding-left: 0;
+		border-bottom: 1px solid rgba($text, .2);
+		padding: 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+
+		&:hover {
+			img {
+				transform: none;
+			}
+		}
+
+		&__info {
+			border: transparent;
+			box-shadow: none;
+			padding: 0 10px;
+			flex-direction: column;
+			align-items: flex-start;
+			height: 100%;
+			margin: 10px 0;
+		}
+
+		&__id {
+			margin-bottom: 5px;
+		}
+
+		&__image {
+			border: none;
+			margin: 10px 0;
+			padding-left: 0;
+		}
+
+		&__link {
+			display: flex;
+			align-items: flex-start;
+		}
+
+		&__text {
+			color: rgba($text, 0.7);
+			line-height: 1.3;
+			text-shadow: none;
+			font-size: $fz--base;
+			order: 4;
+		}
+	}
 }
 
 .s-news-page {
-	&__column {
-		flex-direction: row;
-		.cards-news {
-		flex-direction: column;
+	.breadcrumb-item {
+		background-color: rgba(37, 48, 49, .3);		
+		padding: 5px;		
+		&:last-child {
+			padding-right: 25px;
 		}
+		&:first-child {
+			padding-left: 25px;
 		}
-		.card {	
-			padding-left: 0;				
-			border-bottom: 1px solid rgba($text, .2);
-			padding: 20px;
-					
-			&:last-child {
-				margin-bottom: 0;
-				border-bottom: none;
-				padding-bottom: 0;
-			}
-		
-			&:hover {			
-				img {
-					transform: none;					
-				}
-			}
-
-			&__info {
-				border: transparent;
-				box-shadow: none;
-				padding: 0 10px;
-				flex-direction: column;
-				align-items: flex-start;							
-				height: 100%;
-				margin: 10px 0;		
-			}
-
-			&__id {
-				margin-bottom: 5px;
-			}
-
-			&__image {
-				border:none;
-				margin: 10px 0;				
-			}
-		
-			&__link {
-				display: flex;	
-				align-items: flex-start;
-			}
-			
-			&__text {
-				color: rgba($text, 0.7);
-				line-height: 1.3;
-				text-shadow: none;
-				font-size: $fz--base;
-				order: 4;					
-			}
-		}		
+	}
+	.active {
+	position: relative;
+	&::after {	
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 25px;
+		width: 70%;
+		height: 3px;
+		background-color: $accent2;
+	}
 }
+	.article-body {
+		&__top {
+			display: flex;
+			flex-direction: column;			
+			align-items: center;
+		}
+		.card__info {
+			width: 70%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.card__title-page {
+			font-size: $fz--large;
+		}
+		.card__image {
+			width: 70%;
+		}	
+		
+		&__content {
+			display: flex;
+			justify-content: center;
+		}
+		&__content-wraper {
+			width: 60%;
+		}
+		p {
+			margin: 15px 0;
+			line-height: 1.6;
+		}
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin: auto;
+		}
+		h2, h3, h4, h5, h6 {
+			line-height: 1.2;
+		}
+		blockquote {
+			text-align: center;
+			padding: $gutter*2 0;
+			margin: $gutter*2 0;
+			font-size: $fz--xmedium;
+			color: #000;
+			border-top: rgba($text, .3) 1px solid;
+			border-bottom: rgba($text, .3) 1px solid;
+		}
+		ul, ol {
+				padding-left: 25px;			
+			li {
+				margin: 10px 0;
+			}
+		}
+		.video {
+			margin: $gutter 0;
+			padding-bottom: 56.25%;
+			padding-top: 25px;
+			height: 0;
+			iframe {
+				border: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%!important;
+				height: 100%!important;
+			}
+		}
+		
+	}
+}
+// Для страницы новости
+
