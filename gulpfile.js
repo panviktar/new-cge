@@ -44,6 +44,7 @@ gulp.task('js', function() {
 		'app/libs/swiper/dist/js/swiper.min.js', 
 		'app/libs/equalheights/equalheights.js', 
 		'app/libs/Magnific-Popup/jquery.magnific-popup.min.js', 
+		'app/libs/prognroll/prognroll.js', 
 		
 		'app/js/common.js', // Always at the end
 		

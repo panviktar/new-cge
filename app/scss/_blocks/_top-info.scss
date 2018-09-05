@@ -74,7 +74,7 @@
 	}
 	&:hover {
 		.slide-bgimg::before {
-			opacity: .5;
+			background-image: linear-gradient(rgba(#000, 0.2), rgba(#000, 0.6));
 		}
 	}
 	&.nav-slider {
@@ -145,8 +145,7 @@
 		height: 80%;
 		padding-right: 10%;
 		padding-left: 10%;
-		color: $text--white;
-		
+		color: $text--white;		
 		text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 2px;
 		display: flex;
 		flex-direction: column;
