@@ -2849,17 +2849,19 @@ html {
   .site-header__name {
     margin-left: 15px; }
   .site-header__world, .site-header__sertif {
-    opacity: 0.7; }
+    width: 40px;
+    height: 25px;
+    opacity: 0.8; }
     .site-header__world:hover, .site-header__sertif:hover {
       opacity: 1;
-      -webkit-transition: all 0.2s;
-      -o-transition: all 0.2s;
-      transition: all 0.2s; }
+      -webkit-transition: opacity 0.2s ease;
+      -o-transition: opacity 0.2s ease;
+      transition: opacity 0.2s ease; }
     .site-header__world:active, .site-header__sertif:active {
       opacity: 0.5;
-      -webkit-transition: all 0.2s;
-      -o-transition: all 0.2s;
-      transition: all 0.2s; }
+      -webkit-transition: opacity 0.2s ease;
+      -o-transition: opacity 0.2s ease;
+      transition: opacity 0.2s ease; }
   .site-header__search {
     width: 100%;
     position: relative; }
@@ -5759,7 +5761,9 @@ section {
   padding-right: 30px; }
 
 .hide {
-  opacity: 0; }
+  opacity: 0;
+  font-size: 0;
+  line-height: 0; }
 
 .carousel-services .owl-item:nth-child(3n+1) {
   background-color: rgba(255, 0, 19, 0.5); }

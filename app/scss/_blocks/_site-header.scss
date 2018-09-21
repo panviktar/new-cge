@@ -41,14 +41,16 @@
 	}
 	&__world,
 	&__sertif {
-		opacity: 0.7;
+		width: 40px;
+		height: 25px;
+		opacity: 0.8;
 		&:hover {
 			opacity: 1;
-			transition: all 0.2s;
+			transition: opacity 0.2s ease;
 		}
 		&:active {
 			opacity: 0.5;
-			transition: all 0.2s;
+			transition: opacity 0.2s ease;
 		}
 	}
 	&__search {
