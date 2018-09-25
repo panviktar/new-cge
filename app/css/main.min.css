@@ -4585,6 +4585,10 @@ html.mm-opened {
         padding: 10px 20px; }
     .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__content-wraper {
       padding: 20px; }
+      .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__content-wraper .fas,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__content-wraper .fa,
+      .s-accordion .s-accordion__accordion .s-accordion__trigger .s-accordion__content-wraper .far {
+        margin-right: 7px; }
   .s-accordion #checkbox-1:checked ~ .s-accordion__content,
   .s-accordion #checkbox-2:checked ~ .s-accordion__content,
   .s-accordion #checkbox-3:checked ~ .s-accordion__content,

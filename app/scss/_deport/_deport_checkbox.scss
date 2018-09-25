@@ -140,6 +140,11 @@
 		}
 		.s-accordion__content-wraper {
 			padding: 20px;
+			.fas,
+			.fa,
+			.far {
+				margin-right: 7px;
+			}
 		}
 	}
 }
