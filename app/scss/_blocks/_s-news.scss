@@ -26,10 +26,9 @@
 	}
 
 	.card {
-		perspective: 1000;
 		position: relative;
 		text-align: left;
-		transition: transform 0.2s ease-in;
+		transition: transform .2s ease-in;
 		z-index: 10;
 		margin-bottom: 20px;
 

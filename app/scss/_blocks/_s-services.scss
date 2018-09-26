@@ -14,6 +14,7 @@
 			font-weight: 300;
 			display: flex;
 			flex-direction: column-reverse;
+			
 			&:hover {
 				.pattern::before {			
 					opacity: .3;
@@ -23,9 +24,13 @@
 					left: 10px;
 					z-index: 10;
 				}
+
+				.overlay {
+					opacity: 1;
+				}
 	
 				.overlay::after {
-					opacity: .55;
+					opacity: .1;
 				}
 			}
 		}
@@ -72,7 +77,12 @@
 		&__image {
 			background-size: cover;
 			background-position: center;
-			background-repeat: no-repeat;			
+			background-repeat: no-repeat;		
+		}
+
+		.overlay {
+			background-color: #000;
+			opacity: .8;
 		}
 		.owl-item {
 			&:nth-child(2n+2) {

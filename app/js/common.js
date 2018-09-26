@@ -5,6 +5,21 @@ $(function () {
 	$(".card__title").equalHeights();
 	$(".cur__item").equalHeights();
 
+		// Стрелка вверх
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > $(this).height()) {
+				$(".top").addClass("active");
+			} else {
+				$(".top").removeClass("active");
+			}
+		});
+		$(".top").click(function () {
+			$("html, body").stop().animate({
+				scrollTop: 0
+			}, "slow", "swing")
+		});
+		// Стрелка вверх end
+
 // Preloader
 $(window).on("load", function () {
 	$(".preloader").delay(800).fadeOut("slow");
@@ -43,20 +58,7 @@ $(window).on("load", function () {
 		$('input:checkbox').not(this).prop('checked', this.checked);
 	});
 
-	// Стрелка вверх
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > $(this).height()) {
-			$(".top").addClass("active");
-		} else {
-			$(".top").removeClass("active");
-		}
-	});
-	$(".top").click(function () {
-		$("html, body").stop().animate({
-			scrollTop: 0
-		}, "slow", "swing")
-	});
-	// Стрелка вверх end
+
 
 	// Измерение высоты элемента и подгонка блока info-material
 	function onResize() {
