@@ -44,9 +44,11 @@
 	}
 	.fas,
 	.fa,
-	.fa-phone {
+	.fa-phone,
+	.far {
 		color: $accent;
 		font-size: 0.8rem;
+		margin-right: 5px;
 	}
 	&__allotment {
 		padding: 0.6rem 1.2rem;
@@ -291,11 +293,11 @@
 		p,
 		span,
 		dt,
-		dd {
+		dd		 {
 			font-size: $fz--small;
 			line-height: 1.4;
 		}
-		dt {
+		dt		{
 			text-transform: uppercase;
 			font-weight: $bold;
 		}
