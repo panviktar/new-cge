@@ -3677,7 +3677,9 @@ html.mm-opened {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  position: relative;
+  z-index: 1; }
 
 .s-news-page .article-body .card__info {
   text-align: center;
@@ -4923,9 +4925,19 @@ html.mm-opened {
       .s-container__wraper .ls-none li {
         list-style: none;
         padding: 0;
-        margin: 0; }
+        margin: 8px 0 0 0;
+        position: relative; }
         .s-container__wraper .ls-none li i {
           margin-right: 10px; }
+    .s-container__wraper .pdf li:hover {
+      text-decoration: underline; }
+      .s-container__wraper .pdf li:hover::before {
+        color: #2c923a; }
+    .s-container__wraper .pdf li::before {
+      content: "\f1c1";
+      font-family: "FA";
+      position: relative;
+      margin-right: 8px; }
     .s-container__wraper ul li {
       position: relative; }
     .s-container__wraper p,
